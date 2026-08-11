@@ -4,9 +4,9 @@ export const hero = {
   title: 'POISED ARCHIVE',
   desc: 'As the Zero-to-One design leader, I spearhead product design, research, content, and operations — nurturing the conditions that let teams ship excellence. Twelve years filed the way it happened: numbered, dated, and kept.',
   hint: 'SCROLL TO DEVELOP — CASE STUDY BELOW',
-  backdrop: '/images/portfolio/mezo-hero.png',
+  backdrop: '/images/portfolio/project-hero-coinbase.png',
   cells: [
-    '/images/portfolio/mezo-borrow.png',
+    '/images/portfolio/project-01-borrow.png',
     '/images/portfolio/gf-blockfi.jpg',
     '/images/portfolio/gf-cash.png',
     '/images/portfolio/gf-fennel.png',
@@ -22,11 +22,11 @@ export const roll = {
   title: 'The BitcoinFi Suite',
   sub: 'JUN 2025 — JUN 2026 · $200M+ TVL · 25K+ USERS',
   desc: 'Four product surfaces — MUSD borrowing, swaps, vault deposits, and marketplace — designed to validate the circular Bitcoin economy, with AI accelerating research synthesis across all of them.',
-  stage: '/images/portfolio/mezo-borrow.png',
+  stage: '/images/portfolio/project-01-borrow.png',
   angles: [
-    { no: '02', image: '/images/portfolio/mezo-wallet.png' },
-    { no: '03', image: '/images/portfolio/mezo-explore.png' },
-    { no: '04', image: '/images/portfolio/mezo-hero.png' },
+    { no: '02', image: '/images/portfolio/project-02-loan.png' },
+    { no: '03', image: '/images/portfolio/project-03-wallet.png' },
+    { no: '04', image: '/images/portfolio/project-04-marketplace.png' },
   ],
 } as const;
 

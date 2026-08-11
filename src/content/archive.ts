@@ -27,7 +27,7 @@ export const archive: ArchiveFrame[] = [
 
 /** Featured home track — gofractional extras live here alongside flagship roles. */
 export const featured = [
-  { name: 'Thesis* — BitcoinFi / Mezo', frame: 'CS-03', image: '/images/portfolio/mezo-wallet.png' },
+  { name: 'Thesis* — BitcoinFi / Mezo', frame: 'CS-03', image: '/images/portfolio/project-hero-coinbase.png' },
   { name: 'BlockFi — Director of Product Design', frame: 'CS-06', image: '/images/portfolio/gf-blockfi.jpg' },
   { name: 'C@SH — Head of Design', frame: 'GF-01', image: '/images/portfolio/gf-cash.png' },
   { name: 'Fennel — Head of Design', frame: 'GF-02', image: '/images/portfolio/gf-fennel.png' },
