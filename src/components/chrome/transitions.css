@@ -1,0 +1,57 @@
+/* ---------- HomeSplash ---------- */
+.home-splash {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-splash);
+  background: var(--color-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle(150% at 50% 50%);
+  will-change: clip-path;
+}
+
+.home-splash-mark {
+  font-family: var(--font-disp);
+  font-weight: 800;
+  font-size: var(--text-2xl);
+  letter-spacing: var(--tracking-display);
+  color: var(--color-ink);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.home-splash-period {
+  color: var(--color-ink);
+}
+
+/* ---------- PageCurtain ---------- */
+.page-curtain {
+  /* Idle position (translateY -101%) is set via GSAP on mount, not here — GSAP
+     must have sole ownership of `transform` so its later tweens don't compose
+     with a separately CSS-authored value. */
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-curtain);
+  background: var(--color-curtain);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.page-curtain-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-red);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-splash,
+  .page-curtain {
+    display: none;
+  }
+}

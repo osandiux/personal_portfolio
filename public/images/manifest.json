@@ -1,0 +1,373 @@
+[
+  {
+    "page": "work",
+    "index": 0,
+    "file": "work-00-5db663e620.png",
+    "bytes": 2942,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 1,
+    "file": "work-01-8180c312da.avif",
+    "bytes": 40845,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 2,
+    "file": "work-02-26b63dccba.avif",
+    "bytes": 72559,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 3,
+    "file": "work-03-5dde34c43f.avif",
+    "bytes": 99426,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 4,
+    "file": "work-04-05b5c9e7b2.avif",
+    "bytes": 46825,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 5,
+    "file": "work-05-b833f269dc.avif",
+    "bytes": 55801,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 6,
+    "file": "work-06-c42062a606.avif",
+    "bytes": 219544,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 7,
+    "file": "work-07-ff383224ee.avif",
+    "bytes": 119182,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 8,
+    "file": "work-08-62ec111a60.avif",
+    "bytes": 35433,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 9,
+    "file": "work-09-a38b5101e5.avif",
+    "bytes": 130497,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 10,
+    "file": "work-10-365d3d53cc.avif",
+    "bytes": 55859,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 11,
+    "file": "work-11-08518076e7.avif",
+    "bytes": 114485,
+    "dup": false
+  },
+  {
+    "page": "work",
+    "index": 12,
+    "file": "work-12-e7043be01c.avif",
+    "bytes": 60661,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 0,
+    "file": "work-00-5db663e620.png",
+    "bytes": 2942,
+    "dup": true
+  },
+  {
+    "page": "project",
+    "index": 1,
+    "file": "project-01-3f63582bb6.avif",
+    "bytes": 236503,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 2,
+    "file": "project-02-f221da8d3c.avif",
+    "bytes": 156932,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 3,
+    "file": "project-03-cceb88fb5e.avif",
+    "bytes": 699516,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 4,
+    "file": "project-04-a6fb73fa85.avif",
+    "bytes": 101280,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 5,
+    "file": "project-05-c15bd22707.avif",
+    "bytes": 229468,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 6,
+    "file": "project-06-e8a803b103.avif",
+    "bytes": 258348,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 7,
+    "file": "project-07-0125ece321.avif",
+    "bytes": 33007,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 8,
+    "file": "project-08-0b7bd3be8e.avif",
+    "bytes": 43497,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 9,
+    "file": "project-09-9de80c7710.avif",
+    "bytes": 28283,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 10,
+    "file": "project-10-c15c5533b8.avif",
+    "bytes": 84562,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 11,
+    "file": "project-11-a868904edb.avif",
+    "bytes": 57654,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 12,
+    "file": "project-12-76c614cecc.avif",
+    "bytes": 86577,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 13,
+    "file": "project-13-5f16cbf165.avif",
+    "bytes": 100157,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 14,
+    "file": "project-14-4d0f30e813.avif",
+    "bytes": 43814,
+    "dup": false
+  },
+  {
+    "page": "project",
+    "index": 15,
+    "file": "project-15-6953893144.avif",
+    "bytes": 130719,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 0,
+    "file": "work-00-5db663e620.png",
+    "bytes": 2942,
+    "dup": true
+  },
+  {
+    "page": "home",
+    "index": 1,
+    "file": "home-01-707cebcaad.avif",
+    "bytes": 17770,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 2,
+    "file": "home-02-8968f77a42.avif",
+    "bytes": 26800,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 3,
+    "file": "home-03-105b65c862.avif",
+    "bytes": 33901,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 4,
+    "file": "home-04-d761a4bafb.avif",
+    "bytes": 32071,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 5,
+    "file": "home-05-019c450584.avif",
+    "bytes": 54399,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 6,
+    "file": "home-06-49dd2e8e62.avif",
+    "bytes": 34519,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 7,
+    "file": "home-07-f23e321e00.avif",
+    "bytes": 20037,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 8,
+    "file": "home-08-4f6cd7bd20.avif",
+    "bytes": 23501,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 9,
+    "file": "home-09-555fd2e4a8.avif",
+    "bytes": 129225,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 10,
+    "file": "home-10-c3221dc095.avif",
+    "bytes": 14939,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 11,
+    "file": "home-11-e47d58226d.avif",
+    "bytes": 10883,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 12,
+    "file": "home-12-a056ab6efb.avif",
+    "bytes": 22406,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 13,
+    "file": "home-13-40e0460e25.avif",
+    "bytes": 149222,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 14,
+    "file": "home-14-a9722b23e4.avif",
+    "bytes": 119227,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 15,
+    "file": "home-15-b1bceeead3.avif",
+    "bytes": 340780,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 16,
+    "file": "home-16-1f0ba69c8e.avif",
+    "bytes": 82641,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 17,
+    "file": "home-17-4f40750a8e.avif",
+    "bytes": 64513,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 18,
+    "file": "home-18-b013d24c22.avif",
+    "bytes": 94735,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 19,
+    "file": "home-19-0530165670.avif",
+    "bytes": 316825,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 20,
+    "file": "home-20-c8cefbbc21.avif",
+    "bytes": 173146,
+    "dup": false
+  },
+  {
+    "page": "home",
+    "index": 21,
+    "file": "home-21-a41346a210.avif",
+    "bytes": 175361,
+    "dup": false
+  },
+  {
+    "page": "about",
+    "index": 0,
+    "file": "work-00-5db663e620.png",
+    "bytes": 2942,
+    "dup": true
+  },
+  {
+    "page": "about",
+    "index": 1,
+    "file": "home-21-a41346a210.avif",
+    "bytes": 175361,
+    "dup": true
+  }
+]

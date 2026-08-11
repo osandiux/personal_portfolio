@@ -1,0 +1,284 @@
+/* ---------- Eyebrow ---------- */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+  color: var(--color-dim);
+}
+
+.eyebrow .eyebrow-tick {
+  color: var(--color-red);
+  margin-right: var(--space-2);
+}
+
+/* ---------- Title ---------- */
+.title {
+  font-family: var(--font-disp);
+  font-weight: 800;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-tight);
+  text-wrap: balance;
+}
+
+.title--xl {
+  font-size: var(--text-2xl);
+  text-transform: uppercase;
+}
+
+.title--lg {
+  font-size: var(--text-xl);
+}
+
+.title--md {
+  font-size: var(--text-lg);
+}
+
+.title .title-accent {
+  color: var(--color-red);
+}
+
+/* ---------- MonoText ---------- */
+.mono {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-mono);
+  color: var(--color-dim);
+}
+
+.mono--bright {
+  color: var(--color-paper);
+}
+
+.mono--red {
+  color: var(--color-red);
+}
+
+/* ---------- Button ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+  padding: 0.9em 1.8em;
+  border-radius: var(--radius-pill);
+  transition:
+    background var(--motion-med) var(--ease-out),
+    color var(--motion-med) var(--ease-out),
+    border-color var(--motion-med) var(--ease-out),
+    transform var(--motion-fast) var(--ease-out);
+}
+
+.btn--primary {
+  background: var(--color-red);
+  color: var(--color-ink);
+}
+
+.btn--primary:hover {
+  background: var(--color-paper);
+}
+
+.btn--stroke {
+  border: 1px solid var(--color-hair);
+  color: var(--color-paper);
+}
+
+.btn--stroke:hover {
+  border-color: var(--color-red);
+  color: var(--color-red);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* ---------- TextLink ---------- */
+.text-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+  color: var(--color-paper);
+  transition: color var(--motion-fast) var(--ease-out);
+}
+
+.text-link .text-link-arrow {
+  color: var(--color-red);
+  transition: transform var(--motion-fast) var(--ease-out);
+}
+
+.text-link:hover {
+  color: var(--color-red);
+}
+
+.text-link:hover .text-link-arrow {
+  transform: translateX(4px);
+}
+
+/* ---------- Chip ---------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+  padding: 0.55em 1.2em;
+  border: 1px solid var(--color-hair);
+  border-radius: var(--radius-pill);
+  color: var(--color-dim);
+  transition:
+    color var(--motion-fast) var(--ease-out),
+    border-color var(--motion-fast) var(--ease-out),
+    background var(--motion-fast) var(--ease-out),
+    transform var(--motion-fast) var(--ease-out);
+}
+
+button.chip:hover {
+  color: var(--color-paper);
+  border-color: var(--color-dim);
+}
+
+button.chip:active {
+  transform: scale(0.97);
+}
+
+.chip.is-active {
+  background: var(--color-paper);
+  border-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* ---------- MediaFrame ---------- */
+.media-frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-panel);
+}
+
+.media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-frame--scrim::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(12, 11, 11, 0.72));
+}
+
+/* ---------- Stat ---------- */
+.stat {
+  border-top: 1px solid var(--color-hair);
+  padding-top: var(--space-3);
+}
+
+.stat-value {
+  font-family: var(--font-disp);
+  font-weight: 700;
+  font-size: var(--text-xl);
+  line-height: 1;
+}
+
+.stat-caption {
+  margin-top: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+  color: var(--color-dim);
+}
+
+/* ---------- Quote ---------- */
+.quote {
+  font-family: var(--font-disp);
+  font-weight: 600;
+  font-size: var(--text-xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+}
+
+.quote .quote-line {
+  display: block;
+}
+
+.quote-source {
+  margin-top: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+  color: var(--color-dim);
+}
+
+/* ---------- Marquee ---------- */
+.marquee {
+  overflow: hidden;
+  border-top: 1px solid var(--color-hair);
+  border-bottom: 1px solid var(--color-hair);
+  padding: var(--space-4) 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.marquee-set {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding-right: var(--space-6);
+  font-family: var(--font-disp);
+  font-weight: 600;
+  font-size: var(--text-lg);
+  white-space: nowrap;
+  color: var(--color-dim);
+}
+
+.marquee-set .marquee-dot {
+  color: var(--color-red);
+  font-size: var(--text-sm);
+}
+
+@keyframes marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+  }
+}
+
+/* ---------- NoteCard (atmosphere, intentionally not a link) ---------- */
+.note-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--color-hair);
+}
+
+.note-card:last-child {
+  border-bottom: 1px solid var(--color-hair);
+}
+
+.note-card-title {
+  font-family: var(--font-disp);
+  font-weight: 600;
+  font-size: var(--text-lg);
+}
