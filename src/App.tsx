@@ -4,6 +4,7 @@ import { HomePage } from './pages/HomePage';
 import { WorkPage } from './pages/WorkPage';
 import { ProjectPage } from './pages/ProjectPage';
 import { AboutPage } from './pages/AboutPage';
+import { BuildPage } from './pages/BuildPage';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="work" element={<WorkPage />} />
           <Route path="project" element={<ProjectPage />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="build" element={<BuildPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

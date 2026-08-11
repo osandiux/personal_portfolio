@@ -12,6 +12,7 @@ const ROUTE_LABELS: Record<string, string> = {
   '/work': 'WORK',
   '/project': 'PROJECT',
   '/about': 'ABOUT',
+  '/build': 'BUILD',
 };
 
 const COVER_DURATION = 0.4;

@@ -372,3 +372,13 @@
 .site-footer .footer-mark .dot {
   color: var(--color-red);
 }
+
+.site-footer .footer-build {
+  color: var(--color-paper);
+  text-decoration: none;
+  letter-spacing: var(--tracking-mono);
+}
+
+.site-footer .footer-build:hover {
+  color: var(--color-red);
+}

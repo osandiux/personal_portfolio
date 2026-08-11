@@ -1,5 +1,5 @@
 import { about } from '../../content/about';
-import { Chip, Eyebrow, MonoText, Stat, Title } from '../../components/primitives';
+import { Chip, Eyebrow, MonoText, Stat, TextLink, Title } from '../../components/primitives';
 import { useInView } from '../../hooks/useInView';
 import './about.css';
 
@@ -86,6 +86,9 @@ export function Kit() {
           {kit.clients.map((client) => (
             <Chip key={client}>{client}</Chip>
           ))}
+        </div>
+        <div style={{ marginTop: 'var(--space-5)' }}>
+          <TextLink to="/build">Read the build guide</TextLink>
         </div>
       </div>
     </section>

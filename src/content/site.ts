@@ -21,5 +21,6 @@ export const site = {
     copyright: 'POISED © 2026 · OSANDI ROBINSON',
     plates: 'IMAGERY: PRODUCT UI · BRAND PLATES',
     motto: 'BRIEFED, DESIGNED, SHIPPED',
+    build: 'BUILD GUIDE',
   },
 } as const;

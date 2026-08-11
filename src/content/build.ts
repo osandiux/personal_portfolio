@@ -1,0 +1,126 @@
+export const build = {
+  head: {
+    label: 'BUILD / FOR OTHER BUILDERS',
+    titleA: 'How we',
+    titleB: 'shipped Poised.',
+    intro:
+      'A design-system rebuild of a cinematic portfolio — tokens, primitives, chrome, motion, then content and imagery. This page is the field guide so you can steal the structure, not just the look.',
+    meta: 'VITE · REACT · TOKENS · GSAP · LENIS',
+  },
+  tokensNote: {
+    kicker: 'Tokens first',
+    body: 'Color, type, space, motion, and z-index live in one file. Pages compose; they do not redefine the brand.',
+    path: 'src/styles/tokens.css',
+  },
+  primitives: [
+    { name: 'Eyebrow', note: 'Section label with safelight tick' },
+    { name: 'Title', note: 'Display headings — xl / lg / md' },
+    { name: 'MonoText', note: 'Metadata, captions, technical voice' },
+    { name: 'Button', note: 'Primary + stroke CTAs' },
+    { name: 'TextLink', note: 'Internal route with arrow' },
+    { name: 'Chip', note: 'Filters, tags, static labels' },
+    { name: 'MediaFrame', note: 'Image plate + optional scrim' },
+    { name: 'Stat', note: 'Big number + caption' },
+    { name: 'Quote', note: 'Multi-line pull quote' },
+    { name: 'Marquee', note: 'Press / company ticker' },
+    { name: 'NoteCard', note: 'Journal row: date · title · tag' },
+  ],
+  chrome: [
+    { name: 'SiteShell', path: 'components/chrome/SiteShell.tsx', role: 'Layout host — Lenis, curtain, splash, outlet' },
+    { name: 'SiteHeader', path: 'components/chrome/SiteHeader.tsx', role: 'Wordmark, primary nav, booking, clock' },
+    { name: 'FullscreenMenu', path: 'components/chrome/FullscreenMenu.tsx', role: 'Numbered route list with descriptions' },
+    { name: 'CustomCursor', path: 'components/chrome/CustomCursor.tsx', role: 'Desktop cursor; hidden for touch / reduced motion' },
+    { name: 'ScrollProgressRail', path: 'components/chrome/ScrollProgressRail.tsx', role: 'Film-advance scroll meter' },
+    { name: 'HomeSplash', path: 'components/chrome/HomeSplash.tsx', role: 'Home-only POISED. iris wipe' },
+    { name: 'PageCurtain', path: 'components/chrome/PageCurtain.tsx', role: 'Cover → navigate → reveal transition' },
+    { name: 'FootCTA', path: 'components/chrome/FootCTA.tsx', role: 'Partnerships close — chips + mailto' },
+    { name: 'SiteFooter', path: 'components/chrome/SiteFooter.tsx', role: 'Copyright, imagery note, motto' },
+    { name: 'Lightbox', path: 'components/overlays/Lightbox.tsx', role: 'Contact-sheet enlarge + keyboard close' },
+  ],
+  outline: {
+    kicker: 'The outline',
+    title: 'Six phases.',
+    phases: [
+      { no: '01', name: 'Interview & tokens', note: 'Clarify structure, reusability, and CSS variables before components.' },
+      { no: '02', name: 'Vite scaffold', note: 'React + TypeScript + Router; content files as a lightweight CMS.' },
+      { no: '03', note: 'Header, menu, splash, curtain, Lenis, ScrollTrigger — chrome before pages.', name: 'Chrome & motion' },
+      { no: '04', name: 'Content pivot', note: 'Swap photography persona for Osandi’s CV and product narrative.' },
+      { no: '05', name: 'Imagery', note: 'Real product screens + brand plates; primitives stay image-agnostic.' },
+      { no: '06', name: 'Ship', note: 'Build, verify routes, push the archive.' },
+    ],
+  },
+  milestones: {
+    kicker: 'Key milestones',
+    title: 'One line, one rebuild.',
+    stops: [
+      { year: '01', title: 'HTML export audit', note: 'Four Halide pages → section inventory and reusable patterns.' },
+      { year: '02', title: 'Poised rebrand', note: 'Tokens, wordmark weight, and every Halide string replaced.' },
+      { year: '03', title: 'Scroll & pin fixes', note: 'Pin inner nodes so React unmounts do not throw NotFoundError.' },
+      { year: '04', title: 'Curtain transitions', note: 'Click-intercept cover, then navigate, then reveal.' },
+      { year: '05', title: 'CV content pivot', note: 'Archive, case study, about — product design leadership.' },
+      { year: '06', title: 'Imagery overhaul', note: 'Mezo, gofractional, Coinbase-style UI, Boondocks portrait.' },
+      { year: '07', title: 'GitHub ship', note: 'Initial commit to osandiux/poised_portfolio.' },
+    ],
+  },
+  challenges: {
+    kicker: 'Challenges → solutions',
+    title: 'What broke, what we did.',
+    items: [
+      {
+        challenge: 'GSAP pin wrapped the section; React removeChild threw NotFoundError on route change.',
+        solution: 'Pin an inner div inside the React-managed <section>, never the section itself.',
+      },
+      {
+        challenge: 'Lenis and window.scrollY desynced after deep-scroll pins.',
+        solution: 'Central lenisController with hard scroll reset on navigation.',
+      },
+      {
+        challenge: 'Curtain flashed after the new page painted.',
+        solution: 'Capture-phase link intercept: animate cover, then navigate, then reveal.',
+      },
+      {
+        challenge: 'CSS transform + GSAP yPercent double-offset the curtain off-screen.',
+        solution: 'GSAP owns transform from mount; remove competing CSS translate.',
+      },
+      {
+        challenge: 'Photography copy and landscape plates undercut a product portfolio.',
+        solution: 'Content files as CMS + brand-weighted archive; Featured holds gofractional extras.',
+      },
+    ],
+  },
+  steps: {
+    kicker: 'Key steps',
+    title: 'Steal this sequence.',
+    items: [
+      'Define tokens (color, type, space, z, motion) before any page markup.',
+      'Ship primitives first — Eyebrow, Title, Chip, MediaFrame — then compose sections.',
+      'Keep all copy and image paths in src/content/; pages stay thin composers.',
+      'Build chrome once (header, menu, curtain, footer); routes only swap <Outlet />.',
+      'For pin animations, target an inner node React will not unmount from main.',
+      'Intercept internal links when a cover transition must finish before route swap.',
+      'Prefer real product screens; generate brand plates only for gaps.',
+      'Respect prefers-reduced-motion: skip splash, curtain motion, and custom cursor.',
+    ],
+  },
+  tradeoffs: {
+    kicker: 'Trade-offs',
+    title: 'Choices we made.',
+    rows: [
+      { k: 'Archive', v: 'Brand-weighted 12 in Work; gofractional extras live in Featured only.' },
+      { k: 'Nav', v: 'Build guide is secondary (About + footer) so primary nav stays four routes.' },
+      { k: 'Portrait', v: 'Boondocks-style illustration over photoreal — graphic, on-brand, memorable.' },
+      { k: 'Curtain', v: 'Click intercept + GSAP over router-only transitions — visible cover every time.' },
+      { k: 'CMS', v: 'TypeScript content modules over a headless CMS — fast, typed, no backend.' },
+      { k: 'Sections', v: 'Shared primitives over page-local one-offs — reuse beats novelty.' },
+    ],
+  },
+  learnings: {
+    kicker: 'Learnings',
+    lines: [
+      'The design system is the product of the rebuild — pages are just arrangements.',
+      'Motion bugs are usually ownership bugs: who owns scroll, who owns transform, who owns the DOM node.',
+      'Content pivots are cheap when imagery and copy are data, not hardcoded JSX.',
+    ],
+    cta: 'Explore the shipped work',
+  },
+} as const;
