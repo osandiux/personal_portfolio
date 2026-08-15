@@ -24,7 +24,7 @@ export const site = {
         no: '02',
         name: 'Studio',
         desc: 'Workoholics — work, services, agency, culture.',
-        to: '/studio/work',
+        to: '/studio',
       },
     ],
   },

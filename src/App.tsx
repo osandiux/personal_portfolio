@@ -8,6 +8,7 @@ import { WorkPage } from './pages/WorkPage';
 import { ProjectPage } from './pages/ProjectPage';
 import { AboutPage } from './pages/AboutPage';
 import { BuildPage } from './pages/BuildPage';
+import { HomePage as StudioHomePage } from './studio/pages/HomePage';
 import { WorkPage as StudioWorkPage } from './studio/pages/WorkPage';
 import { ServicesPage as StudioServicesPage } from './studio/pages/ServicesPage';
 import { AgencyPage as StudioAgencyPage } from './studio/pages/AgencyPage';
@@ -36,7 +37,7 @@ function AppRoutes() {
           <Route path="build" element={<Navigate to={`${POISED_BASE}/build`} replace />} />
         </Route>
         <Route path="studio" element={<StudioShell />}>
-          <Route index element={<Navigate to="/studio/work" replace />} />
+          <Route index element={<StudioHomePage />} />
           <Route path="work" element={<StudioWorkPage />} />
           <Route path="services" element={<StudioServicesPage />} />
           <Route path="agency" element={<StudioAgencyPage />} />

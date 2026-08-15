@@ -1,16 +1,18 @@
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { studioNav } from './content';
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { pathname } = useLocation();
+  const isHome = pathname === '/studio' || pathname === '/studio/';
 
   return (
     <>
-      <header className={`wkhs-header wkhs-header--show-brand${menuOpen ? ' wkhs-header--menu-open' : ''}`}>
+      <header className={`wkhs-header${isHome ? '' : ' wkhs-header--show-brand'}${menuOpen ? ' wkhs-header--menu-open' : ''}`}>
         <div className="wkhs-header__start">
           <figure className="wkhs-header__logo">
-            <Link to="/studio/work" aria-label="Access the home page">
+            <Link to="/studio" aria-label="Access the home page">
               <img src="/studio/svg/logo.svg" alt="Workoholics" />
             </Link>
           </figure>

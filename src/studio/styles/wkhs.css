@@ -50,8 +50,30 @@ html[data-wkhs] .wkhs-menu--open {
   --opacity: 1;
 }
 
+html[data-wkhs] .wkhs-header {
+  --header-text-color: var(--color-primary);
+}
+
+html[data-wkhs] .wkhs-header a {
+  color: var(--header-text-color);
+}
+
 html[data-wkhs] .wkhs-header--menu-open {
   --header-text-color: var(--color-primary-contrast);
+}
+
+html[data-wkhs] .wkhs-footer {
+  position: relative;
+  z-index: 1;
+}
+
+html[data-wkhs] .wkhs-footer__intersection-ref {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
 }
 
 html[data-wkhs] .page-culture {
@@ -67,15 +89,4 @@ html[data-wkhs] .list-article .article {
 html[data-wkhs] .wkhs-footer__bottom-start img {
   width: 100%;
   height: auto;
-}
-
-html[data-wkhs] .hero-agency {
-  padding: 0 var(--safe-area) var(--block-vpadding);
-}
-
-html[data-wkhs] .hero-agency__intro {
-  font-size: var(--fs-md);
-  line-height: var(--lh-md);
-  max-width: 42em;
-  margin-top: 1.4em;
 }

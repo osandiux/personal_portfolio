@@ -1,0 +1,145 @@
+html[data-wkhs] .split-text-shuffle {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+html[data-wkhs] .split-text-shuffle > span {
+  display: block;
+  white-space: nowrap;
+}
+
+html[data-wkhs] .figure-stripes {
+  position: relative;
+}
+
+html[data-wkhs] .figure-stripes__fragment .picture {
+  aspect-ratio: auto;
+}
+
+html[data-wkhs] .figure-stripes__fragment .picture .picture__img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: cover;
+}
+
+html[data-wkhs] .hero-work__video {
+  margin-top: 1.2em;
+}
+
+html[data-wkhs] .hero-work .text-fractured__text {
+  font-size: var(--fs-hg);
+  line-height: var(--lh-hg);
+  letter-spacing: var(--ls-hg);
+  font-family: var(--font-primary);
+}
+
+html[data-wkhs] .hero-services .text-fractured__text {
+  font-size: var(--fs-hg);
+  line-height: var(--lh-hg);
+  letter-spacing: var(--ls-hg);
+  font-family: var(--font-primary);
+}
+
+html[data-wkhs] .filter-projects__options[hidden] {
+  display: none;
+}
+
+html[data-wkhs] .article-service__projects-track {
+  display: flex;
+  gap: var(--gap);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 0 var(--safe-area);
+}
+
+html[data-wkhs] .article-service__projects-track::-webkit-scrollbar {
+  display: none;
+}
+
+html[data-wkhs] .article-service__projects-slide {
+  flex: 0 0 80vw;
+  scroll-snap-align: start;
+  color: inherit;
+  text-decoration: none;
+}
+
+html[data-wkhs] .article-service__projects-slide .picture,
+html[data-wkhs] .article-service__projects-slide .figure-stripes {
+  aspect-ratio: 296 / 217;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+html[data-wkhs] .article-service__projects-slide figcaption {
+  margin-top: 0.5em;
+  font-size: var(--fs-base);
+}
+
+html[data-wkhs] .vision-slider {
+  overflow: hidden;
+}
+
+html[data-wkhs] .vision-slider__track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+html[data-wkhs] .vision-slider__track::-webkit-scrollbar {
+  display: none;
+}
+
+html[data-wkhs] .vision-slider__track > * {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+html[data-wkhs] .gallery-grid {
+  background-color: var(--color-bg-pink-light);
+}
+
+html[data-wkhs] .gallery-grid__inner figure {
+  cursor: pointer;
+}
+
+html[data-wkhs] .gallery-grid__inner figure .picture {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html[data-wkhs] .gallery-grid__inner figure:hover .picture {
+  transform: scale(1.04);
+}
+
+html[data-wkhs] .list-table a.list-table__item {
+  text-decoration: none;
+  color: inherit;
+}
+
+html[data-wkhs-page="culture"] .wkhs-header {
+  --header-text-color: var(--color-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-wkhs] .gallery-grid__inner figure .picture {
+    transition: none;
+  }
+
+  html[data-wkhs] .gallery-grid__inner figure:hover .picture {
+    transform: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html[data-wkhs] .article-service__projects-track {
+    padding: 0;
+  }
+
+  html[data-wkhs] .article-service__projects-slide {
+    flex-basis: 22vw;
+  }
+}

@@ -4,6 +4,7 @@ import { studioNav } from './content';
 export function Footer() {
   return (
     <footer className="wkhs-footer" id="wkhs-footer">
+      <span className="wkhs-footer__intersection-ref" aria-hidden="true" />
       <div className="wkhs-footer__top">
         <div className="wkhs-footer__top-start">
           <div className="wkhs-footer__contact">

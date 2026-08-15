@@ -1,16 +1,36 @@
+import { useEffect, useRef, useState } from 'react';
 import { studioAgency } from '../content';
 import { Picture } from '../Picture';
+import { SplitTextShuffle } from '../home/SplitTextShuffle';
+import { TextFractured } from '../home/TextFractured';
 
 export function AgencyPage() {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    const onScroll = () => {
+      const width = track.clientWidth || 1;
+      setActive(Math.round(track.scrollLeft / width));
+    };
+    track.addEventListener('scroll', onScroll, { passive: true });
+    return () => track.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
     <div className="page page-agency">
       <header className="hero-agency">
         <div className="hero-agency__inner">
           <div className="hero-agency__start">
             <div className="hero-agency__heading">
-              <h1 className="heading heading--hg">{studioAgency.title}</h1>
+              <h1 className="heading heading--hg sr-only">{studioAgency.title}</h1>
+              <TextFractured text={studioAgency.title} />
             </div>
-            <p className="hero-agency__intro">{studioAgency.intro}</p>
+            <p className="hero-agency__intro">
+              <SplitTextShuffle text={studioAgency.intro} lines={studioAgency.introLines} />
+            </p>
           </div>
         </div>
       </header>
@@ -25,7 +45,7 @@ export function AgencyPage() {
             <p>{studioAgency.teamBody}</p>
           </div>
           <figure className="team__figure">
-            <Picture src={studioAgency.portrait} alt="Studio team" />
+            <Picture src={studioAgency.portrait} alt="Studio team" className="picture--cover" />
           </figure>
           <div className="team__people">
             {studioAgency.team.map((person) => (
@@ -69,14 +89,43 @@ export function AgencyPage() {
 
       <section className="vision">
         <div className="vision__inner">
-          {studioAgency.vision.map((slide) => (
-            <article key={slide.name} className="vision__slide">
-              <div className="vision__start">
-                <h3 className="vision__slide-header heading heading--xl">{slide.name}</h3>
-                <p className="vision__slide-description">{slide.copy}</p>
-              </div>
-            </article>
-          ))}
+          <nav className="vision__nav">
+            <ul>
+              {studioAgency.vision.map((slide, index) => (
+                <li key={slide.name} className="vision__nav-item">
+                  <button
+                    type="button"
+                    className={`vision__nav-button${index === active ? ' vision__nav-button--active' : ''}`}
+                    onClick={() => {
+                      const target = trackRef.current?.children[index] as HTMLElement | undefined;
+                      target?.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+                    }}
+                  >
+                    [{String(index + 1).padStart(2, '0')}]
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="vision-slider">
+            <div className="vision-slider__track" ref={trackRef}>
+              {studioAgency.vision.map((slide) => (
+                <article key={slide.name} className="vision__slide">
+                  <div className="vision__start">
+                    <header className="vision__slide-header">
+                      <h3 className="heading heading--xl">{slide.name}</h3>
+                    </header>
+                    <p className="vision__slide-description">{slide.copy}</p>
+                  </div>
+                  <div className="vision__end">
+                    <figure>
+                      <Picture src={slide.image} alt="" className="picture--cover" />
+                    </figure>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

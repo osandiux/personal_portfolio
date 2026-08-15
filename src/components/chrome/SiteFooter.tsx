@@ -15,7 +15,7 @@ export function SiteFooter() {
       <Link to={`${POISED_BASE}/build`} className="footer-build">
         {site.footer.build}
       </Link>
-      <Link to="/studio/work" className="footer-build">
+      <Link to="/studio" className="footer-build">
         {site.footer.studio}
       </Link>
       <span>{site.footer.motto}</span>
