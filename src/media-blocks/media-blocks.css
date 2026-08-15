@@ -1,0 +1,93 @@
+.media-blocks-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: var(--text-xs, 0.6875rem);
+  letter-spacing: var(--tracking-mono, 0.08em);
+  text-transform: uppercase;
+}
+
+.media-blocks-toggle__track {
+  position: relative;
+  width: 2.35rem;
+  height: 1.2rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  opacity: 0.55;
+  transition:
+    opacity var(--motion-fast, 150ms) var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+    background-color var(--motion-fast, 150ms) var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.media-blocks-toggle.is-on .media-blocks-toggle__track {
+  opacity: 1;
+  background: var(--color-red, #ff3b3b);
+  border-color: var(--color-red, #ff3b3b);
+}
+
+.media-blocks-toggle__thumb {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: calc(1.2rem - 4px);
+  height: calc(1.2rem - 4px);
+  border-radius: 999px;
+  background: currentColor;
+  transform: translateX(0);
+  transition: transform var(--motion-fast, 150ms) var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.media-blocks-toggle.is-on .media-blocks-toggle__thumb {
+  transform: translateX(1.12rem);
+  background: #fff;
+}
+
+.media-blocks-toggle:hover .media-blocks-toggle__track,
+.media-blocks-toggle:focus-visible .media-blocks-toggle__track {
+  opacity: 1;
+}
+
+.media-blocks-toggle:focus-visible {
+  outline: 2px solid var(--color-red, #ff3b3b);
+  outline-offset: 4px;
+}
+
+.media-blocks-toggle--compact {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 90;
+  padding: 0.45rem 0.65rem 0.45rem 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  background: rgba(12, 11, 11, 0.82);
+  color: var(--color-paper, #eae6dd);
+  backdrop-filter: blur(10px);
+}
+
+html[data-wkhs] .media-blocks-toggle--compact,
+html[data-craft] .media-blocks-toggle--compact {
+  background: rgba(249, 248, 245, 0.9);
+  color: #090909;
+}
+
+html[data-media-blocks] img:not([src*='.svg']),
+html[data-media-blocks] video {
+  background-color: var(--media-block, #3b5bd9);
+  object-fit: none !important;
+  object-position: 9999px 9999px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .media-blocks-toggle__track,
+  .media-blocks-toggle__thumb {
+    transition: none;
+  }
+}

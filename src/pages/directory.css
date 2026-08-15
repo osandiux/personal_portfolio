@@ -2,14 +2,20 @@
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: var(--space-6) var(--space-pad) var(--space-5);
 }
 
+.directory-toolbar {
+  flex: none;
+  margin-bottom: var(--space-5);
+}
+
 .directory-rooms {
+  flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-pad);
+  align-content: center;
 }
 
 @media (max-width: 760px) {

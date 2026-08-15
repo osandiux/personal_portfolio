@@ -17,6 +17,7 @@ import { CraftShell } from './craft/CraftShell';
 import { HomePage as CraftHomePage } from './craft/pages/HomePage';
 import { BcpPage as CraftBcpPage } from './craft/pages/BcpPage';
 import { POISED_BASE } from './content/site';
+import { MediaBlocksProvider } from './media-blocks/MediaBlocks';
 import { usePageFade } from './hooks/usePageFade';
 import './components/chrome/page-fade.css';
 
@@ -59,7 +60,9 @@ function AppRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
-      <AppRoutes />
+      <MediaBlocksProvider>
+        <AppRoutes />
+      </MediaBlocksProvider>
     </BrowserRouter>
   );
 }
