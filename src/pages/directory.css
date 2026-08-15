@@ -8,11 +8,11 @@
 
 .directory-rooms {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-pad);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 760px) {
   .directory-rooms {
     grid-template-columns: 1fr;
   }
