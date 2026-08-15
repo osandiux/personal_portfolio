@@ -1,23 +1,45 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { RootShell } from './components/chrome/RootShell';
 import { SiteShell } from './components/chrome/SiteShell';
+import { StudioShell } from './studio/StudioShell';
+import { IndexPage } from './pages/IndexPage';
 import { HomePage } from './pages/HomePage';
 import { WorkPage } from './pages/WorkPage';
 import { ProjectPage } from './pages/ProjectPage';
 import { AboutPage } from './pages/AboutPage';
 import { BuildPage } from './pages/BuildPage';
+import { WorkPage as StudioWorkPage } from './studio/pages/WorkPage';
+import { ServicesPage as StudioServicesPage } from './studio/pages/ServicesPage';
+import { AgencyPage as StudioAgencyPage } from './studio/pages/AgencyPage';
+import { CulturePage as StudioCulturePage } from './studio/pages/CulturePage';
+import { POISED_BASE } from './content/site';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<SiteShell />}>
-          <Route index element={<HomePage />} />
-          <Route path="work" element={<WorkPage />} />
-          <Route path="project" element={<ProjectPage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="build" element={<BuildPage />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+        <Route element={<RootShell />}>
+          <Route index element={<IndexPage />} />
+          <Route element={<SiteShell />}>
+            <Route path="poised1" element={<HomePage />} />
+            <Route path="poised1/work" element={<WorkPage />} />
+            <Route path="poised1/project" element={<ProjectPage />} />
+            <Route path="poised1/about" element={<AboutPage />} />
+            <Route path="poised1/build" element={<BuildPage />} />
+          </Route>
+          <Route path="work" element={<Navigate to={`${POISED_BASE}/work`} replace />} />
+          <Route path="project" element={<Navigate to={`${POISED_BASE}/project`} replace />} />
+          <Route path="about" element={<Navigate to={`${POISED_BASE}/about`} replace />} />
+          <Route path="build" element={<Navigate to={`${POISED_BASE}/build`} replace />} />
         </Route>
+        <Route path="studio" element={<StudioShell />}>
+          <Route index element={<Navigate to="/studio/work" replace />} />
+          <Route path="work" element={<StudioWorkPage />} />
+          <Route path="services" element={<StudioServicesPage />} />
+          <Route path="agency" element={<StudioAgencyPage />} />
+          <Route path="culture" element={<StudioCulturePage />} />
+        </Route>
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );

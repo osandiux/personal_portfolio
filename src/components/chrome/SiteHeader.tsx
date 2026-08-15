@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { site } from '../../content/site';
+import { POISED_BASE, site } from '../../content/site';
 import { useLocalClock } from '../../hooks/useLocalClock';
 
 export function SiteHeader({ onMenu }: { onMenu: () => void }) {
@@ -16,7 +16,7 @@ export function SiteHeader({ onMenu }: { onMenu: () => void }) {
 
   return (
     <header className={`site-header${scrolled ? ' is-scrolled' : ''}`}>
-      <NavLink to="/" className="header-mark" aria-label="Poised — home">
+      <NavLink to={POISED_BASE} className="header-mark" aria-label="Poised — home">
         <span className="header-pulse" aria-hidden />
         <span className="header-wordmark">{site.name}</span>
       </NavLink>

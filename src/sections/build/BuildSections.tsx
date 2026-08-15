@@ -1,4 +1,5 @@
 import { build } from '../../content/build';
+import { POISED_BASE } from '../../content/site';
 import {
   Button,
   Chip,
@@ -76,7 +77,7 @@ export function SystemShowcase() {
 
         <article className="build-specimen">
           <MonoText>TextLink</MonoText>
-          <TextLink to="/work">Internal route</TextLink>
+          <TextLink to={`${POISED_BASE}/work`}>Internal route</TextLink>
           <p className="build-specimen-note">{build.primitives[4].note}</p>
         </article>
 
@@ -278,7 +279,7 @@ export function BuildLearnings() {
       <Eyebrow>{learnings.kicker}</Eyebrow>
       <Quote lines={learnings.lines} />
       <div className="build-learnings-cta">
-        <TextLink to="/work">{learnings.cta}</TextLink>
+        <TextLink to={`${POISED_BASE}/work`}>{learnings.cta}</TextLink>
         <div className="build-specimen-row">
           <Chip>Work</Chip>
           <Chip>Project</Chip>

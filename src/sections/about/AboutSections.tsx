@@ -1,4 +1,5 @@
 import { about } from '../../content/about';
+import { POISED_BASE } from '../../content/site';
 import { Chip, Eyebrow, MonoText, Stat, TextLink, Title } from '../../components/primitives';
 import { useInView } from '../../hooks/useInView';
 import './about.css';
@@ -88,7 +89,7 @@ export function Kit() {
           ))}
         </div>
         <div style={{ marginTop: 'var(--space-5)' }}>
-          <TextLink to="/build">Read the build guide</TextLink>
+          <TextLink to={`${POISED_BASE}/build`}>Read the build guide</TextLink>
         </div>
       </div>
     </section>

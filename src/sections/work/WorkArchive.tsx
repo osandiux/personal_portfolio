@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { archive, type Category } from '../../content/archive';
+import { POISED_BASE } from '../../content/site';
 import { Chip, Eyebrow, MediaFrame, MonoText, Title } from '../../components/primitives';
 import './work.css';
 
@@ -57,7 +58,7 @@ export function WorkArchive() {
       {view === 'grid' ? (
         <section key={`${filter}-grid`} className="work-grid" aria-label="Archive grid">
           {frames.map((frame) => (
-            <Link key={frame.frame} to="/project" className="work-card">
+            <Link key={frame.frame} to={`${POISED_BASE}/project`} className="work-card">
               <MediaFrame src={frame.image} alt={frame.name} />
               <div className="work-card-meta">
                 <span className="work-card-name">{frame.name}</span>
@@ -68,7 +69,7 @@ export function WorkArchive() {
       ) : (
         <section key={`${filter}-ledger`} className="work-ledger" aria-label="Archive ledger">
           {frames.map((frame) => (
-            <Link key={frame.frame} to="/project" className="ledger-row">
+            <Link key={frame.frame} to={`${POISED_BASE}/project`} className="ledger-row">
               <span className="mono">{frame.no}</span>
               <span className="ledger-name">{frame.name}</span>
               <span className="mono">{frame.category}</span>

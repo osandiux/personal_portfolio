@@ -1,4 +1,5 @@
 import { aboutTeaser } from '../../content/home';
+import { POISED_BASE } from '../../content/site';
 import { Eyebrow, MediaFrame, Stat, TextLink, Title } from '../../components/primitives';
 import { useInView } from '../../hooks/useInView';
 
@@ -21,7 +22,7 @@ export function AboutTeaser() {
             <Stat key={stat.caption} value={stat.value} caption={stat.caption} />
           ))}
         </div>
-        <TextLink to="/about">{aboutTeaser.cta}</TextLink>
+        <TextLink to={`${POISED_BASE}/about`}>{aboutTeaser.cta}</TextLink>
       </div>
     </section>
   );

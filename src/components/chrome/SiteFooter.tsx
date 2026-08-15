@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { site } from '../../content/site';
+import { POISED_BASE, site } from '../../content/site';
 
 export function SiteFooter() {
   return (
@@ -9,8 +9,14 @@ export function SiteFooter() {
       </span>
       <span>{site.footer.copyright}</span>
       <span>{site.footer.plates}</span>
-      <Link to="/build" className="footer-build">
+      <Link to="/" className="footer-build">
+        {site.footer.index}
+      </Link>
+      <Link to={`${POISED_BASE}/build`} className="footer-build">
         {site.footer.build}
+      </Link>
+      <Link to="/studio/work" className="footer-build">
+        {site.footer.studio}
       </Link>
       <span>{site.footer.motto}</span>
     </footer>

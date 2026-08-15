@@ -4,15 +4,22 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { scrollToTopImmediate } from './lenisController';
 import { usePrefersReducedMotion } from './usePrefersReducedMotion';
+import { POISED_BASE } from '../content/site';
 
 const SPLASH_KEY = 'poised-splash-seen';
 
 const ROUTE_LABELS: Record<string, string> = {
-  '/': 'HOME',
-  '/work': 'WORK',
-  '/project': 'PROJECT',
-  '/about': 'ABOUT',
-  '/build': 'BUILD',
+  '/': 'INDEX',
+  [POISED_BASE]: 'POISED',
+  [`${POISED_BASE}/work`]: 'WORK',
+  [`${POISED_BASE}/project`]: 'PROJECT',
+  [`${POISED_BASE}/about`]: 'ABOUT',
+  [`${POISED_BASE}/build`]: 'BUILD',
+  '/studio': 'STUDIO',
+  '/studio/work': 'STUDIO / WORK',
+  '/studio/services': 'STUDIO / SERVICES',
+  '/studio/agency': 'STUDIO / AGENCY',
+  '/studio/culture': 'STUDIO / CULTURE',
 };
 
 const COVER_DURATION = 0.4;
@@ -36,7 +43,7 @@ function markSplashSeen() {
 }
 
 function willShowSplash(pathname: string) {
-  return pathname === '/' && !hasSeenSplash();
+  return pathname === POISED_BASE && !hasSeenSplash();
 }
 
 function resetScroll() {
@@ -63,7 +70,7 @@ interface UsePageTransitionArgs {
  * Back/forward navigation can't be intercepted before the fact, so it falls
  * back to an instant (invisible) cover snap in the same effect.
  *
- * The home splash takes over entirely for the first visit to `/` each session;
+ * The home splash takes over entirely for the first visit to `/poised1` each session;
  * reduced motion skips both and marks the splash seen so it never traps.
  */
 export function usePageTransition({ pathname, curtainRef, labelRef }: UsePageTransitionArgs) {
