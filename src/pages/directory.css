@@ -8,11 +8,11 @@
 
 .directory-rooms {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--space-pad);
 }
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
   .directory-rooms {
     grid-template-columns: 1fr;
   }
@@ -34,6 +34,10 @@
 
 .directory-room:nth-child(2) {
   animation-delay: 60ms;
+}
+
+.directory-room:nth-child(3) {
+  animation-delay: 120ms;
 }
 
 .directory-no {

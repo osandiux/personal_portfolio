@@ -26,6 +26,12 @@ export const site = {
         desc: 'Workoholics — work, services, agency, culture.',
         to: '/studio',
       },
+      {
+        no: '03',
+        name: 'Craft',
+        desc: 'wild — craft, engineered. A point of view from Vienna.',
+        to: '/craft',
+      },
     ],
   },
   footCta: {

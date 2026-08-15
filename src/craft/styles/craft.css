@@ -1,0 +1,18 @@
+html[data-craft] body::after {
+  display: none !important;
+}
+
+html[data-craft],
+html[data-craft] body {
+  background: #ffffff;
+  color: #0a0a0a;
+  cursor: auto;
+  overflow-x: hidden;
+}
+
+html[data-craft] .craft-root {
+  min-height: 100svh;
+  background: #ffffff;
+  color: #0a0a0a;
+  font-family: Sneak, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

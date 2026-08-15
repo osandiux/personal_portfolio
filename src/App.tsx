@@ -13,6 +13,9 @@ import { WorkPage as StudioWorkPage } from './studio/pages/WorkPage';
 import { ServicesPage as StudioServicesPage } from './studio/pages/ServicesPage';
 import { AgencyPage as StudioAgencyPage } from './studio/pages/AgencyPage';
 import { CulturePage as StudioCulturePage } from './studio/pages/CulturePage';
+import { CraftShell } from './craft/CraftShell';
+import { HomePage as CraftHomePage } from './craft/pages/HomePage';
+import { BcpPage as CraftBcpPage } from './craft/pages/BcpPage';
 import { POISED_BASE } from './content/site';
 import { usePageFade } from './hooks/usePageFade';
 import './components/chrome/page-fade.css';
@@ -42,6 +45,10 @@ function AppRoutes() {
           <Route path="services" element={<StudioServicesPage />} />
           <Route path="agency" element={<StudioAgencyPage />} />
           <Route path="culture" element={<StudioCulturePage />} />
+        </Route>
+        <Route path="craft" element={<CraftShell />}>
+          <Route index element={<CraftHomePage />} />
+          <Route path="bcp" element={<CraftBcpPage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

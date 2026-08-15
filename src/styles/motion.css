@@ -1,5 +1,5 @@
 /* Shared reveal used by sections; toggled with .is-inview via IntersectionObserver */
-.reveal {
+html:not([data-craft]) .reveal {
   opacity: 0;
   transform: translateY(24px);
   transition:
@@ -7,13 +7,13 @@
     transform var(--motion-slow) var(--ease-out);
 }
 
-.reveal.is-inview {
+html:not([data-craft]) .reveal.is-inview {
   opacity: 1;
   transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
+  html:not([data-craft]) .reveal {
     opacity: 1;
     transform: none;
     transition: none;
