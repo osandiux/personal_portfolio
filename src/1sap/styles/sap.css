@@ -1,0 +1,22 @@
+html[data-sap] body::after {
+  display: none !important;
+}
+
+html[data-sap],
+html[data-sap] body {
+  background: #ffffff;
+  color: #211b1c;
+  cursor: auto;
+  overflow-x: hidden;
+}
+
+html[data-sap] .sap-root {
+  min-height: 100svh;
+  background: var(--bg, #ffffff);
+  color: var(--text-body, #211b1c);
+  font-family: var(--font, 'UCity Pro', system-ui, sans-serif);
+}
+
+.page-fade:not(.is-in) .sap-root * {
+  animation: none !important;
+}

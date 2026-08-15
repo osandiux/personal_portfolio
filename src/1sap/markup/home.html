@@ -1,0 +1,567 @@
+<!-- Mobile Header -->
+  <header class="mobile-header">
+    <a href="#services" class="mobile-logo"><img src="/1sap/images/signature.svg" alt="Gregory Muryn-Mukha" width="98" height="38"></a>
+    <nav class="mobile-header__nav">
+      <a href="#services" class="mobile-header__link active" data-section="services">Services</a>
+      <a href="#work" class="mobile-header__link" data-section="work">Work</a>
+      <a href="#experience" class="mobile-header__link" data-section="experience">Experience</a>
+      <a href="#publications" class="mobile-header__link" data-section="publications">Publications</a>
+      <a href="#about" class="mobile-header__link" data-section="about">About</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#services" class="mobile-menu-link">Services</a>
+    <a href="#work" class="mobile-menu-link">Work</a>
+    <a href="#experience" class="mobile-menu-link">Experience</a>
+    <a href="#publications" class="mobile-menu-link">Publications</a>
+    <a href="#about" class="mobile-menu-link">About</a>
+    <div class="mobile-menu-bottom">
+      <a href="https://linkedin.com/in/murynmukha" target="_blank" rel="noopener" class="mobile-menu-link">LinkedIn</a>
+      <a href="#" class="mobile-menu-link" id="mobileMenuCopyEmail">Email</a>
+    </div>
+  </div>
+
+  <!-- Sidebar (Desktop) -->
+  <aside class="sidebar reveal-load">
+    <div class="sidebar-top">
+      <a href="#about" class="sidebar-name reveal-load" data-reveal-delay="60" id="sidebarSig">
+        <div class="signature-wrap">
+          <img src="/1sap/images/signature.svg" alt="Gregory Muryn-Mukha" class="signature-img" width="123" height="48">
+        </div>
+      </a>
+      <nav class="sidebar-nav">
+        <a href="#services" class="nav-link active reveal-load" data-reveal-delay="140" data-section="services">Services</a>
+        <a href="#work" class="nav-link reveal-load" data-reveal-delay="180" data-section="work">Work</a>
+        <a href="#experience" class="nav-link reveal-load" data-reveal-delay="220" data-section="experience">Experience</a>
+        <a href="#publications" class="nav-link reveal-load" data-reveal-delay="260" data-section="publications">Publications</a>
+        <a href="#about" class="nav-link reveal-load" data-reveal-delay="300" data-section="about">About</a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <a href="https://linkedin.com/in/murynmukha" target="_blank" rel="noopener" class="sidebar-external reveal-load" data-reveal-delay="360">LinkedIn</a>
+      <a href="#" class="sidebar-external sidebar-email reveal-load" data-reveal-delay="400" id="sidebarCopyEmail">Email</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- Services / Hero Section -->
+    <section id="services" class="section section--hero">
+      <div class="centered">
+        <h1 class="hero-name shiny-hover reveal-load" data-reveal-delay="100">I'm Gregory, I make products feel obvious for technology that isn't</h1>
+
+        <div class="hero-bio reveal-load" data-reveal-delay="200">
+          <p>I join startups early. Often before there's a product. I scope it, design it, and ship it with engineering. No handoff, no gaps. 15 years in. 9 of them building AI products.</p>
+          <p class="hero-bio--location"><span class="globe-wrap"><svg class="globe-svg" viewBox="0 0 22 22" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" stroke="#6B6666" stroke-width="1.5"/><line x1="1" y1="11" x2="21" y2="11" stroke="#6B6666" stroke-width="1.5"/><ellipse class="globe-meridian" cx="11" cy="11" rx="10" ry="10" stroke="#6B6666" stroke-width="1.5" vector-effect="non-scaling-stroke"/><ellipse class="globe-meridian m2" cx="11" cy="11" rx="10" ry="10" stroke="#6B6666" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg></span><span>Berlin. Available remotely.</span></p>
+        </div>
+
+        <!-- Social Proof -->
+        <div class="social-proof reveal-load" data-reveal-delay="320">
+          <div class="social-proof__left">
+            <!-- Services Card -->
+            <div class="sp-card sp-card--services">
+              <div class="sp-services__wheel" aria-hidden="true">
+                <div class="sp-wheel__track"></div>
+              </div>
+              <div class="sp-services__arrow" aria-hidden="true">
+                <svg width="20" height="15" viewBox="0 0 20 15" fill="none"><path d="M1 7.5H19M12 1l7 6.5-7 6.5" stroke="#2B2525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="sp-services__pill-stack" id="pillStack">
+                <div class="sp-stack__card" id="stackTop2"></div>
+                <div class="sp-stack__card" id="stackTop1"></div>
+                <div class="sp-stack__card sp-stack__card--active" id="stackActive"><span></span></div>
+                <div class="sp-stack__card" id="stackBot1"></div>
+                <div class="sp-stack__card" id="stackBot2"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial Card -->
+          <div class="sp-card sp-card--testimonial" id="testimonialCard">
+            <div class="sp-testimonial__header">
+              <div class="sp-testimonial__author">
+                <div class="sp-testimonial__avatar">
+                  <img id="testimonialAvatar" src="/1sap/images/mikhail-dubov.png" alt="Mikhail Dubov" width="56" height="56">
+                </div>
+                <div class="sp-testimonial__details">
+                  <div class="sp-testimonial__name" id="testimonialName">Mikhail Dubov</div>
+                  <div class="sp-testimonial__role" id="testimonialRole">Founder @ Chattermill</div>
+                </div>
+              </div>
+              <div class="sp-testimonial__nav">
+                <button class="sp-testimonial__btn sp-testimonial__btn--prev" id="testimonialPrev" disabled aria-label="Previous testimonial">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.25 11C18.6642 11 19 11.3358 19 11.75C19 12.1642 18.6642 12.5 18.25 12.5L7.35127 12.5L10.8262 16.2698C11.0913 16.5881 11.0483 17.061 10.7301 17.3261C10.4119 17.5913 9.939 17.5483 9.67383 17.2301L5.17383 12.2301C4.94205 11.952 4.94205 11.548 5.17383 11.2698L9.67383 6.26984C9.939 5.95163 10.4119 5.90864 10.7301 6.17382C11.0483 6.43899 11.0913 6.91191 10.8262 7.23012L7.35129 11L18.25 11Z" fill="#002E71"/></svg>
+                </button>
+                <button class="sp-testimonial__btn sp-testimonial__btn--next" id="testimonialNext" aria-label="Next testimonial">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 11C5.33579 11 5 11.3358 5 11.75C5 12.1642 5.33579 12.5 5.75 12.5L16.6487 12.5L13.1738 16.2698C12.9087 16.5881 12.9517 17.061 13.2699 17.3261C13.5881 17.5913 14.061 17.5483 14.3262 17.2301L18.8262 12.2301C19.0579 11.952 19.0579 11.548 18.8262 11.2698L14.3262 6.26984C14.061 5.95163 13.5881 5.90864 13.2699 6.17382C12.9517 6.43899 12.9087 6.91191 13.1738 7.23012L16.6487 11L5.75 11Z" fill="#002E71"/></svg>
+                </button>
+              </div>
+            </div>
+            <blockquote class="sp-testimonial__quote" id="testimonialQuote">
+              <p>&ldquo;Gregory is the perfect Founding Designer, with meticulous attention to details, full design ownership end to end from idea generation to user research to of course implementation and even quality control.</p>
+              <p>You would be hard pressed to find someone else who cares about the product they are working as much.</p>
+              <p>Not to mention one of the best work ethics I've seen and huge experience building B2B products.&rdquo;</p>
+            </blockquote>
+            <div class="sp-testimonial__dots" id="testimonialDots"></div>
+          </div>
+        </div>
+
+        <!-- Logos Section -->
+        <div class="logos-section">
+          <svg class="logos-section__divider" preserveAspectRatio="none" viewBox="0 0 100 1" aria-hidden="true">
+            <line x1="0" y1="0.5" x2="100" y2="0.5" stroke="#F5F0F0" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          </svg>
+          <div class="logos-section__content">
+            <p class="logos-section__title">Founding designer at startups backed by</p>
+            <div class="logos-section__logos">
+              <svg class="logos-svg" data-logo="yc" width="120" height="24" viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg" aria-label="Y Combinator">
+                <g>
+                  <path d="M0 0H24V24H0V0Z"/>
+                  <path d="M67.3775 4.7489C67.5838 4.7489 67.6354 5.00422 67.6354 5.20848C67.687 6.0255 67.7386 6.79145 67.7386 7.60848C67.7902 8.37443 67.7902 9.14039 67.7902 9.90635C68.2545 9.5489 68.6672 9.19145 69.1831 9.03826C70.0086 8.68082 70.9888 8.68082 71.8142 9.08933C72.6913 9.5489 73.2588 10.3659 73.5683 11.234C73.8263 12.1021 73.9295 13.0212 73.8779 13.8893C73.7747 14.9617 73.5167 15.9829 72.8977 16.851C72.5365 17.3617 72.0722 17.7702 71.4531 17.9744C70.4729 18.3319 69.4411 18.1787 68.564 17.668C68.3061 17.5149 68.0481 17.2595 67.8418 17.0553C67.7386 17.3617 67.687 17.6681 67.5838 17.9744C67.1195 17.9744 66.7068 18.0255 66.2425 17.9234C66.3972 17.2085 66.3972 16.4425 66.4488 15.7276C66.5004 13.1234 66.4488 10.5191 66.4488 7.96592C66.3972 6.94465 66.4488 5.92337 66.294 4.95316C66.6036 4.85103 67.0163 4.7489 67.3775 4.7489ZM70.7824 10.1106C70.3697 10.0085 69.957 10.0085 69.5958 10.0595C68.8736 10.1617 68.3061 10.6723 67.8418 11.1829C67.8418 11.3361 67.8418 11.5404 67.8418 11.6936V15.8298C67.8418 15.9829 67.9449 16.0851 68.0481 16.1361C68.7704 16.8 69.8022 17.1063 70.7308 16.9021C71.1952 16.8 71.6079 16.4936 71.8142 16.0851C72.1754 15.5234 72.2786 14.8595 72.3302 14.1957C72.3817 13.6851 72.4333 13.1744 72.3817 12.7149C72.3817 12.1532 72.227 11.5404 71.9174 11.0298C71.6595 10.5191 71.2467 10.2127 70.7824 10.1106ZM76.7154 5.10635C76.9733 5.00422 77.3345 5.00422 77.5924 5.15741C77.8504 5.3106 78.0567 5.56592 78.1599 5.82124C78.3147 6.43401 77.8504 7.09784 77.2313 7.1489C76.767 7.19997 76.2511 6.94465 76.0963 6.43401C75.8899 5.97443 76.1995 5.3106 76.7154 5.10635ZM34.0498 6.17869C34.7205 5.71911 35.546 5.36167 36.3714 5.36167C37.2485 5.36167 38.1255 5.41273 38.8994 5.77018C39.2089 5.92337 39.5185 6.07656 39.828 6.28082C39.6216 6.63826 39.3637 6.89358 39.1057 7.19997C38.7962 7.04677 38.4866 6.84252 38.1255 6.68933C37.3001 6.38294 36.3198 6.33188 35.4944 6.68933C34.7721 6.94465 34.2046 7.50635 33.8435 8.17018C33.6371 8.68082 33.4308 9.19145 33.3276 9.70209C33.2244 10.2127 33.2244 10.7234 33.1728 11.234C33.1728 11.8978 33.1212 12.6127 33.1728 13.2766C33.276 14.2468 33.6371 15.1659 34.2562 15.8808C34.8237 16.5446 35.6492 16.9021 36.5262 17.0042C36.9905 17.0042 37.4032 17.0042 37.8676 16.9021C38.3835 16.8 38.8478 16.4936 39.3637 16.2893C39.6216 16.5446 39.8796 16.9021 40.1376 17.2085C39.7764 17.4127 39.4153 17.617 39.0026 17.7702C37.9707 18.1787 36.7842 18.2298 35.7007 18.0766C34.8753 17.9234 34.153 17.5149 33.5339 17.0042C32.8117 16.3915 32.2958 15.5744 31.9862 14.7063C31.7799 14.0936 31.6767 13.4808 31.6251 12.8681C31.6251 12.4085 31.5219 11.9489 31.6251 11.4383C31.6251 10.5702 31.7799 9.65103 32.141 8.83401C32.5021 7.81273 33.1212 6.84252 34.0498 6.17869Z"/>
+                  <path d="M7.11951 5.97447C7.22269 5.97447 7.32587 5.92341 7.42905 5.92341C7.94496 5.92341 8.46087 5.92341 8.97677 5.97447C9.07995 5.97447 9.07995 6.02554 9.13155 6.0766C9.90541 7.65958 10.6793 9.29362 11.5047 10.9277C11.6595 11.2851 11.8143 11.5915 12.0206 11.8979C12.1754 11.6426 12.3302 11.3872 12.4849 11.0809C13.362 9.34469 14.239 7.65958 15.1161 5.92341C15.6836 5.92341 16.2511 5.87235 16.8702 5.97447C16.767 6.33192 16.5606 6.58724 16.4058 6.89362C15.2708 9.08937 14.0843 11.2851 12.8977 13.4809C12.8461 13.583 12.8461 13.634 12.8461 13.7362C12.8461 15.3192 12.8461 16.9021 12.8461 18.434C12.2786 18.434 11.7111 18.434 11.1436 18.434C11.1436 16.9021 11.1436 15.3702 11.1436 13.8383C11.1436 13.6851 11.1436 13.4809 11.0404 13.3277C9.957 11.3362 8.92518 9.34469 7.84178 7.30213C7.63541 6.89362 7.37746 6.43405 7.11951 5.97447Z" data-logo-y="1"/>
+                  <path d="M100.189 6.68936C100.654 6.53616 101.118 6.43404 101.634 6.33191C101.531 7.19999 101.479 8.06808 101.479 8.98723C102.201 8.98723 102.975 8.98723 103.697 9.03829C103.594 9.39574 103.439 9.70212 103.285 10.0085C102.666 10.0085 102.046 10.0085 101.376 10.0085C101.376 10.8255 101.376 11.6425 101.376 12.4596C101.376 13.0723 101.427 13.7362 101.376 14.4C101.376 15.1149 101.376 15.8808 101.427 16.5957C101.427 16.9021 101.737 17.1064 101.995 17.2085C102.459 17.3106 102.923 17.2596 103.388 17.1574C103.491 17.4128 103.543 17.7191 103.543 17.9745C103.13 18.1787 102.666 18.2298 102.201 18.2808C101.582 18.2808 100.86 18.1787 100.396 17.7191C100.034 17.3617 100.034 16.8 99.9828 16.3404C99.9312 15.3191 99.9828 14.2468 99.9312 13.2255C99.9312 12.1532 99.9312 11.1319 99.9312 10.0596C99.5185 10.0596 99.1058 10.0596 98.7446 10.0596C98.7446 9.70212 98.7446 9.34468 98.7446 9.03829C99.1574 9.03829 99.5185 9.03829 99.9312 9.03829C100.086 8.22127 100.086 7.40425 100.189 6.68936ZM45.503 8.73191C45.8642 8.73191 46.2769 8.73191 46.638 8.83404C47.4635 9.08936 48.1858 9.70212 48.5985 10.417C48.9596 11.0808 49.2176 11.7957 49.2692 12.5617C49.3208 13.583 49.3723 14.6043 49.0112 15.5745C48.7017 16.4936 48.0826 17.3106 47.2055 17.7702C46.3285 18.2298 45.2967 18.2808 44.368 18.0255C43.5426 17.8213 42.8203 17.2596 42.3044 16.5447C41.7885 15.7787 41.5821 14.8596 41.5821 13.8894C41.5821 13.0213 41.5306 12.1021 41.8401 11.234C42.098 10.417 42.6655 9.65106 43.4394 9.14042C43.8005 8.93616 44.1617 8.73191 44.5744 8.68085C44.8839 8.73191 45.1935 8.73191 45.503 8.73191ZM44.7808 9.90638C44.3165 10.0085 43.8521 10.3149 43.5942 10.7234C43.233 11.3362 43.1299 12.0511 43.1299 12.766C43.0783 13.2766 43.1299 13.7872 43.1815 14.2979C43.2846 14.9106 43.3878 15.5745 43.6974 16.1362C44.0069 16.7489 44.6776 17.0043 45.3483 17.0553C45.9674 17.1064 46.638 16.9532 47.1024 16.4425C47.4635 16.034 47.6698 15.5745 47.7214 15.0128C47.8246 14.3489 47.8246 13.6851 47.773 13.0723C47.773 12.4085 47.6698 11.6936 47.4119 11.0298C47.2571 10.6213 46.9476 10.3149 46.5864 10.1106C46.0189 9.80425 45.3999 9.75319 44.7808 9.90638ZM51.7971 9.03829C52.2098 8.8851 52.6226 8.78297 53.0869 8.73191C53.2416 9.14042 53.3448 9.54893 53.3964 10.0085C53.706 9.85531 53.9123 9.59999 54.2219 9.4468C54.841 8.98723 55.6148 8.73191 56.3887 8.73191C56.5435 8.73191 56.7498 8.78297 56.9046 8.8851C57.1625 9.03829 57.4205 9.14042 57.6784 9.34468C57.8848 9.54893 58.0396 9.85531 58.1944 10.1106C58.5555 9.95744 58.8134 9.65106 59.123 9.4468C59.6389 9.08936 60.258 8.78297 60.9802 8.73191C61.5993 8.68085 62.2184 8.8851 62.6827 9.29361C62.8891 9.49787 63.0955 9.70212 63.1987 9.95744C63.3018 10.2128 63.3534 10.4681 63.3534 10.7745C63.4566 12.2043 63.405 13.6851 63.4566 15.1149C63.4566 16.0851 63.4566 17.0553 63.4566 18.0255C62.9923 18.0255 62.4764 18.0255 62.0121 18.0255C62.0121 16.5957 62.0121 15.1149 62.0121 13.6851C62.0121 12.766 62.0121 11.8468 61.9605 10.8766C61.9089 10.5702 61.7541 10.3149 61.4962 10.1106C61.2382 9.95744 60.8771 9.95744 60.5159 9.95744C59.9484 10.0085 59.4841 10.366 59.0198 10.7234C58.8134 10.8766 58.6071 11.0808 58.4007 11.234C58.3491 11.2851 58.3491 11.3872 58.3491 11.4383C58.3491 13.634 58.3491 15.7787 58.3491 17.9745C57.8848 17.9745 57.3689 17.9745 56.9046 17.9745V12.8681C56.9046 12.4596 56.9046 12.0511 56.9046 11.6425C56.9046 11.234 56.9046 10.7745 56.7498 10.417C56.4403 10.0085 55.8728 9.90638 55.4085 10.0596C54.6862 10.2128 54.0671 10.6723 53.4996 11.183C53.3964 11.234 53.3964 11.3362 53.3964 11.4383C53.3964 13.634 53.3964 15.8298 53.3964 18.0255C52.9837 18.0255 52.571 18.0255 52.1582 18.0255C52.1066 15.7787 52.1582 13.5319 52.0551 11.2851C52.0551 10.7745 52.0551 10.2638 51.9519 9.75319C51.9003 9.49787 51.7971 9.24255 51.7971 9.03829ZM76.4059 8.98723C76.8702 8.93617 77.3345 8.83404 77.7988 8.73191C77.8504 10.0085 77.8504 11.2851 77.8504 12.5106C77.8504 14.3489 77.8504 16.1362 77.8504 17.9745C77.3861 17.9745 76.8702 17.9745 76.4059 17.9745C76.4059 15.3702 76.4059 12.766 76.4059 10.1617C76.4059 9.80425 76.3543 9.34468 76.4059 8.98723ZM94.9269 8.78297C95.9072 8.93617 96.7326 9.85531 96.7842 10.8766C96.8358 12.3574 96.7842 13.8894 96.7842 15.3702V15.8298C96.7842 16.1362 96.7842 16.4425 96.8874 16.6979C96.939 17.0043 97.2485 17.1574 97.4549 17.3106C97.2485 17.566 97.0937 17.9234 96.8358 18.1277C96.681 18.2808 96.4747 18.1277 96.3715 18.0255C96.0103 17.7702 95.804 17.4128 95.5976 17.0043C95.2881 17.1574 95.0817 17.4638 94.7206 17.617C94.2047 17.9745 93.5856 18.1277 92.9149 18.1277C92.3474 18.1277 91.7799 18.0255 91.264 17.7702C90.4385 17.3106 89.9742 16.3915 90.0258 15.4723C90.0258 14.6042 90.4901 13.7362 91.1608 13.2255C91.9863 12.6128 93.0697 12.4085 94.1015 12.3064C94.5658 12.2553 95.0301 12.2553 95.546 12.2553C95.546 11.7957 95.546 11.3362 95.4428 10.8766C95.3913 10.5191 95.1849 10.1106 94.8238 9.90638C94.411 9.70212 93.8951 9.65106 93.4308 9.75319C92.5538 9.85531 91.7283 10.2128 91.006 10.7234C90.7997 10.4681 90.5933 10.2128 90.4385 9.90638C90.3354 9.75319 90.4901 9.65106 90.5933 9.59999C91.5735 9.08936 92.6054 8.62978 93.7403 8.62978H94.2047C94.4626 8.73191 94.669 8.73191 94.9269 8.78297ZM94.3078 13.3277C93.8435 13.3787 93.4308 13.3787 92.9665 13.4808C92.4506 13.634 91.9863 13.9404 91.6767 14.4C91.5219 14.6553 91.5219 14.9617 91.5219 15.2681C91.5219 15.5745 91.4704 15.9319 91.6251 16.2383C91.7283 16.5447 91.9863 16.8511 92.2958 16.9532C92.6569 17.1064 93.0697 17.1064 93.4824 17.1064C93.9467 17.0553 94.3594 16.8 94.7206 16.4936C95.0301 16.2383 95.3397 15.9319 95.3397 15.5234C95.3913 14.8085 95.3913 14.0425 95.3913 13.3277C95.0301 13.3787 94.669 13.2766 94.3078 13.3277ZM109.991 8.83404C110.817 9.03829 111.539 9.54893 112.055 10.2128C112.468 10.7745 112.726 11.3872 112.829 12.0511C112.932 12.6638 112.984 13.3277 112.932 13.9915C112.932 15.0638 112.571 16.0851 111.952 16.9021C111.436 17.566 110.611 17.9745 109.837 18.1277C108.856 18.2808 107.773 18.1277 106.896 17.5149C106.174 17.0043 105.709 16.1872 105.451 15.3191C105.297 14.8596 105.297 14.4511 105.245 13.9915C105.245 13.2255 105.245 12.5106 105.348 11.7447C105.555 10.9277 105.967 10.1106 106.586 9.49787C107.051 9.03829 107.67 8.78297 108.289 8.68085C108.908 8.68085 109.476 8.73191 109.991 8.83404ZM108.444 9.90638C107.773 10.0085 107.206 10.5191 106.999 11.1319C106.741 11.7957 106.741 12.5106 106.741 13.1745C106.741 13.8383 106.741 14.5021 106.896 15.1149C106.999 15.5745 107.102 15.983 107.412 16.3404C107.67 16.6979 108.134 16.9021 108.547 16.9532C108.702 17.0043 108.908 17.0043 109.063 17.0043H109.218H109.372C109.733 16.9532 110.043 16.8511 110.353 16.6979C110.714 16.4936 110.972 16.1362 111.126 15.7277C111.281 15.2681 111.333 14.7574 111.384 14.2979C111.384 13.7362 111.436 13.1745 111.384 12.5617C111.333 11.9489 111.281 11.3362 110.972 10.8255C110.714 10.417 110.353 10.1106 109.888 9.90638C109.424 9.80425 108.908 9.80425 108.444 9.90638ZM115.408 9.08936C115.873 8.98723 116.285 8.83404 116.698 8.73191C116.956 9.19148 116.956 9.70212 117.008 10.1617C117.214 10.0085 117.42 9.80425 117.627 9.59999C118.246 8.98723 119.175 8.62978 120.052 8.78297V8.8851C119.845 9.29361 119.742 9.75319 119.536 10.2128C119.536 10.3149 119.381 10.2638 119.329 10.2638C118.968 10.2638 118.504 10.2638 118.194 10.4681C117.833 10.6723 117.575 10.9277 117.317 11.234C117.059 11.5404 117.111 11.9489 117.111 12.3064C117.111 12.817 117.059 13.3277 117.111 13.8383C117.111 15.217 117.111 16.6468 117.111 18.0255C116.647 18.0255 116.131 18.0255 115.666 18.0255C115.666 16.4936 115.666 14.9106 115.666 13.3787C115.666 12.3064 115.666 11.2851 115.615 10.2128C115.563 9.80425 115.46 9.4468 115.408 9.08936ZM80.6363 9.08936C81.049 8.93616 81.5134 8.78297 81.9261 8.78297C82.0809 9.19148 82.184 9.65106 82.2356 10.0596C82.5968 9.80425 82.9579 9.49787 83.319 9.29361C84.0929 8.83404 85.0215 8.52765 85.847 8.83404C86.3629 8.98723 86.8272 9.29361 87.1367 9.75319C87.3947 10.0596 87.4463 10.5191 87.4979 10.8766C87.6011 12.3064 87.5495 13.6851 87.5495 15.1149C87.5495 16.0851 87.5495 17.0043 87.5495 17.9234C87.0851 17.9234 86.5692 17.9234 86.1049 17.9234C86.1049 16.3915 86.0533 14.8085 86.0533 13.2766C86.0533 12.4085 86.0533 11.5404 85.9502 10.6723C85.7954 10.2638 85.4342 9.90638 84.9699 9.90638C84.6604 9.90638 84.2993 9.90638 83.9897 10.0085C83.319 10.2638 82.6999 10.6723 82.1324 11.1319C82.1324 13.3787 82.1324 15.6766 82.1324 17.9234C81.7197 17.9234 81.307 17.9234 80.8943 17.9234C80.8943 16.6468 80.8427 15.3702 80.8427 14.0425C80.8427 12.7149 80.8427 11.3872 80.7395 10.0596C80.8427 9.80425 80.7395 9.4468 80.6363 9.08936Z"/>
+                </g>
+              </svg>
+              <svg class="logos-svg" data-logo="sequoia" width="113" height="15" viewBox="0 0 113 15" xmlns="http://www.w3.org/2000/svg" aria-label="Sequoia Capital">
+                <g>
+                  <path d="M39.7813 14.8501L38.3376 12.3501C39.0126 11.0564 39.0126 9.53137 39.0126 7.52512C39.0126 5.02512 39.0126 3.15012 37.5688 1.63137C37.0713 1.08855 36.4611 0.661224 35.7808 0.379413C35.1006 0.0976029 34.3669 -0.0318588 33.6313 0.000121467C32.8977 -0.0160662 32.1688 0.120607 31.4909 0.401446C30.813 0.682285 30.201 1.10114 29.6938 1.63137C28.2501 3.08137 28.2501 4.91887 28.2501 7.50012C28.2501 10.0814 28.1751 11.8751 29.6938 13.3876C30.1971 13.9258 30.8084 14.3518 31.4876 14.6376C32.1668 14.916 32.8977 15.046 33.6313 15.0189C34.0418 15.0129 34.4504 14.9626 34.8501 14.8689L39.7813 14.8501ZM31.7438 11.6314C31.2188 11.0064 31.0688 10.3314 31.0688 7.50012C31.0688 4.66887 31.2501 3.97512 31.7438 3.36887C31.9841 3.12911 32.2685 2.9381 32.5813 2.80637C32.8916 2.67421 33.2253 2.60618 33.5626 2.60637C33.9017 2.60686 34.2374 2.67485 34.5501 2.80637C34.861 2.93824 35.1433 3.12929 35.3813 3.36887C35.9063 3.99387 36.0563 4.66887 36.0563 7.50012C36.0563 10.3314 35.9063 11.0189 35.3813 11.6314C35.1489 11.8779 34.868 12.0737 34.5563 12.2064C34.2401 12.3313 33.9025 12.3929 33.5626 12.3876C33.2239 12.3944 32.8876 12.3306 32.5751 12.2001C32.2623 12.0689 31.9794 11.8754 31.7438 11.6314Z"/>
+                  <path d="M73.0187 0.150024H75.8124V14.85H73.0187V0.150024Z"/>
+                  <path d="M5.30625 15C3.125 15 1.45 14.5437 0 13.0875L1.81875 11.25C2.28865 11.6784 2.8388 12.0094 3.4374 12.224C4.036 12.4385 4.67119 12.5323 5.30625 12.5C6.975 12.5 7.88125 11.875 7.88125 10.6625C7.88986 10.4368 7.85375 10.2116 7.775 9.99995C7.69869 9.79017 7.57949 9.59859 7.425 9.43745C7.0634 9.12676 6.61268 8.93859 6.1375 8.89995L4.375 8.6562C3.32925 8.56721 2.34449 8.1266 1.58125 7.4062C1.23025 7.01655 0.958522 6.56226 0.78125 6.0687C0.59467 5.56767 0.511745 5.03398 0.5375 4.49995C0.525 1.91245 2.41875 0.0749512 5.625 0.0749512C7.59375 0.0749512 9.1125 0.524951 10.3313 1.7562L8.49375 3.52495C8.09772 3.15845 7.62995 2.87813 7.12002 2.70169C6.61009 2.52526 6.06909 2.45657 5.53125 2.49995C4.0125 2.49995 3.2625 3.34995 3.2625 4.37495C3.27453 4.77289 3.43506 5.15192 3.7125 5.43745C4.10534 5.76334 4.57769 5.97903 5.08125 6.06245L6.825 6.28745C7.86687 6.31563 8.86169 6.72736 9.61875 7.4437C10.0065 7.86435 10.3081 8.35699 10.5062 8.8937C10.7001 9.43648 10.7871 10.0116 10.7625 10.5875C10.7625 13.4062 8.34375 15.0187 5.3 15.0187"/>
+                  <path d="M14.8437 14.85V0.150024H24.4624V2.65002H17.7124V6.11877H23.4624V8.75003H17.7187V12.3563H24.4687V14.8563H14.8437"/>
+                  <path d="M48.6314 15C45.6689 15 43.2501 12.9375 43.2501 9.80003V0.150024H46.1439V9.71253C46.1439 11.4 47.1376 12.3875 48.6439 12.3875C50.1501 12.3875 51.1439 11.3813 51.1439 9.71253V0.150024H53.9376V9.78753C53.9376 12.9125 51.6126 14.9875 48.6501 14.9875"/>
+                  <path d="M67.4125 13.3876C66.9144 13.9293 66.3039 14.3555 65.6237 14.6362C64.9435 14.9169 64.2101 15.0454 63.475 15.0126C62.7424 15.0326 62.0138 14.8983 61.3365 14.6183C60.6592 14.3383 60.0484 13.919 59.5437 13.3876C58.125 11.9314 58.125 10.0939 58.125 7.50012C58.125 4.90637 58.05 3.12512 59.575 1.61262C60.0682 1.07578 60.6728 0.653283 61.3465 0.374736C62.0202 0.09619 62.7467 -0.0316696 63.475 0.000116847C64.2072 -0.0101507 64.9338 0.128612 65.6107 0.407967C66.2876 0.687322 66.9006 1.10143 67.4125 1.62512C68.8562 3.08137 68.8562 4.91887 68.8562 7.51262C68.8562 10.1064 68.8562 11.8751 67.4125 13.3876ZM65.2937 3.38762C65.0561 3.14782 64.7733 2.95747 64.4616 2.82757C64.15 2.69767 63.8157 2.63079 63.4781 2.63079C63.1405 2.63079 62.8062 2.69767 62.4946 2.82757C62.183 2.95747 61.9002 3.14782 61.6625 3.38762C61.1312 4.01262 60.9875 4.68762 60.9875 7.51887C60.9875 10.3501 61.1312 11.0376 61.6625 11.6439C61.8993 11.8852 62.1818 12.0769 62.4936 12.2077C62.8053 12.3386 63.14 12.406 63.4781 12.406C63.8162 12.406 64.1509 12.3386 64.4627 12.2077C64.7744 12.0769 65.0569 11.8852 65.2937 11.6439C65.8187 11.0189 65.9687 10.3501 65.9687 7.51887C65.9687 4.68762 65.8375 3.97512 65.2937 3.36887V3.38762Z"/>
+                  <path d="M89.2375 14.85L88.4062 12.25H83.25L82.35 14.85H79.375L84.7 0.150024H86.875L92.1813 14.85H89.2375ZM85.8187 4.43127L84 9.78752H87.6375L85.8187 4.43127Z"/>
+                  <path d="M108.863 0.150024H112.5V3.82502H108.863V0.150024Z"/>
+                  <path d="M99.7687 11.6875V0.150024H97.95V13.5438L99.7687 11.6875Z"/>
+                  <path d="M101.044 13.0125L99.225 14.85H112.5V13.0125H101.044Z"/>
+                  <path d="M103.406 8.03127V0.150024H101.588V9.86877L103.406 8.03127Z"/>
+                  <path d="M104.681 9.33752L102.856 11.175H112.5V9.33752H104.681Z"/>
+                  <path d="M107.037 4.37502V0.150024H105.219V6.19377L107.037 4.37502Z"/>
+                  <path d="M108.319 5.66248L106.506 7.49998H112.5V5.66248H108.319Z"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <svg class="logos-section__divider" preserveAspectRatio="none" viewBox="0 0 100 1" aria-hidden="true">
+            <line x1="0" y1="0.5" x2="100" y2="0.5" stroke="#F5F0F0" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          </svg>
+        </div>
+
+        <!-- Case Studies -->
+        <div class="case-studies section" id="work">
+
+          <!-- Twain -->
+          <div class="case-study">
+            <div class="case-study__header">
+              <div class="case-study__text">
+                <h2 class="case-study__title shiny-hover">Twain</h2>
+                <p class="case-study__caption"><span class="case-study__caption-desc">Building GTM agents for research &amp; outreach</span> <span class="case-study__caption-dot">&nbsp;・&nbsp;</span> <span class="case-study__caption-year">'22 − Present</span></p>
+              </div>
+              <div class="case-study__buttons">
+                <a href="https://twain.ai" target="_blank" rel="noopener" class="case-study__btn">
+                  <span>Explore Live</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 11C5.33579 11 5 11.3358 5 11.75C5 12.1642 5.33579 12.5 5.75 12.5L16.6487 12.5L13.1738 16.2698C12.9087 16.5881 12.9517 17.061 13.2699 17.3261C13.5881 17.5913 14.061 17.5483 14.3262 17.2301L18.8262 12.2301C19.0579 11.952 19.0579 11.548 18.8262 11.2698L14.3262 6.26984C14.061 5.95163 13.5881 5.90864 13.2699 6.17382C12.9517 6.43899 12.9087 6.91191 13.1738 7.23012L16.6487 11L5.75 11Z" fill="#FFF1F2"/></svg>
+                </a>
+              </div>
+            </div>
+            <a href="https://twain.ai" target="_blank" rel="noopener" class="case-study__image-wrap" style="background: rgba(209, 227, 255, 0.88)">
+              <div class="case-study__tilt">
+                <div class="tilt-glare"></div>
+                <div class="case-study__video-border">
+                  <video class="case-study__image" autoplay loop muted playsinline>
+                    <source src="/1sap/images/case-twain.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Voiceflow -->
+          <div class="case-study">
+            <div class="case-study__header">
+              <div class="case-study__text">
+                <h2 class="case-study__title shiny-hover">Voiceflow</h2>
+                <p class="case-study__caption"><span class="case-study__caption-desc">Building conversational agent experience</span> <span class="case-study__caption-dot">&nbsp;・&nbsp;</span> <span class="case-study__caption-year">'21 − 22</span></p>
+              </div>
+              <div class="case-study__buttons">
+                <a href="https://voiceflow.com" target="_blank" rel="noopener" class="case-study__website-btn" aria-label="Visit website">
+                  <svg class="globe-svg" viewBox="0 0 22 22" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" stroke="currentColor" stroke-width="1.5"/><line x1="1" y1="11" x2="21" y2="11" stroke="currentColor" stroke-width="1.5"/><ellipse class="globe-meridian" cx="11" cy="11" rx="10" ry="10" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/><ellipse class="globe-meridian m2" cx="11" cy="11" rx="10" ry="10" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>
+                </a>
+                <a class='case-study__btn' href='https://murynmukha.com/voiceflow' target='_blank' rel='noopener noreferrer'>
+                  <span>Read Case Study</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 11C5.33579 11 5 11.3358 5 11.75C5 12.1642 5.33579 12.5 5.75 12.5L16.6487 12.5L13.1738 16.2698C12.9087 16.5881 12.9517 17.061 13.2699 17.3261C13.5881 17.5913 14.061 17.5483 14.3262 17.2301L18.8262 12.2301C19.0579 11.952 19.0579 11.548 18.8262 11.2698L14.3262 6.26984C14.061 5.95163 13.5881 5.90864 13.2699 6.17382C12.9517 6.43899 12.9087 6.91191 13.1738 7.23012L16.6487 11L5.75 11Z" fill="#FFF1F2"/></svg>
+                </a>
+              </div>
+            </div>
+            <a class='case-study__image-wrap' href='https://murynmukha.com/voiceflow' target='_blank' rel='noopener noreferrer'>
+              <div class="case-study__tilt">
+                <div class="tilt-glare"></div>
+                <img src="/1sap/images/case-voiceflow.png" alt="Voiceflow case study" class="case-study__image">
+              </div>
+            </a>
+          </div>
+
+          <!-- Chattermill -->
+          <div class="case-study">
+            <div class="case-study__header">
+              <div class="case-study__text">
+                <h2 class="case-study__title shiny-hover">Chattermill</h2>
+                <p class="case-study__caption"><span class="case-study__caption-desc">AI for customer feedback analytics platform</span> <span class="case-study__caption-dot">&nbsp;・&nbsp;</span> <span class="case-study__caption-year">'19 − 21</span></p>
+              </div>
+              <div class="case-study__buttons">
+                <a href="https://chattermill.com" target="_blank" rel="noopener" class="case-study__website-btn" aria-label="Visit website">
+                  <svg class="globe-svg" viewBox="0 0 22 22" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" stroke="currentColor" stroke-width="1.5"/><line x1="1" y1="11" x2="21" y2="11" stroke="currentColor" stroke-width="1.5"/><ellipse class="globe-meridian" cx="11" cy="11" rx="10" ry="10" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/><ellipse class="globe-meridian m2" cx="11" cy="11" rx="10" ry="10" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>
+                </a>
+                <a class='case-study__btn' href='https://murynmukha.com/chattermill' target='_blank' rel='noopener noreferrer'>
+                  <span>Read Case Study</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 11C5.33579 11 5 11.3358 5 11.75C5 12.1642 5.33579 12.5 5.75 12.5L16.6487 12.5L13.1738 16.2698C12.9087 16.5881 12.9517 17.061 13.2699 17.3261C13.5881 17.5913 14.061 17.5483 14.3262 17.2301L18.8262 12.2301C19.0579 11.952 19.0579 11.548 18.8262 11.2698L14.3262 6.26984C14.061 5.95163 13.5881 5.90864 13.2699 6.17382C12.9517 6.43899 12.9087 6.91191 13.1738 7.23012L16.6487 11L5.75 11Z" fill="#FFF1F2"/></svg>
+                </a>
+              </div>
+            </div>
+            <a class='case-study__image-wrap' href='https://murynmukha.com/chattermill' target='_blank' rel='noopener noreferrer'>
+              <div class="case-study__tilt">
+                <div class="tilt-glare"></div>
+                <div class="case-study__crop-wrap">
+                  <video class="case-study__image case-study__image--crop-top case-study__image--crop-1" autoplay loop muted playsinline>
+                    <source src="/1sap/images/case-chattermill.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Invocable -->
+          <div class="case-study">
+            <div class="case-study__header">
+              <div class="case-study__text">
+                <h2 class="case-study__title shiny-hover">Invocable</h2>
+                <p class="case-study__caption"><span class="case-study__caption-desc">No-code builder for conversational UI</span> <span class="case-study__caption-dot">&nbsp;・&nbsp;</span> <span class="case-study__caption-year">'18 − 19</span></p>
+              </div>
+              <div class="case-study__buttons">
+                <a class='case-study__btn' href='https://murynmukha.com/invocable' target='_blank' rel='noopener noreferrer'>
+                  <span>Read Case Study</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 11C5.33579 11 5 11.3358 5 11.75C5 12.1642 5.33579 12.5 5.75 12.5L16.6487 12.5L13.1738 16.2698C12.9087 16.5881 12.9517 17.061 13.2699 17.3261C13.5881 17.5913 14.061 17.5483 14.3262 17.2301L18.8262 12.2301C19.0579 11.952 19.0579 11.548 18.8262 11.2698L14.3262 6.26984C14.061 5.95163 13.5881 5.90864 13.2699 6.17382C12.9517 6.43899 12.9087 6.91191 13.1738 7.23012L16.6487 11L5.75 11Z" fill="#FFF1F2"/></svg>
+                </a>
+              </div>
+            </div>
+            <a class='case-study__image-wrap' href='https://murynmukha.com/invocable' target='_blank' rel='noopener noreferrer'>
+              <div class="case-study__tilt">
+                <div class="tilt-glare"></div>
+                <div class="case-study__crop-wrap">
+                  <video class="case-study__image case-study__image--crop-top case-study__image--crop-2" autoplay loop muted playsinline>
+                    <source src="/1sap/images/case-invocable.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="centered">
+        <h2 class="experience__heading shiny-hover reveal-scroll">Experience</h2>
+        <div class="experience__rows">
+
+          <div class="experience__row reveal-scroll">
+            <div class="experience__left">
+              <img src="/1sap/images/logo-twain.png" alt="Twain" class="experience__logo" style="border-radius:14px" width="56" height="56">
+              <div class="experience__details">
+                <div class="experience__title">Founding Product Designer</div>
+                <div class="experience__caption">Twain <span class="experience__caption-dot">&nbsp;・&nbsp;</span> 2022 − Present</div>
+              </div>
+            </div>
+            <p class="experience__desc">Sequoia Arc '22. Twain pivoted three times before finding PMF. I designed every version, from the first prototype to the current GTM agents platform.</p>
+          </div>
+
+          <div class="experience__row reveal-scroll">
+            <div class="experience__left">
+              <img src="/1sap/images/logo-voiceflow.png" alt="Voiceflow" class="experience__logo" style="border-radius:14px" width="56" height="56">
+              <div class="experience__details">
+                <div class="experience__title">Individual Contributor</div>
+                <div class="experience__caption">Voiceflow <span class="experience__caption-dot">&nbsp;・&nbsp;</span> 2021 − 2022</div>
+              </div>
+            </div>
+            <p class="experience__desc">Senior IC hired to redesign the platform. Reworked the core flows, rebuilt the visual language, and shipped a design system the team still uses.</p>
+          </div>
+
+          <div class="experience__row reveal-scroll">
+            <div class="experience__left">
+              <img src="/1sap/images/logo-chattermill.png" alt="Chattermill" class="experience__logo" style="border-radius:10px" width="56" height="56">
+              <div class="experience__details">
+                <div class="experience__title">Founding Product Designer</div>
+                <div class="experience__caption">Chattermill <span class="experience__caption-dot">&nbsp;・&nbsp;</span> 2019 − 2021</div>
+              </div>
+            </div>
+            <p class="experience__desc">Founding designer through Series A. Redesigned the core product and introduced research practices that shaped how the team builds.</p>
+          </div>
+
+          <div class="experience__row reveal-scroll">
+            <div class="experience__left">
+              <img src="/1sap/images/logo-invocable.png" alt="Invocable" class="experience__logo" style="border-radius:0" width="56" height="56">
+              <div class="experience__details">
+                <div class="experience__title">Founding Product Designer</div>
+                <div class="experience__caption">Invocable (Storyline) <span class="experience__caption-dot">&nbsp;・&nbsp;</span> 2018 − 2019</div>
+              </div>
+            </div>
+            <p class="experience__desc">Y Combinator '18. Created the conversation builder UX, ran custdev and support calls. Designed the core feature: a non-linear dialogue flow canvas.</p>
+          </div>
+
+          <div class="experience__row reveal-scroll">
+            <div class="experience__left">
+              <img src="/1sap/images/logo-adamantium.png" alt="Adamantium" class="experience__logo" style="border-radius:0" width="56" height="56">
+              <div class="experience__details">
+                <div class="experience__title">Senior UX Designer</div>
+                <div class="experience__caption">Adamantium <span class="experience__caption-dot">&nbsp;・&nbsp;</span> 2015 − 2018</div>
+              </div>
+            </div>
+            <p class="experience__desc">Led 4 designers on a DSP/DMP platform. Built the design system (30% faster builds). Redesigned the core product in 6 months.</p>
+          </div>
+
+          <div class="experience__row reveal-scroll">
+            <div class="experience__left">
+              <img src="/1sap/images/logo-forexclub.png" alt="Forex Club" class="experience__logo" style="border-radius:14px" width="56" height="56">
+              <div class="experience__details">
+                <div class="experience__title">Senior System Analyst</div>
+                <div class="experience__caption">Forex Club <span class="experience__caption-dot">&nbsp;・&nbsp;</span> 2014 − 2015</div>
+              </div>
+            </div>
+            <p class="experience__desc">Business analyst and UX on the trading platform Libertex. Redesigned the UX of web terminal. Built a UI system that adapts to each client segment.</p>
+          </div>
+
+          <div class="experience__row reveal-scroll">
+            <div class="experience__left">
+              <img src="/1sap/images/logo-iba.png" alt="IBA Group" class="experience__logo" style="border-radius:14px" width="56" height="56">
+              <div class="experience__details">
+                <div class="experience__title">Business Analyst</div>
+                <div class="experience__caption">IBA Group <span class="experience__caption-dot">&nbsp;・&nbsp;</span> 2013 − 2014</div>
+              </div>
+            </div>
+            <p class="experience__desc">UX and Business analyst. Shipped 5 web-portals for banks and telecom providers across in-house and distributed teams.</p>
+          </div>
+
+          <div class="experience__row reveal-scroll">
+            <div class="experience__left">
+              <img src="/1sap/images/logo-telecontact.png" alt="Telecontact" class="experience__logo" style="border-radius:14px" width="56" height="56">
+              <div class="experience__details">
+                <div class="experience__title">Business Analyst</div>
+                <div class="experience__caption">Telecontact <span class="experience__caption-dot">&nbsp;・&nbsp;</span> 2012 − 2013</div>
+              </div>
+            </div>
+            <p class="experience__desc">Worked directly with enterprise clients to turn their requirements into specs and UI mockups for call-center software.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Block -->
+    <section class="cta-block reveal-scroll">
+      <div class="centered">
+        <div class="cta-block__content">
+          <span class="cta-block__label cta-block__label--desktop shiny-hover shiny-hover--blue">Working on something? Let's talk</span>
+          <span class="cta-block__label cta-block__label--mobile shiny-hover shiny-hover--blue">Building something? Let's talk</span>
+          <a href="https://calendar.app.google/e1nq9HDsCKAYrq6S7" target="_blank" rel="noopener" class="case-study__btn cta-block__btn">
+            <span>Book a Call</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 11C5.33579 11 5 11.3358 5 11.75C5 12.1642 5.33579 12.5 5.75 12.5L16.6487 12.5L13.1738 16.2698C12.9087 16.5881 12.9517 17.061 13.2699 17.3261C13.5881 17.5913 14.061 17.5483 14.3262 17.2301L18.8262 12.2301C19.0579 11.952 19.0579 11.548 18.8262 11.2698L14.3262 6.26984C14.061 5.95163 13.5881 5.90864 13.2699 6.17382C12.9517 6.43899 12.9087 6.91191 13.1738 7.23012L16.6487 11L5.75 11Z" fill="#FFF1F2"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section publications-section">
+      <div class="centered">
+        <h2 class="publications__heading shiny-hover reveal-scroll">Publications</h2>
+        <div class="publications__content">
+
+          <!-- Articles -->
+          <div class="publications__articles reveal-scroll">
+            <a href="https://medium.com/@gregory.murynmukha/your-ai-agent-can-read-your-codebase-it-doesnt-know-your-product-b5ea0cd77989" target="_blank" rel="noopener" class="pub-article">
+              <div class="pub-article__image pub-article__tilt">
+                <img src="/1sap/images/pub-ai-context-bg.png" alt="" class="pub-article__bg">
+                <img src="/1sap/images/pub-ai-context-logo.png" alt="" class="pub-article__logo">
+              </div>
+              <div class="pub-article__details">
+                <h3 class="pub-article__title">Your AI agent can read your codebase. It doesn&rsquo;t know your product.</h3>
+                <p class="pub-article__caption">How to feed AI coding agents the brand, UX patterns, and visual language that aren&rsquo;t in your code</p>
+              </div>
+            </a>
+            <a href="https://medium.com/design-bootcamp/perception-based-color-palettes-for-customizable-ui-themes-33f596faf23d" target="_blank" rel="noopener" class="pub-article">
+              <div class="pub-article__image pub-article__tilt">
+                <img src="/1sap/images/pub-colors-bg.png" alt="" class="pub-article__bg">
+                <img src="/1sap/images/pub-colors-logo.png" alt="" class="pub-article__logo" style="background:#000000">
+              </div>
+              <div class="pub-article__details">
+                <h3 class="pub-article__title">Perception-based color palettes for customizable UI themes</h3>
+                <p class="pub-article__caption">Choosing the right color space to generate contrast-consistent palettes based on human color perception</p>
+              </div>
+            </a>
+            <a href="https://dribbble.com/stories/2020/03/26/5-tips-dashboard-design" target="_blank" rel="noopener" class="pub-article">
+              <div class="pub-article__image pub-article__tilt">
+                <img src="/1sap/images/pub-dashboard-bg.png" alt="" class="pub-article__bg">
+                <img src="/1sap/images/pub-dashboard-logo.png" alt="" class="pub-article__logo" style="background:#FFACE6">
+              </div>
+              <div class="pub-article__details">
+                <h3 class="pub-article__title">Five advanced tips for better dashboard design</h3>
+                <p class="pub-article__caption">Practical design patterns for data-heavy dashboards: alignment, chart selection, hierarchy, and anomaly detection</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Tools -->
+          <div class="publications__tools reveal-scroll">
+            <a href="https://github.com/gregorymm/design-tokens" target="_blank" rel="noopener" class="pub-tool">
+              <img src="/1sap/images/tool-design-tokens.png" alt="Design tokens" class="pub-tool__logo" width="56" height="56">
+              <div class="pub-tool__details">
+                <div class="pub-tool__title"><span class="pub-tool__title-full">Design tokens <span class="pub-tool__dot">&nbsp;・&nbsp;</span> Claude Code plugin</span><span class="pub-tool__title-short">Design tokens</span></div>
+                <div class="pub-tool__caption"><span class="pub-tool__caption-full">Extracts Figma variables into W3C DTCG tokens</span><span class="pub-tool__caption-short">Extract tokens to W3C DTCG</span></div>
+              </div>
+            </a>
+            <a href="https://github.com/gregorymm/humanize-text" target="_blank" rel="noopener" class="pub-tool">
+              <img src="/1sap/images/tool-humanize-cc.png" alt="Humanize text" class="pub-tool__logo" width="56" height="56">
+              <div class="pub-tool__details">
+                <div class="pub-tool__title"><span class="pub-tool__title-full">Humanize text <span class="pub-tool__dot">&nbsp;・&nbsp;</span> Claude Code plugin</span><span class="pub-tool__title-short">Humanize text</span></div>
+                <div class="pub-tool__caption"><span class="pub-tool__caption-full">Assesses and rewrites text to eliminate AI patterns</span><span class="pub-tool__caption-short">Assesses and rewrites AI text</span></div>
+              </div>
+            </a>
+            <a href="https://github.com/gregorymm/design-review-plugin" target="_blank" rel="noopener" class="pub-tool">
+              <img src="/1sap/images/tool-review-cc.png" alt="Design review" class="pub-tool__logo" width="56" height="56">
+              <div class="pub-tool__details">
+                <div class="pub-tool__title"><span class="pub-tool__title-full">Design review <span class="pub-tool__dot">&nbsp;・&nbsp;</span> Claude Code skill</span><span class="pub-tool__title-short">Design review</span></div>
+                <div class="pub-tool__caption"><span class="pub-tool__caption-full">Reviews UI/UX designs against professional standards</span><span class="pub-tool__caption-short">Reviews design against standard</span></div>
+              </div>
+            </a>
+            <a href="https://github.com/gregorymm/job-scout" target="_blank" rel="noopener" class="pub-tool">
+              <img src="/1sap/images/tool-job-scout.png" alt="Job scout" class="pub-tool__logo" width="56" height="56">
+              <div class="pub-tool__details">
+                <div class="pub-tool__title"><span class="pub-tool__title-full">Job scout <span class="pub-tool__dot">&nbsp;・&nbsp;</span> Claude Code skill</span><span class="pub-tool__title-short">Job scout</span></div>
+                <div class="pub-tool__caption"><span class="pub-tool__caption-full">Scrapes and ranks jobs against your CV</span><span class="pub-tool__caption-short">Scrapes and ranks jobs</span></div>
+              </div>
+            </a>
+            <a href="https://www.figma.com/community/plugin/1620574471890652269/chromasmith" target="_blank" rel="noopener" class="pub-tool">
+              <img src="/1sap/images/tool-chromasmith.png" alt="Chromasmith" class="pub-tool__logo" width="56" height="56">
+              <div class="pub-tool__details">
+                <div class="pub-tool__title"><span class="pub-tool__title-full">Chromasmith <span class="pub-tool__dot">&nbsp;・&nbsp;</span> Figma plugin</span><span class="pub-tool__title-short">Chromasmith</span></div>
+                <div class="pub-tool__caption"><span class="pub-tool__caption-full">AI-powered OKLAB color palettes from one accent</span><span class="pub-tool__caption-short">AI-powered OKLAB palette generator</span></div>
+              </div>
+            </a>
+            <a href="https://www.figma.com/community/plugin/1619710368646415057/humanize-text" target="_blank" rel="noopener" class="pub-tool">
+              <img src="/1sap/images/tool-humanize-figma.png" alt="Humanize text Figma" class="pub-tool__logo" width="56" height="56">
+              <div class="pub-tool__details">
+                <div class="pub-tool__title"><span class="pub-tool__title-full">Humanize text <span class="pub-tool__dot">&nbsp;・&nbsp;</span> Figma plugin</span><span class="pub-tool__title-short">Humanize text</span></div>
+                <div class="pub-tool__caption"><span class="pub-tool__caption-full">Rewrites text layers to remove AI patterns in UI</span><span class="pub-tool__caption-short">Rewrites text to remove AI patterns</span></div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about-section">
+      <div class="centered">
+        <h2 class="about__heading shiny-hover reveal-scroll">About me</h2>
+
+        <div class="about__body">
+          <div class="about__content">
+          <p>I studied software engineering and business analysis. My first years were specs, process maps, and sitting between business and engineering. Business and system analyst, UX designer and researcher. Each role was a different layer of how software actually gets built.</p>
+          <p>That path pulled me into product design. I've worked across the whole thing: system architecture, product strategy, pitch decks. What the interface looks like, and why it works that way.</p>
+          <p>You get one person who owns design from research to release. No handoff to worry about, no details lost in translation. What ships is what was designed. I stay through the hard parts: pivots, fundraising, the release that almost didn't ship.</p>
+          <p>Outside work, I'm into Streamline Moderne and constructivist architecture. The way those movements balance structure with boldness is how I think about design.</p>
+          <p>I choose early-stage because that's where one designer shapes the whole product. Small team, full ownership, from first prototype to the deck that raises the round.</p>
+          </div>
+
+          <div class="about__hero-photo" id="aboutHeroPhoto">
+            <div class="about__hero-glare"></div>
+            <img src="/1sap/images/about-hero.png" alt="Gregory in an orange chair" width="700" height="1360">
+          </div>
+
+          <div class="about__photos" id="aboutPhotos">
+            <div class="about__photo">
+              <img src="/1sap/images/about-3.png" alt="Gregory at a gallery">
+            </div>
+            <div class="about__photo">
+              <img src="/1sap/images/about-2.png" alt="Gregory in an orange chair">
+            </div>
+            <div class="about__photo">
+              <img src="/1sap/images/about-4.png" alt="Gregory working with a cat">
+            </div>
+          </div>
+        </div>
+
+        <div class="about__footer reveal-scroll">
+          <!-- CTA card -->
+          <div class="about__cta-card">
+            <div class="about__cta-title shiny-hover shiny-hover--blue">Tell me what you're building.<br class="about__cta-br"> Let's see if it's a fit.</div>
+            <div class="about__cta-controls">
+              <div class="about__email-pill">
+                <span class="about__email-text">gregory.murynmukha@gmail.com</span>
+                <button class="about__icon-btn" id="aboutCopyEmail" aria-label="Copy email">
+                  <img src="/1sap/images/icon-copy.svg" alt="" width="24" height="24">
+                </button>
+              </div>
+              <a href="https://calendar.app.google/e1nq9HDsCKAYrq6S7" target="_blank" rel="noopener" class="case-study__btn about__book-btn">
+                <span>Book a Call</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.75 11C5.33579 11 5 11.3358 5 11.75C5 12.1642 5.33579 12.5 5.75 12.5L16.6487 12.5L13.1738 16.2698C12.9087 16.5881 12.9517 17.061 13.2699 17.3261C13.5881 17.5913 14.061 17.5483 14.3262 17.2301L18.8262 12.2301C19.0579 11.952 19.0579 11.548 18.8262 11.2698L14.3262 6.26984C14.061 5.95163 13.5881 5.90864 13.2699 6.17382C12.9517 6.43899 12.9087 6.91191 13.1738 7.23012L16.6487 11L5.75 11Z" fill="#FFF1F2"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Ask AI block -->
+          <div class="about__ask-ai">
+            <div class="about__ask-ai-title">Ask AI about Gregory</div>
+            <div class="about__ai-pill">
+              <a href="https://chatgpt.com/?q=I%27m%20evaluating%20Gregory%20Muryn-Mukha%20%28https%3A//www.murynmukha.com%29%20for%20a%20founding%20product%20designer%20role%20at%20our%20startup.%20Review%20his%20portfolio%20site%20and%20tell%20me%3A%20what%27s%20his%20design%20range%2C%20what%20stage%20of%20company%20he%20fits%20best%2C%20and%20what%20I%27d%20actually%20get%20if%20I%20hired%20him.%20Be%20specific%20%E2%80%94%20reference%20his%20case%20studies%20and%20experience." target="_blank" rel="noopener" class="about__icon-btn" aria-label="ChatGPT">
+                <img src="/1sap/images/ai-icon-1.svg" alt="" width="20" height="20">
+              </a>
+              <a href="https://claude.ai/new?q=I%27m%20evaluating%20Gregory%20Muryn-Mukha%20%28https%3A//www.murynmukha.com%29%20for%20a%20founding%20product%20designer%20role%20at%20our%20startup.%20Review%20his%20portfolio%20site%20and%20tell%20me%3A%20what%27s%20his%20design%20range%2C%20what%20stage%20of%20company%20he%20fits%20best%2C%20and%20what%20I%27d%20actually%20get%20if%20I%20hired%20him.%20Be%20specific%20%E2%80%94%20reference%20his%20case%20studies%20and%20experience." target="_blank" rel="noopener" class="about__icon-btn" aria-label="Claude">
+                <img src="/1sap/images/ai-icon-2.svg" alt="" width="20" height="20">
+              </a>
+              <a href="https://www.perplexity.ai/search?q=I%27m%20evaluating%20Gregory%20Muryn-Mukha%20%28https%3A//www.murynmukha.com%29%20for%20a%20founding%20product%20designer%20role%20at%20our%20startup.%20Review%20his%20portfolio%20site%20and%20tell%20me%3A%20what%27s%20his%20design%20range%2C%20what%20stage%20of%20company%20he%20fits%20best%2C%20and%20what%20I%27d%20actually%20get%20if%20I%20hired%20him.%20Be%20specific%20%E2%80%94%20reference%20his%20case%20studies%20and%20experience." target="_blank" rel="noopener" class="about__icon-btn" aria-label="Perplexity">
+                <img src="/1sap/images/ai-icon-3.svg" alt="" width="20" height="20">
+              </a>
+              <a href="https://www.google.com/search?udm=50&amp;aep=11&amp;q=I%27m%20evaluating%20Gregory%20Muryn-Mukha%20%28https%3A//www.murynmukha.com%29%20for%20a%20founding%20product%20designer%20role%20at%20our%20startup.%20Review%20his%20portfolio%20site%20and%20tell%20me%3A%20what%27s%20his%20design%20range%2C%20what%20stage%20of%20company%20he%20fits%20best%2C%20and%20what%20I%27d%20actually%20get%20if%20I%20hired%20him.%20Be%20specific%20%E2%80%94%20reference%20his%20case%20studies%20and%20experience." target="_blank" rel="noopener" class="about__icon-btn" aria-label="Gemini">
+                <img src="/1sap/images/ai-icon-4.svg" alt="" width="20" height="20">
+              </a>
+              <a href="https://x.com/i/grok?text=I%27m%20evaluating%20Gregory%20Muryn-Mukha%20%28https%3A//www.murynmukha.com%29%20for%20a%20founding%20product%20designer%20role%20at%20our%20startup.%20Review%20his%20portfolio%20site%20and%20tell%20me%3A%20what%27s%20his%20design%20range%2C%20what%20stage%20of%20company%20he%20fits%20best%2C%20and%20what%20I%27d%20actually%20get%20if%20I%20hired%20him.%20Be%20specific%20%E2%80%94%20reference%20his%20case%20studies%20and%20experience." target="_blank" rel="noopener" class="about__icon-btn" aria-label="Grok">
+                <img src="/1sap/images/ai-icon-5.svg" alt="" width="20" height="20">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="centered">
+        <div class="footer__inner">
+          <span class="footer__copyright"><span id="footerYear"></span> ©️ <strong>Gregory Muryn-Mukha</strong>. All rights reserved.</span>
+          <div class="footer__socials">
+            <a href="https://dribbble.com/murynmukha" target="_blank" rel="noopener" class="footer__social" aria-label="Dribbble">
+              <img src="/1sap/images/icon-dribbble.svg" alt="" width="20" height="20">
+            </a>
+            <a href="https://github.com/gregorymm" target="_blank" rel="noopener" class="footer__social" aria-label="GitHub">
+              <img src="/1sap/images/icon-github.svg" alt="" width="20" height="20">
+            </a>
+            <a href="https://linkedin.com/in/murynmukha" target="_blank" rel="noopener" class="footer__social" aria-label="LinkedIn">
+              <img src="/1sap/images/icon-linkedin.svg" alt="" width="20" height="20">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>

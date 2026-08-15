@@ -32,6 +32,12 @@ export const site = {
         desc: 'wild — craft, engineered. A point of view from Vienna.',
         to: '/craft',
       },
+      {
+        no: '04',
+        name: '1sap',
+        desc: 'Gregory Muryn-Mukha — founding product designer.',
+        to: '/1sap',
+      },
     ],
   },
   footCta: {

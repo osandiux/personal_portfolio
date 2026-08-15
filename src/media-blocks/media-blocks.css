@@ -1,4 +1,5 @@
-.media-blocks-toggle {
+.media-blocks-toggle,
+.wireframe-toggle {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
@@ -14,7 +15,8 @@
   text-transform: uppercase;
 }
 
-.media-blocks-toggle__track {
+.media-blocks-toggle__track,
+.wireframe-toggle__track {
   position: relative;
   width: 2.35rem;
   height: 1.2rem;
@@ -26,13 +28,15 @@
     background-color var(--motion-fast, 150ms) var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
 }
 
-.media-blocks-toggle.is-on .media-blocks-toggle__track {
+.media-blocks-toggle.is-on .media-blocks-toggle__track,
+.wireframe-toggle.is-on .wireframe-toggle__track {
   opacity: 1;
   background: var(--color-red, #ff3b3b);
   border-color: var(--color-red, #ff3b3b);
 }
 
-.media-blocks-toggle__thumb {
+.media-blocks-toggle__thumb,
+.wireframe-toggle__thumb {
   position: absolute;
   top: 1px;
   left: 1px;
@@ -44,22 +48,27 @@
   transition: transform var(--motion-fast, 150ms) var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
 }
 
-.media-blocks-toggle.is-on .media-blocks-toggle__thumb {
+.media-blocks-toggle.is-on .media-blocks-toggle__thumb,
+.wireframe-toggle.is-on .wireframe-toggle__thumb {
   transform: translateX(1.12rem);
   background: #fff;
 }
 
 .media-blocks-toggle:hover .media-blocks-toggle__track,
-.media-blocks-toggle:focus-visible .media-blocks-toggle__track {
+.media-blocks-toggle:focus-visible .media-blocks-toggle__track,
+.wireframe-toggle:hover .wireframe-toggle__track,
+.wireframe-toggle:focus-visible .wireframe-toggle__track {
   opacity: 1;
 }
 
-.media-blocks-toggle:focus-visible {
+.media-blocks-toggle:focus-visible,
+.wireframe-toggle:focus-visible {
   outline: 2px solid var(--color-red, #ff3b3b);
   outline-offset: 4px;
 }
 
-.media-blocks-toggle--compact {
+.media-blocks-toggle--compact,
+.wireframe-toggle--compact {
   position: fixed;
   right: max(1rem, env(safe-area-inset-right));
   bottom: max(1rem, env(safe-area-inset-bottom));
@@ -72,8 +81,16 @@
   backdrop-filter: blur(10px);
 }
 
+.wireframe-toggle--compact {
+  bottom: calc(max(1rem, env(safe-area-inset-bottom)) + 3rem);
+}
+
 html[data-wkhs] .media-blocks-toggle--compact,
-html[data-craft] .media-blocks-toggle--compact {
+html[data-wkhs] .wireframe-toggle--compact,
+html[data-craft] .media-blocks-toggle--compact,
+html[data-craft] .wireframe-toggle--compact,
+html[data-sap] .media-blocks-toggle--compact,
+html[data-sap] .wireframe-toggle--compact {
   background: rgba(249, 248, 245, 0.9);
   color: #090909;
 }
@@ -87,7 +104,9 @@ html[data-media-blocks] video {
 
 @media (prefers-reduced-motion: reduce) {
   .media-blocks-toggle__track,
-  .media-blocks-toggle__thumb {
+  .media-blocks-toggle__thumb,
+  .wireframe-toggle__track,
+  .wireframe-toggle__thumb {
     transition: none;
   }
 }

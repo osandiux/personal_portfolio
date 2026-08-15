@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { site } from '../content/site';
 import { MediaBlocksToggle } from '../media-blocks/MediaBlocks';
+import { WireframeToggle } from '../wireframe/Wireframe';
 import './directory.css';
 
 export function IndexPage() {
@@ -8,6 +9,7 @@ export function IndexPage() {
     <main className="directory">
       <div className="directory-toolbar">
         <MediaBlocksToggle />
+        <WireframeToggle />
       </div>
       <nav className="directory-rooms" aria-label="Sites">
         {site.directory.rooms.map((room) => (

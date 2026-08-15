@@ -1,0 +1,152 @@
+html[data-wireframe] {
+  --color-ink: #111111;
+  --color-paper: #ffffff;
+  --color-red: #111111;
+  --color-panel: #ffffff;
+  --color-dim: rgba(17, 17, 17, 0.48);
+  --color-hair: rgba(17, 17, 17, 0.22);
+  --color-curtain: #ffffff;
+  --bg: #ffffff;
+  --text: #111111;
+  --text-body: #111111;
+  --accent: #111111;
+  --wire-ink: #111111;
+  --wire-paper: #ffffff;
+  --wire-fill: #c8c8c8;
+}
+
+html[data-wireframe],
+html[data-wireframe] body {
+  background: var(--wire-paper) !important;
+  color: var(--wire-ink) !important;
+  cursor: auto !important;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif !important;
+}
+
+html[data-wireframe] body::after,
+html[data-wireframe] .cursor-dot,
+html[data-wireframe] .cursor-ring {
+  display: none !important;
+}
+
+html[data-wireframe].has-cursor,
+html[data-wireframe].has-cursor a,
+html[data-wireframe].has-cursor button {
+  cursor: auto;
+}
+
+html[data-wireframe].has-cursor a,
+html[data-wireframe].has-cursor button {
+  cursor: pointer;
+}
+
+html[data-wireframe] ::selection {
+  background: var(--wire-ink);
+  color: var(--wire-paper);
+}
+
+html[data-wireframe] :focus-visible {
+  outline: 2px solid var(--wire-ink);
+  outline-offset: 3px;
+}
+
+html[data-wireframe] *:not(svg):not(path):not(line):not(circle):not(rect):not(polyline):not(polygon):not(canvas) {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif !important;
+  color: var(--wire-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  background-image: none !important;
+  border-color: var(--wire-ink) !important;
+  outline-color: var(--wire-ink) !important;
+  caret-color: var(--wire-ink) !important;
+  text-decoration-color: var(--wire-ink) !important;
+}
+
+html[data-wireframe] *:not(html):not(body):not(img):not(video):not(canvas):not(svg):not(path):not(line):not(circle):not(rect) {
+  background-color: transparent !important;
+}
+
+html[data-wireframe] img,
+html[data-wireframe] video,
+html[data-wireframe] canvas,
+html[data-wireframe] iframe,
+html[data-wireframe] button,
+html[data-wireframe] input,
+html[data-wireframe] textarea,
+html[data-wireframe] select,
+html[data-wireframe] nav,
+html[data-wireframe] header,
+html[data-wireframe] footer,
+html[data-wireframe] aside,
+html[data-wireframe] section,
+html[data-wireframe] article,
+html[data-wireframe] figure,
+html[data-wireframe] main,
+html[data-wireframe] a {
+  outline: 1px solid var(--wire-ink);
+  outline-offset: -1px;
+}
+
+html[data-wireframe]:not([data-media-blocks]) img:not([src*='.svg']),
+html[data-wireframe]:not([data-media-blocks]) video {
+  background-color: var(--wire-fill) !important;
+  object-fit: none !important;
+  object-position: 9999px 9999px !important;
+}
+
+html[data-wireframe] canvas {
+  background-color: var(--wire-fill) !important;
+  filter: grayscale(1) contrast(0) !important;
+  outline: 1px solid var(--wire-ink);
+}
+
+html[data-wireframe] .directory-room:hover .directory-name,
+html[data-wireframe] .directory-room:focus-visible .directory-name {
+  text-decoration: underline;
+}
+
+html[data-wireframe] svg {
+  color: var(--wire-ink) !important;
+}
+
+html[data-wireframe] .media-blocks-toggle,
+html[data-wireframe] .wireframe-toggle,
+html[data-wireframe] .media-blocks-toggle *,
+html[data-wireframe] .wireframe-toggle * {
+  font-family: var(--font-mono, ui-monospace, monospace) !important;
+  outline: none !important;
+}
+
+html[data-wireframe] .media-blocks-toggle--compact,
+html[data-wireframe] .wireframe-toggle--compact {
+  background-color: var(--wire-paper) !important;
+  color: var(--wire-ink) !important;
+  border: 1px solid var(--wire-ink) !important;
+}
+
+html[data-wireframe] .media-blocks-toggle.is-on .media-blocks-toggle__track,
+html[data-wireframe] .wireframe-toggle.is-on .wireframe-toggle__track {
+  background-color: var(--wire-ink) !important;
+  border-color: var(--wire-ink) !important;
+}
+
+html[data-wireframe] .media-blocks-toggle__thumb,
+html[data-wireframe] .wireframe-toggle__thumb {
+  background-color: var(--wire-ink) !important;
+}
+
+html[data-wireframe] .media-blocks-toggle.is-on .media-blocks-toggle__thumb,
+html[data-wireframe] .wireframe-toggle.is-on .wireframe-toggle__thumb {
+  background-color: var(--wire-paper) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-wireframe] .wireframe-toggle__track,
+  html[data-wireframe] .wireframe-toggle__thumb {
+    transition: none;
+  }
+}

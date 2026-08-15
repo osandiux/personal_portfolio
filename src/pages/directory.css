@@ -7,6 +7,10 @@
 
 .directory-toolbar {
   flex: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4) var(--space-5);
   margin-bottom: var(--space-5);
 }
 
@@ -44,6 +48,10 @@
 
 .directory-room:nth-child(3) {
   animation-delay: 120ms;
+}
+
+.directory-room:nth-child(4) {
+  animation-delay: 180ms;
 }
 
 .directory-no {
