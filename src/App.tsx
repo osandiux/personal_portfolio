@@ -13,11 +13,14 @@ import { ServicesPage as StudioServicesPage } from './studio/pages/ServicesPage'
 import { AgencyPage as StudioAgencyPage } from './studio/pages/AgencyPage';
 import { CulturePage as StudioCulturePage } from './studio/pages/CulturePage';
 import { POISED_BASE } from './content/site';
+import { usePageFade } from './hooks/usePageFade';
+import './components/chrome/page-fade.css';
 
-export default function App() {
+function AppRoutes() {
+  const { location, visible } = usePageFade();
   return (
-    <BrowserRouter>
-      <Routes>
+    <div className={`page-fade${visible ? ' is-in' : ''}`}>
+      <Routes location={location}>
         <Route element={<RootShell />}>
           <Route index element={<IndexPage />} />
           <Route element={<SiteShell />}>
@@ -41,6 +44,14 @@ export default function App() {
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppRoutes />
     </BrowserRouter>
   );
 }

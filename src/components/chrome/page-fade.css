@@ -1,0 +1,20 @@
+.page-fade {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.page-fade.is-in {
+  opacity: 1;
+  pointer-events: auto;
+  transition-duration: 280ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-fade,
+  .page-fade.is-in {
+    opacity: 1;
+    pointer-events: auto;
+    transition: none;
+  }
+}
