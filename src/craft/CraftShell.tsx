@@ -28,6 +28,9 @@ export function CraftShell() {
   const navigate = useNavigate();
   const page = pathname.includes('/bcp') ? 'bcp' : 'home';
 
+  document.documentElement.dataset.craft = '';
+  document.documentElement.dataset.craftPage = page;
+
   useLayoutEffect(() => {
     const root = document.documentElement;
     root.dataset.craft = '';

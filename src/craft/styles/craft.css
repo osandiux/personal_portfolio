@@ -16,3 +16,7 @@ html[data-craft] .craft-root {
   color: #0a0a0a;
   font-family: Sneak, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+.page-fade:not(.is-in) .craft-root * {
+  animation: none !important;
+}
