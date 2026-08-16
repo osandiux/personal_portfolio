@@ -20,6 +20,10 @@ import { SapShell } from './1sap/SapShell';
 import { HomePage as SapHomePage } from './1sap/pages/HomePage';
 import { Os1Shell } from './os1/Os1Shell';
 import { HomePage as Os1HomePage } from './os1/pages/HomePage';
+import { ObsShell } from './obs/ObsShell';
+import { HomePage as ObsHomePage } from './obs/pages/HomePage';
+import { AboutPage as ObsAboutPage } from './obs/pages/AboutPage';
+import { WorkPage as ObsWorkPage } from './obs/pages/WorkPage';
 import { POISED_BASE } from './content/site';
 import { MediaBlocksProvider } from './media-blocks/MediaBlocks';
 import { WireframeProvider } from './wireframe/Wireframe';
@@ -61,6 +65,11 @@ function AppRoutes() {
         </Route>
         <Route path="os1" element={<Os1Shell />}>
           <Route index element={<Os1HomePage />} />
+        </Route>
+        <Route path="obs" element={<ObsShell />}>
+          <Route index element={<ObsHomePage />} />
+          <Route path="about" element={<ObsAboutPage />} />
+          <Route path="work/:slug" element={<ObsWorkPage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

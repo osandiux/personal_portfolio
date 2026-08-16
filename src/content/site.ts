@@ -44,6 +44,12 @@ export const site = {
         desc: 'gucduck — a macOS desktop, rebuilt as a portfolio.',
         to: '/os1',
       },
+      {
+        no: '06',
+        name: 'obs',
+        desc: 'Obys Agency — concept-driven studio, three ways to browse the work.',
+        to: '/obs',
+      },
     ],
   },
   footCta: {
