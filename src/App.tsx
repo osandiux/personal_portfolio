@@ -18,6 +18,8 @@ import { HomePage as CraftHomePage } from './craft/pages/HomePage';
 import { BcpPage as CraftBcpPage } from './craft/pages/BcpPage';
 import { SapShell } from './1sap/SapShell';
 import { HomePage as SapHomePage } from './1sap/pages/HomePage';
+import { Os1Shell } from './os1/Os1Shell';
+import { HomePage as Os1HomePage } from './os1/pages/HomePage';
 import { POISED_BASE } from './content/site';
 import { MediaBlocksProvider } from './media-blocks/MediaBlocks';
 import { WireframeProvider } from './wireframe/Wireframe';
@@ -56,6 +58,9 @@ function AppRoutes() {
         </Route>
         <Route path="1sap" element={<SapShell />}>
           <Route index element={<SapHomePage />} />
+        </Route>
+        <Route path="os1" element={<Os1Shell />}>
+          <Route index element={<Os1HomePage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

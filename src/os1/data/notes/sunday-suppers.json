@@ -1,0 +1,991 @@
+[
+  {
+    "id": "sunday-suppers-about",
+    "title": "About Sunday Suppers",
+    "folder": "Sunday Suppers",
+    "body": "What Sunday Suppers is and how we score each dish.",
+    "aboutContent": {
+      "intro": "Sunday Suppers is a hangout series with my bestie Anjuli. We take cool and interesting recipes from social media and try to make them, all while catching up during our busy lives. We then rank each dish according to our criteria below.",
+      "scoringIntro": "Each category is scored by both of us (Chris and Anjuli). The columns in the table are our individual scores; Sum is the total for that row.",
+      "criteria": [
+        { "label": "Taste (out of 10)", "description": "How good it was to eat" },
+        { "label": "Appearance (out of 5)", "description": "How it looked on the plate" },
+        { "label": "Effort (out of 5)", "description": "Low score = high effort, high score = low effort" },
+        { "label": "Misc (out of 5)", "description": "How memorable, fun, etc." }
+      ],
+      "footer": "Maximum total per person: 25 points. Higher total = we liked it more."
+    }
+  },
+  {
+    "id": "sunday-suppers-0",
+    "title": "Squash Gnocchi Soup",
+    "folder": "Sunday Suppers",
+    "dateString": "10/10/2023",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fsquash_gnocchi_soup_1.jpg?alt=media&token=9200b177-03e9-4912-81e2-5f4c0cba5e0c"
+    ],
+    "scores": {
+      "appearance": [
+        4,
+        4
+      ],
+      "taste": [
+        9,
+        10
+      ],
+      "effort": [
+        2,
+        2
+      ],
+      "misc": [
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-1",
+    "title": "Cabbage Dumplings",
+    "folder": "Sunday Suppers",
+    "dateString": "10/22/2023",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fcabbage_dumplings_1.jpg?alt=media&token=f55e46ec-12db-438c-92ff-72f57af6f6d1"
+    ],
+    "scores": {
+      "effort": [
+        4,
+        3
+      ],
+      "appearance": [
+        3.5,
+        3
+      ],
+      "taste": [
+        8,
+        8
+      ],
+      "misc": [
+        4.5,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-2",
+    "title": "Scissor Cut Noodles",
+    "folder": "Sunday Suppers",
+    "dateString": "11/12/2023",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fscissor_cut_noodles_1.jpg?alt=media&token=e3c48ce7-0f63-4e88-ad09-ec02c32173b2"
+    ],
+    "scores": {
+      "effort": [
+        4,
+        4
+      ],
+      "misc": [
+        3.5,
+        3
+      ],
+      "appearance": [
+        3,
+        3
+      ],
+      "taste": [
+        7,
+        7
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-3",
+    "title": "Fried Spring Rolls",
+    "folder": "Sunday Suppers",
+    "dateString": "11/19/2023",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Ffried_spring_rolls_1.jpg?alt=media&token=8bda1088-74c9-4534-b4de-62044df8ecf1"
+    ],
+    "scores": {
+      "misc": [
+        3.5,
+        4
+      ],
+      "effort": [
+        4.5,
+        4
+      ],
+      "taste": [
+        6,
+        6
+      ],
+      "appearance": [
+        2.5,
+        2
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-4",
+    "title": "Sweet Potato Balls",
+    "folder": "Sunday Suppers",
+    "dateString": "12/03/2023",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fsweet_potato_balls_1.jpg?alt=media&token=4ff266cd-b695-49f1-aca4-7c9b93ecd4c6"
+    ],
+    "scores": {
+      "taste": [
+        8.5,
+        9
+      ],
+      "appearance": [
+        4,
+        4
+      ],
+      "misc": [
+        5,
+        5
+      ],
+      "effort": [
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-5",
+    "title": "Cauliflower Steaks",
+    "folder": "Sunday Suppers",
+    "dateString": "12/10/2023",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fcauliflower_steaks_1.jpg?alt=media&token=00ea91c3-e4ae-4ed8-ad1f-eafaaf704659"
+    ],
+    "scores": {
+      "taste": [
+        7,
+        6
+      ],
+      "appearance": [
+        1,
+        2
+      ],
+      "effort": [
+        5,
+        5
+      ],
+      "misc": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-6",
+    "title": "Crispy Gochujang Tofu",
+    "folder": "Sunday Suppers",
+    "dateString": "12/10/2023",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fcrispy_gochujang_tofu_1.jpg?alt=media&token=bc5b7d48-8bd0-4acc-ab79-eaf88c463408"
+    ],
+    "scores": {
+      "misc": [
+        4,
+        3
+      ],
+      "effort": [
+        5,
+        5
+      ],
+      "appearance": [
+        4,
+        4
+      ],
+      "taste": [
+        10,
+        10
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-7",
+    "title": "Thiccc Potato Noodles",
+    "folder": "Sunday Suppers",
+    "dateString": "12/16/2023",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fthiccc_potato_noodles_1.jpg?alt=media&token=6c77a106-464d-4895-910e-e2c77cb050a6"
+    ],
+    "scores": {
+      "effort": [
+        2,
+        2
+      ],
+      "taste": [
+        6.5,
+        7
+      ],
+      "appearance": [
+        3.5,
+        3
+      ],
+      "misc": [
+        4,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-8",
+    "title": "Grated Spätzle",
+    "folder": "Sunday Suppers",
+    "dateString": "01/15/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fgrated_spatzle_1.jpg?alt=media&token=6dab4b50-58c6-43cb-ad00-a93ef466bbfd"
+    ],
+    "scores": {
+      "appearance": [
+        3,
+        3.5
+      ],
+      "taste": [
+        6,
+        7
+      ],
+      "effort": [
+        3,
+        3
+      ],
+      "misc": [
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-9",
+    "title": "Khachapuri Cheese Bread",
+    "folder": "Sunday Suppers",
+    "dateString": "01/21/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fkhachapuri_cheese_bread_1.jpg?alt=media&token=b87a235c-a170-4eb3-8e41-e2cc3b220e99"
+    ],
+    "scores": {
+      "taste": [
+        10,
+        10
+      ],
+      "appearance": [
+        5,
+        5
+      ],
+      "effort": [
+        4.5,
+        4
+      ],
+      "misc": [
+        3.5,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-10",
+    "title": "Mayak Eggs",
+    "folder": "Sunday Suppers",
+    "dateString": "01/29/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fmayak_eggs_1.jpg?alt=media&token=5abd0031-f5da-4ede-85c2-89742812347f"
+    ],
+    "scores": {
+      "misc": [
+        2.5,
+        4
+      ],
+      "taste": [
+        9,
+        9
+      ],
+      "effort": [
+        5,
+        5
+      ],
+      "appearance": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-11",
+    "title": "Beige Bean French Onion Soup",
+    "folder": "Sunday Suppers",
+    "dateString": "03/05/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fbeige_bean_french_onion_soup_1.jpg?alt=media&token=3f3e67c4-4e52-4cd7-99f8-cd03dc059ba0"
+    ],
+    "scores": {
+      "effort": [
+        5,
+        5
+      ],
+      "taste": [
+        6,
+        7
+      ],
+      "misc": [
+        2,
+        2
+      ],
+      "appearance": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-12",
+    "title": "Tofu Gochujang Fries",
+    "folder": "Sunday Suppers",
+    "dateString": "03/19/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Ftofu_gochujang_fries_1.jpg?alt=media&token=76581f5d-813e-4367-9246-5a7a6231aaf5"
+    ],
+    "scores": {
+      "taste": [
+        7,
+        9
+      ],
+      "appearance": [
+        3,
+        4
+      ],
+      "effort": [
+        4,
+        4
+      ],
+      "misc": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-13",
+    "title": "Leftover Ingredient Waffles",
+    "folder": "Sunday Suppers",
+    "dateString": "03/19/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fleftover_ingredient_waffles_1.jpg?alt=media&token=6dd7a73e-6b26-416e-ad37-511f5d8bb886"
+    ],
+    "scores": {
+      "taste": [
+        6,
+        5
+      ],
+      "appearance": [
+        4,
+        3
+      ],
+      "effort": [
+        5,
+        5
+      ],
+      "misc": [
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-14",
+    "title": "Korean Japchae",
+    "folder": "Sunday Suppers",
+    "dateString": "04/28/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fkorean_japchae_1.jpg?alt=media&token=2a1b8f15-796e-43fe-8350-1b158165ed40"
+    ],
+    "scores": {
+      "appearance": [
+        4,
+        5
+      ],
+      "misc": [
+        2,
+        2
+      ],
+      "taste": [
+        9,
+        9
+      ],
+      "effort": [
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-15",
+    "title": "Aloo Pies",
+    "folder": "Sunday Suppers",
+    "dateString": "06/04/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Faloo_pies_1.jpg?alt=media&token=e045a933-f956-4d0e-9032-b09248c592db"
+    ],
+    "scores": {
+      "appearance": [
+        3.5,
+        3
+      ],
+      "effort": [
+        3,
+        4
+      ],
+      "misc": [
+        4,
+        4
+      ],
+      "taste": [
+        9,
+        7
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-16",
+    "title": "Tofu Pancakes",
+    "folder": "Sunday Suppers",
+    "dateString": "06/11/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Ftofu_pancakes_1.jpg?alt=media&token=16ba3df3-0470-48e6-9516-48a2ef3ec7ed"
+    ],
+    "scores": {
+      "taste": [
+        6,
+        7
+      ],
+      "appearance": [
+        2,
+        3
+      ],
+      "misc": [
+        3,
+        2
+      ],
+      "effort": [
+        5,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-17",
+    "title": "Cold Soba Noodles with Cucumber Salad",
+    "folder": "Sunday Suppers",
+    "dateString": "06/25/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fcold-soba-noodles-1.jpg?alt=media&token=b7bb105b-ca13-41bd-9b64-569ac785630e"
+    ],
+    "scores": {
+      "appearance": [
+        4,
+        4
+      ],
+      "effort": [
+        5,
+        4
+      ],
+      "misc": [
+        3,
+        3
+      ],
+      "taste": [
+        9,
+        9
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-18",
+    "title": "Spinach Potato Gnocchi",
+    "folder": "Sunday Suppers",
+    "dateString": "11/24/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fspinach_potato_gnocchi_1.jpg?alt=media&token=8f50df62-8ee0-4755-9257-3a7c19868f66"
+    ],
+    "scores": {
+      "taste": [
+        7,
+        8
+      ],
+      "effort": [
+        3,
+        3
+      ],
+      "appearance": [
+        2.5,
+        3
+      ],
+      "misc": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-19",
+    "title": "Mandolin Asian Cucumbers",
+    "folder": "Sunday Suppers",
+    "dateString": "12/08/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fmandolin_asian_cucumbers_1.jpg?alt=media&token=e38c6861-2c9e-4a04-a3e5-64617d01fdb3"
+    ],
+    "scores": {
+      "appearance": [
+        3,
+        2
+      ],
+      "effort": [
+        5,
+        5
+      ],
+      "misc": [
+        4,
+        3
+      ],
+      "taste": [
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-20",
+    "title": "Potato Wedge Accordions",
+    "folder": "Sunday Suppers",
+    "dateString": "12/08/2024",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fpotato_wedge_accordions_1.jpg?alt=media&token=7f404e6c-2305-4557-8688-e24b8daac955"
+    ],
+    "scores": {
+      "appearance": [
+        3,
+        3
+      ],
+      "taste": [
+        6,
+        6.5
+      ],
+      "misc": [
+        2,
+        2
+      ],
+      "effort": [
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-21",
+    "title": "Tofu Bulgogi Over Rice",
+    "folder": "Sunday Suppers",
+    "dateString": "01/27/2025",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Ftofu_bulgogi_over_rice_1.jpg?alt=media&token=4b25e958-f617-4819-8b1d-9f367310aac8"
+    ],
+    "scores": {
+      "appearance": [
+        3,
+        3
+      ],
+      "taste": [
+        9,
+        9
+      ],
+      "misc": [
+        4,
+        4
+      ],
+      "effort": [
+        4,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-22",
+    "title": "Chinese New Year Dumplings",
+    "folder": "Sunday Suppers",
+    "dateString": "02/03/2025",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fchinese_new_year_dumplings_1.jpg?alt=media&token=28ad1f4b-2bf6-4df0-a2b2-1585a46094ef"
+    ],
+    "scores": {
+      "misc": [
+        4,
+        4
+      ],
+      "effort": [
+        2,
+        2
+      ],
+      "taste": [
+        7.5,
+        7.5
+      ],
+      "appearance": [
+        3.5,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-23",
+    "title": "Ricotta Eggplant Meatballs",
+    "folder": "Sunday Suppers",
+    "dateString": "04/26/2025",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fricotta_eggplant_meatballs_1.jpg?alt=media&token=89ffd45b-3078-4d03-8c28-e92a9797b2b6"
+    ],
+    "scores": {
+      "misc": [
+        3,
+        3
+      ],
+      "appearance": [
+        4.5,
+        4
+      ],
+      "taste": [
+        9,
+        9
+      ],
+      "effort": [
+        4,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-24",
+    "title": "Korean Pancakes",
+    "folder": "Sunday Suppers",
+    "dateString": "05/26/2025",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fkorean_pancakes_1.jpg?alt=media&token=c8cdab35-5e99-46bb-af42-963f4c98e133"
+    ],
+    "scores": {
+      "misc": [
+        3,
+        3
+      ],
+      "appearance": [
+        3.5,
+        3
+      ],
+      "taste": [
+        7,
+        9
+      ],
+      "effort": [
+        5,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-25",
+    "title": "3 Ingredient Bagels",
+    "folder": "Sunday Suppers",
+    "dateString": "06/02/2025",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2F3-ingredient-bagels-1.jpg?alt=media&token=1f0216b0-a82d-4575-981b-ace941ffa137"
+    ],
+    "scores": {
+      "appearance": [
+        4,
+        4.5
+      ],
+      "misc": [
+        4,
+        4
+      ],
+      "taste": [
+        6,
+        6
+      ],
+      "effort": [
+        4.5,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-26",
+    "title": "Shredded Carrot Salad",
+    "folder": "Sunday Suppers",
+    "dateString": "06/02/2025",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fshredded-carrot-salad-1.jpg?alt=media&token=4cf81385-41fe-4c81-a445-f22d3ea00e02"
+    ],
+    "scores": {
+      "misc": [
+        3,
+        3
+      ],
+      "taste": [
+        4,
+        5.5
+      ],
+      "effort": [
+        4,
+        4
+      ],
+      "appearance": [
+        4.5,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-27",
+    "title": "Tofu Kimchi Cucumber Edamame Rice Bowl",
+    "folder": "Sunday Suppers",
+    "dateString": "08/24/2025",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Ftofu_kimchi_cucumber_edamame_rice_bowl_1.jpg?alt=media&token=41173b62-8410-4c60-aea7-cab14e6fffe5"
+    ],
+    "scores": {
+      "appearance": [
+        3.5,
+        4.5
+      ],
+      "effort": [
+        4.5,
+        4
+      ],
+      "taste": [
+        8.5,
+        9
+      ],
+      "misc": [
+        3,
+        3.5
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-28",
+    "title": "Chickpea Stuffed Pitas",
+    "folder": "Sunday Suppers",
+    "dateString": "10/12/2025",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fchickpea_stuffed_pitas_1.jpg?alt=media&token=a1ee8eaa-91dd-4f69-97eb-ff9a01971c4d"
+    ],
+    "scores": {
+      "effort": [
+        4,
+        4
+      ],
+      "taste": [
+        8,
+        9
+      ],
+      "appearance": [
+        3,
+        3.5
+      ],
+      "misc": [
+        3.5,
+        3.5
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-29",
+    "title": "Spring Pea Pasta",
+    "folder": "Sunday Suppers",
+    "dateString": "11/09/2025",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fspring_pea_pasta_1.jpg?alt=media&token=bb1da15e-3907-43cd-b838-31857f26ed4c"
+    ],
+    "scores": {
+      "appearance": [
+        4.5,
+        4
+      ],
+      "effort": [
+        5,
+        5
+      ],
+      "misc": [
+        4,
+        3.5
+      ],
+      "taste": [
+        8,
+        8
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-30",
+    "title": "Crispy Seaweed Enoki Rolls",
+    "folder": "Sunday Suppers",
+    "dateString": "11/17/2025",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fcrispy_seaweed_enoki_rolls_1.jpg?alt=media&token=8cb2ef36-314f-4469-8c27-8eaa9c0fd391"
+    ],
+    "scores": {
+      "appearance": [
+        4,
+        4
+      ],
+      "effort": [
+        4.5,
+        4
+      ],
+      "misc": [
+        5,
+        5
+      ],
+      "taste": [
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-31",
+    "title": "Onion Corn Onigiri",
+    "folder": "Sunday Suppers",
+    "dateString": "01/11/2026",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fonion_corn_onigiri_1.jpg?alt=media&token=a791794d-e209-431c-98c4-728d93c91bbb"
+    ],
+    "scores": {
+      "appearance": [
+        3.5,
+        4.5
+      ],
+      "effort": [
+        4,
+        4
+      ],
+      "misc": [
+        4,
+        4
+      ],
+      "taste": [
+        9,
+        8.5
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-32",
+    "title": "Tofu Mushroom Dumpling Lasagna",
+    "folder": "Sunday Suppers",
+    "dateString": "02/02/2026",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Ftofu_mushroom_dumpling_lasanga_1.jpg?alt=media&token=53939bb3-4a92-4b12-94b5-5966cfec499f"
+    ],
+    "scores": {
+      "appearance": [
+        1,
+        1
+      ],
+      "effort": [
+        2.5,
+        3
+      ],
+      "misc": [
+        3,
+        3
+      ],
+      "taste": [
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-33",
+    "title": "Kale Tofu Walnut Pasta",
+    "folder": "Sunday Suppers",
+    "dateString": "03/15/2026",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fkale_tofu_walnut_pasta_1.jpg?alt=media&token=5fa57a93-b6a2-4843-8056-cf76740c6b4c"
+    ],
+    "scores": {
+      "appearance": [
+        4.5,
+        4.5
+      ],
+      "effort": [
+        3,
+        3
+      ],
+      "misc": [
+        3,
+        3
+      ],
+      "taste": [
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-34",
+    "title": "Crispy Rice Tofu Cups",
+    "folder": "Sunday Suppers",
+    "dateString": "04/02/2026",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fcrispy_rice_tofu_cups_1.jpg?alt=media&token=0eda8c19-23e9-456f-9cd2-02ddb432d52c"
+    ],
+    "scores": {
+      "appearance": [
+        4,
+        4
+      ],
+      "effort": [
+        5,
+        5
+      ],
+      "misc": [
+        4,
+        4
+      ],
+      "taste": [
+        8,
+        8
+      ]
+    }
+  },
+  {
+    "id": "sunday-suppers-35",
+    "title": "Isobe Tofu Mochi",
+    "folder": "Sunday Suppers",
+    "dateString": "05/17/2026",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/gucduck-61736.firebasestorage.app/o/notes%2Fsunday-suppers%2Fisobe_tofu_mochi_1.jpg?alt=media&token=50de7550-3fa9-4955-bae1-657158b31601"
+    ],
+    "scores": {
+      "appearance": [
+        3,
+        3
+      ],
+      "effort": [
+        5,
+        5
+      ],
+      "misc": [
+        3,
+        3
+      ],
+      "taste": [
+        6,
+        6.5
+      ]
+    }
+  }
+]

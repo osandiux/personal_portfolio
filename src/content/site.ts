@@ -38,6 +38,12 @@ export const site = {
         desc: 'Gregory Muryn-Mukha — founding product designer.',
         to: '/1sap',
       },
+      {
+        no: '05',
+        name: 'os1',
+        desc: 'gucduck — a macOS desktop, rebuilt as a portfolio.',
+        to: '/os1',
+      },
     ],
   },
   footCta: {

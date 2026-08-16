@@ -54,6 +54,10 @@
   animation-delay: 180ms;
 }
 
+.directory-room:nth-child(5) {
+  animation-delay: 240ms;
+}
+
 .directory-no {
   grid-row: 1 / span 2;
   font-family: var(--font-mono);
