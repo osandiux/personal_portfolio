@@ -1,4 +1,4 @@
-# Poised — Osandi Robinson's Product Design Portfolio
+# Osandi Robinson's Product Design Portfolio
 
 A multi-page portfolio for a product design leader, presenting twelve years of work as a searchable archive. Nocturnal palette, safelight-red accents, and scroll-driven motion.
 
