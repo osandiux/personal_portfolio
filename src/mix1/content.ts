@@ -1,0 +1,247 @@
+export const EMAIL = 'osandi.designs@gmail.com';
+export const LINKEDIN = 'https://www.linkedin.com/in/osandi';
+export const DECK = 'https://bit.ly/osandi_design_deck_2026';
+
+export const mix1Nav = [
+  { name: 'Work', to: '/mix1/work' },
+  { name: 'About', to: '/mix1/about' },
+] as const;
+
+export const mix1Work = {
+  title: 'Work',
+  intro:
+    'Leading for impact, then designing for it — org infrastructure, product surfaces, and the numbers that followed.',
+  introLines: [
+    'Leading for impact, then designing for it — org',
+    'infrastructure, product surfaces, and the numbers',
+    'that followed.',
+  ],
+  services: [
+    { id: 'all', label: 'All' },
+    { id: 'product', label: 'Product' },
+    { id: 'systems', label: 'Systems' },
+    { id: 'leadership', label: 'Leadership' },
+    { id: 'consultant', label: 'Consultant' },
+  ],
+  sectors: [
+    { id: 'all', label: 'All' },
+    { id: 'crypto', label: 'Crypto' },
+    { id: 'fintech', label: 'Fintech' },
+    { id: 'consumer', label: 'Consumer' },
+    { id: 'ai', label: 'AI' },
+  ],
+  impact: [
+    { org: 'BlockFi', value: '$50M', label: 'monthly revenue' },
+    { org: 'BlockFi', value: '+200%', label: 'trades / 90 days' },
+    { org: 'Mezo', value: '98%', label: 'sprint completion' },
+    { org: 'Mezo', value: '$200M+', label: 'TVL · 25K+ users' },
+    { org: 'a16z', value: '0 → 1', label: 'design function' },
+    { org: 'Vinyl Crate', value: '$250K', label: 'dev cost saved' },
+  ],
+  items: [
+    {
+      name: 'Mezo Clay Design System',
+      headline: 'Converting design debt into product infrastructure',
+      desc: 'Led Mezo design system migration across three product phases (legacy, testnet, mainnet); post-launch audit established 70% component integration and identified systemic overrides from premature styling as the primary implementation bottleneck, informing governance decisions. Managed a direct report and an engineering contributor from execution through deployment. Partnered with the contributing designer to set quality standards and pattern library conventions, building out Uber Base into a React, WCAG 2.2-compliant library purpose-built for the Thesis BitcoinFi suite. Managed, built, and tested 2,000+ variants across 50+ base components, establishing the single source of truth every product surface shipped: the infrastructure behind $322M in testnet deposits, 154K transactions, and $151M TVL at mainnet, peaking at $200M+.',
+      image: '/images/portfolio/mock-thesis-systems.png',
+      service: 'systems',
+      sector: 'crypto',
+    },
+    {
+      name: 'Deposit on Mezo',
+      headline: 'Improving the deposit flow that unlocked Mezo’s liquidity',
+      desc: 'Depositing Bitcoin to Mezo wasn’t a standard transfer — users were bridging assets across chains into a protocol where a wrong address meant permanent loss of funds. Research confirmed the existing deposit flow was fundamentally broken — perceived as risky and confusing. The redesign introduced upfront deposit instructions, surfaced network context and minimum thresholds before commitment, and provided unambiguous success states so users knew their funds had arrived safely. The deposit flow became the primary on-ramp enabling liquidity for vaults, pools, and rewards — contributing to Mezo’s growth to $200M+ TVL.',
+      image: '/images/portfolio/project-hero-coinbase.png',
+      service: 'product',
+      sector: 'crypto',
+    },
+    {
+      name: 'Borrow MUSD on Mezo',
+      headline: 'Making high-stakes borrowing feel safe, not complex',
+      desc: 'MUSD borrowing required users to understand collateralization, liquidation risk, and variable APR simultaneously — concepts that had no mainstream equivalent. The design challenge wasn’t simplification for its own sake; it was making consequential financial decisions feel appropriately weighted without overwhelming users into inaction. The redesign introduced progressive disclosure, consolidated error handling to a single inline signal, and leaned on benchmarked design patterns to reduce DeFi complexity for a larger addressable market.',
+      image: '/images/portfolio/project-01-borrow.png',
+      service: 'product',
+      sector: 'crypto',
+    },
+    {
+      name: 'BlockFi Mobile',
+      headline: 'Redefining mobile trading to drive 200%+ transaction volume in 90 days',
+      desc: 'BlockFi’s mobile trading experience was scoped too narrowly — USD denomination was the surface problem, but the deeper opportunity was rebuilding the entire flow around how users actually trade. As Director, I pushed back on the original brief using product benchmarking and heuristic evaluation, moving buy/sell intent before the amount screen to eliminate a segmented control that was adding cognitive load, making room for surfacing recurring trades earlier in the flow — previously buried at the summary screen. Both decisions were validated through user testing before implementation, and applied consistently across web and mobile. Trades grew 200%+ within 90 days of launch — outpacing web-based trades for the first time — and contributed directly to BlockFi’s growth in service of 225K+ clients.',
+      image: '/images/portfolio/gf-blockfi.jpg',
+      service: 'leadership',
+      sector: 'fintech',
+    },
+    {
+      name: 'C@SH Native App',
+      headline: 'Zero-to-one product design that informed a strategic pivot',
+      desc: 'At an a16z Crypto portfolio company, I established the design function from zero — customizing Uber Base into a branded component library before a single internal designer was hired, doubling engineering speed and giving the team infrastructure to build with from day one. The VC principal set a high bar: a premium product resonating with an urban audience. We met it — validated through affinity testing — delivering a full light and dark mode experience. The same research surfaced a harder finding: the market hadn’t matured enough for a social wallet. That insight informed a strategic pivot, preserving capital that would otherwise have been burned against a product without sufficient traction.',
+      image: '/images/portfolio/gf-cash.png',
+      service: 'leadership',
+      sector: 'crypto',
+    },
+    {
+      name: 'EASI Food Delivery',
+      headline: 'Rearchitecting EASI to win a second audience — and a $500M valuation',
+      desc: 'EASI had a strong market position in Australian diaspora communities, but poor usability, frequent crashes, and a sub-3.0 App Store rating were capping their TAM. In six weeks, I used benchmarking to build stakeholder confidence for a full redesign, then rebuilt core ordering flow in parallel with engineering’s re-architecture — prototyping and testing each decision before handoff. App Store rating climbed from below 3.0 to 4.5 stars. EASI surpassed 1M+ users, reached a $500M+ valuation, and was acquired by HungryPanda in 2022 — whose acquisition rationale mirrored the market strategy the redesign was built around.',
+      image: '/images/portfolio/gf-easi.jpg',
+      service: 'consultant',
+      sector: 'consumer',
+    },
+    {
+      name: 'Krisp AI',
+      headline: 'Product innovation for Krisp.ai’s noise cancelling desktop application',
+      desc: 'Krisp had built strong utility as a consumer noise-cancellation tool, but the desktop experience hadn’t kept pace with what AI-native software was starting to look like. Engaged as principal design consultant, I redesigned the application around a modern UI system — introducing branded components to accelerate implementation, reduce design debt, and establish a visual foundation capable of scaling with the product. The engagement paused when COVID-19 created market uncertainty across the space. Krisp would later pivot into meeting intelligence and recording — a shift toward enterprise aesthetics and a design brief the original work wasn’t built to serve.',
+      image: '/images/portfolio/gf-krisp.jpg',
+      service: 'consultant',
+      sector: 'ai',
+    },
+  ],
+} as const;
+
+export const mix1About = {
+  title: 'About',
+  intro:
+    'I build the conditions for great product work — org infrastructure, delivery systems, and cross-functional standards that make design a measurable driver of business outcomes across 0→1 builds and iterative product evolution.',
+  introLines: [
+    'I build the conditions for great product work — org',
+    'infrastructure, delivery systems, and cross-functional',
+    'standards that make design a measurable driver of',
+    'business outcomes across 0→1 builds and iterative',
+    'product evolution.',
+  ],
+  teamIntro: 'Osandi Sekoú Robinson — product & design leader.',
+  teamBody:
+    'Startup founder turned design executive with 14 years building products and the orgs that ship them — across fintech, crypto, and consumer mobile.',
+  portrait: '/images/osandi-portrait-anime.png',
+  capabilitiesFigure: '/images/portfolio/mock-poised.png',
+  team: [{ name: 'Osandi Sekoú Robinson', role: 'Product & design leader' }],
+  capabilities: [
+    {
+      no: '01',
+      name: 'Product design · 14 years',
+      items: [
+        'Hands-on research and craft across fintech, crypto, and consumer mobile',
+        '0→1 builds and iterative product evolution',
+        'Shaped by data, business goals, and operational strategy',
+      ],
+    },
+    {
+      no: '02',
+      name: 'Research & testing · 14 years',
+      items: [
+        'Test programs and UX research',
+        'Adoption and engagement',
+        'Center user needs throughout the product journey',
+      ],
+    },
+    {
+      no: '03',
+      name: 'Design operations · 6 years',
+      items: [
+        'Delivery systems and discovery protocols',
+        'Team leveling frameworks',
+        '98% sprint completion',
+        'Feature delivery compressed from 6+ weeks to 2 weeks',
+      ],
+    },
+    {
+      no: '04',
+      name: 'AI-assisted design · 2 years',
+      items: ['Claude API, MCP, and agentic systems', 'Hands-on enough to know where models fall short'],
+    },
+    {
+      no: '05',
+      name: 'Functional',
+      items: [
+        'Native, tablet, and web design',
+        'Design operations & strategy',
+        '0 to 1 product development',
+        'Iterative design improvement',
+        'User research, testing & insights',
+        'Design systems & governance',
+        'Team leveling, mentoring, & org scaling',
+        'Cross functional alignment',
+        'AI native product development',
+        'Prototyping & validation standards',
+      ],
+    },
+    {
+      no: '06',
+      name: 'Industries',
+      items: [
+        'Fintech, blockchain, & web3',
+        'AI-native products & agents',
+        'Consumer mobile',
+        'B2B & developer tools',
+        'E-commerce & marketplaces',
+        'Video & audio streaming',
+        'Web & native SaaS',
+        'IoT & hardware',
+        'Social & community',
+        'Sports & entertainment',
+      ],
+    },
+  ],
+  process: [
+    {
+      name: 'Discover',
+      copy: 'Discovery determines whether a team is solving the right problem before anyone commits to a solution. Widen the aperture before narrowing toward anything buildable. The output is alignment on the problem, the evidence needed, and why it matters to the business.',
+      image: '/images/studio/agency-01-9b4387d5aa.webp',
+      methods: [
+        'Customer feedback',
+        'Quant data analysis',
+        'Lived observations',
+        'Surveys & questionnaires',
+        'Business analysis',
+        'Interviews',
+        'Market research',
+        'Session replay',
+        'Goal & signal statements',
+        'Hypothesis generation',
+      ],
+    },
+    {
+      name: 'Explore',
+      copy: 'With the evidential problem in sight, artifacts and written context align stakeholders — connecting hypotheses and objectives to human needs and business goals.',
+      image: '/images/studio/agency-05-6ff4e85875.webp',
+      methods: ['Diagram', 'Journey map', 'Wireframe', 'Prompt design & prototyping'],
+    },
+    {
+      name: 'Validate',
+      copy: 'Validation can occur at multiple touchpoints with an array of artifacts, ensuring the work addresses the needs of users — and, inevitably, the business.',
+      image: '/images/studio/agency-06-c2c1790069.webp',
+      methods: [
+        'Card sorting',
+        'Design reviews',
+        'Usability testing',
+        'Error rate analysis',
+        'Business analysis',
+        'Interviews',
+        'Market research',
+        'Session replay',
+        'Goal & signal statements',
+        'Hypothesis generation',
+      ],
+    },
+    {
+      name: 'Implement',
+      copy: 'Collaborate closely with engineers for design alignment and capture details pre-release. For new components, ensure awareness for product consistency. Cross-functional stakeholders are informed via Loom and case-study briefs before final sign-off — including how we measure design intent.',
+      image: '/images/studio/agency-07-a0986e9d3f.webp',
+      methods: [
+        'Feasibility sign-off',
+        'Compliance sign-off',
+        'Business sign-off',
+        'Design QA',
+        'Content sign-off',
+        'Accessibility checklist',
+        'Design-systems check-in',
+        'Design guidelines',
+        'Criteria sign-off',
+        'Cross-functional review',
+      ],
+    },
+  ],
+  clients: ['Apple', 'Square', 'BlockFi', 'Andreessen Horowitz', 'Thesis*', 'Mezo', 'EASI', 'Fennel', 'Krisp.ai', 'Vinyl Crate'],
+  seeking: 'Seeking design leadership roles where product, design, and engineering judgment equally matter.',
+  contactLine: 'Got questions? Get in touch.',
+} as const;

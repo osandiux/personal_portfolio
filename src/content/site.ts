@@ -50,6 +50,12 @@ export const site = {
         desc: 'Obys Agency — concept-driven studio, three ways to browse the work.',
         to: '/obs',
       },
+      {
+        no: '07',
+        name: 'mix1',
+        desc: 'Osandi — Craft home with Studio work and about, from the 2026 deck.',
+        to: '/mix1',
+      },
     ],
   },
   footCta: {

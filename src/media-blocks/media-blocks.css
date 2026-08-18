@@ -92,7 +92,9 @@ html[data-craft] .wireframe-toggle--compact,
 html[data-sap] .media-blocks-toggle--compact,
 html[data-sap] .wireframe-toggle--compact,
 html[data-obs] .media-blocks-toggle--compact,
-html[data-obs] .wireframe-toggle--compact {
+html[data-obs] .wireframe-toggle--compact,
+html[data-mix1] .media-blocks-toggle--compact,
+html[data-mix1] .wireframe-toggle--compact {
   background: rgba(249, 248, 245, 0.9);
   color: #090909;
 }

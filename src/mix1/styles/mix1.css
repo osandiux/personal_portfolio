@@ -1,0 +1,157 @@
+html[data-mix1] body::after {
+  display: none !important;
+}
+
+html[data-mix1] {
+  cursor: auto;
+}
+
+.page-fade:not(.is-in) .mix1-root * {
+  animation: none !important;
+}
+
+.mix1-nav {
+  position: fixed;
+  top: 1rem;
+  inset-inline: 1.25rem;
+  z-index: 80;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  color: #0a0a0a;
+  pointer-events: none;
+  font-family: Sneak, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+}
+
+.mix1-nav a {
+  pointer-events: all;
+  color: inherit;
+  text-decoration: none;
+}
+
+.mix1-nav__mark {
+  font-weight: 500;
+}
+
+.mix1-nav__links {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.mix1-nav__links a {
+  position: relative;
+}
+
+.mix1-nav__links a.is-on::after,
+.mix1-nav__links a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.12em;
+  border-bottom: 1px solid currentColor;
+}
+
+html[data-mix1] #toplink,
+html[data-mix1] .wlogo {
+  display: none !important;
+}
+
+html[data-mix1][data-mix1-page='home'] .hhead .hgrid {
+  padding-top: calc(var(--cell) * 4);
+}
+
+html[data-mix1][data-mix1-page='home'] .pxctl {
+  display: flex;
+}
+
+@media (max-width: 720px) {
+  html[data-mix1][data-mix1-page='home'] .pxctl {
+    display: none;
+  }
+}
+
+html[data-mix1][data-mix1-page='work'] .wkhs-root,
+html[data-mix1][data-mix1-page='about'] .wkhs-root {
+  padding-top: 3.5rem;
+}
+
+.mix1-impact {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem 2rem;
+  padding: 0 1.25rem 3rem;
+}
+
+html[data-mix1][data-mix1-page='work'] .article header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.55em;
+  width: min(52rem, 100%);
+}
+
+html[data-mix1][data-mix1-page='work'] .article__heading,
+html[data-mix1][data-mix1-page='work'] .article__description {
+  grid-column: unset;
+}
+
+.mix1-impact__item {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.mix1-impact__org {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+.mix1-impact__value {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.mix1-impact__label {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.mix1-process-methods {
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+.mix1-contact {
+  padding: 3rem 1.25rem 5rem;
+  max-width: 52rem;
+}
+
+.mix1-contact p + p {
+  margin-top: 0.75rem;
+}
+
+.mix1-contact a {
+  color: inherit;
+}
+
+@media (max-width: 720px) {
+  .mix1-impact {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mix1-nav__links a::after {
+    transition: none;
+  }
+}

@@ -24,6 +24,10 @@ import { ObsShell } from './obs/ObsShell';
 import { HomePage as ObsHomePage } from './obs/pages/HomePage';
 import { AboutPage as ObsAboutPage } from './obs/pages/AboutPage';
 import { WorkPage as ObsWorkPage } from './obs/pages/WorkPage';
+import { Mix1Shell } from './mix1/Mix1Shell';
+import { HomePage as Mix1HomePage } from './mix1/pages/HomePage';
+import { WorkPage as Mix1WorkPage } from './mix1/pages/WorkPage';
+import { AboutPage as Mix1AboutPage } from './mix1/pages/AboutPage';
 import { POISED_BASE } from './content/site';
 import { MediaBlocksProvider } from './media-blocks/MediaBlocks';
 import { WireframeProvider } from './wireframe/Wireframe';
@@ -70,6 +74,11 @@ function AppRoutes() {
           <Route index element={<ObsHomePage />} />
           <Route path="about" element={<ObsAboutPage />} />
           <Route path="work/:slug" element={<ObsWorkPage />} />
+        </Route>
+        <Route path="mix1" element={<Mix1Shell />}>
+          <Route index element={<Mix1HomePage />} />
+          <Route path="work" element={<Mix1WorkPage />} />
+          <Route path="about" element={<Mix1AboutPage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
