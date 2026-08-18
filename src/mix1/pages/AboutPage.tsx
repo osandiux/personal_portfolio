@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { DECK, EMAIL, LINKEDIN, mix1About } from '../content';
+import { mix1About } from '../content';
+import { Mix1Contact } from '../Contact';
 import { Picture } from '../../studio/Picture';
 import { SplitTextShuffle } from '../../studio/home/SplitTextShuffle';
 import { TextFractured } from '../../studio/home/TextFractured';
@@ -95,7 +96,7 @@ export function AboutPage() {
                 <li key={slide.name} className="vision__nav-item">
                   <button
                     type="button"
-                    className={`vision__nav-button${index === active ? ' vision__nav-button--active' : ''}`}
+                    className={`mix1-pxbtn mix1-pxbtn--chip vision__nav-button${index === active ? ' vision__nav-button--active' : ''}`}
                     onClick={() => {
                       const target = trackRef.current?.children[index] as HTMLElement | undefined;
                       target?.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
@@ -150,22 +151,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="mix1-contact">
-        <p>{mix1About.seeking}</p>
-        <p>{mix1About.contactLine}</p>
-        <p>
-          <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
-          {' · '}
-          <a href={LINKEDIN} target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-          {' · '}
-          <a href={DECK} target="_blank" rel="noreferrer">
-            Deck
-          </a>
-        </p>
-        <p>Poised LLC © 2026</p>
-      </section>
+      <Mix1Contact lead />
     </div>
   );
 }

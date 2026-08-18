@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import './media-blocks.css';
 
 const STORAGE_KEY = 'media-blocks';
+const MIX1_STORAGE_KEY = 'mix1-media-blocks';
 const PALETTE = ['#ff3b3b', '#3b5bd9', '#f5c518', '#2a9d8f', '#e0492a', '#1c2541'];
 
 type MediaBlocksValue = {
@@ -17,6 +18,22 @@ function readStored() {
     return sessionStorage.getItem(STORAGE_KEY) === '1';
   } catch {
     return false;
+  }
+}
+
+function readMix1Stored() {
+  try {
+    return sessionStorage.getItem(MIX1_STORAGE_KEY) !== '0';
+  } catch {
+    return true;
+  }
+}
+
+function writeStored(key: string, on: boolean) {
+  try {
+    sessionStorage.setItem(key, on ? '1' : '0');
+  } catch {
+    /* private mode */
   }
 }
 
@@ -52,19 +69,26 @@ function paint(on: boolean) {
 
 export function MediaBlocksProvider({ children }: { children: ReactNode }) {
   const { pathname } = useLocation();
-  const [on, setOn] = useState(readStored);
+  const isMix1 = pathname.startsWith('/mix1');
+  const [globalOn, setGlobalOn] = useState(readStored);
+  const [mix1On, setMix1On] = useState(readMix1Stored);
+  const on = isMix1 ? mix1On : globalOn;
 
   const toggle = useCallback(() => {
-    setOn((current) => {
+    if (isMix1) {
+      setMix1On((current) => {
+        const next = !current;
+        writeStored(MIX1_STORAGE_KEY, next);
+        return next;
+      });
+      return;
+    }
+    setGlobalOn((current) => {
       const next = !current;
-      try {
-        sessionStorage.setItem(STORAGE_KEY, next ? '1' : '0');
-      } catch {
-        /* private mode */
-      }
+      writeStored(STORAGE_KEY, next);
       return next;
     });
-  }, []);
+  }, [isMix1]);
 
   useLayoutEffect(() => {
     if (on) document.documentElement.dataset.mediaBlocks = '';

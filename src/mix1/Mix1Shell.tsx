@@ -58,13 +58,13 @@ export function Mix1Shell() {
     delete root.dataset.wkhs;
     delete root.dataset.wkhsPage;
     delete root.dataset.craftPage;
+    root.classList.add('fonts-loaded');
     if (page === 'home') {
       root.dataset.craft = '';
       root.dataset.craftPage = 'home';
     } else {
       root.dataset.wkhs = '';
       root.dataset.wkhsPage = page;
-      root.classList.add('fonts-loaded');
     }
     const previousTitle = document.title;
     document.title =
@@ -77,6 +77,7 @@ export function Mix1Shell() {
     return () => {
       delete root.dataset.mix1;
       delete root.dataset.mix1Page;
+      delete root.dataset.mix1Color;
       delete root.dataset.craft;
       delete root.dataset.craftPage;
       delete root.dataset.wkhs;

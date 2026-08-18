@@ -1,4 +1,5 @@
 import { mix1Work } from '../content';
+import { Mix1Contact } from '../Contact';
 import { FigureStripes } from '../../studio/home/FigureStripes';
 import { SplitTextShuffle } from '../../studio/home/SplitTextShuffle';
 import { TextFractured } from '../../studio/home/TextFractured';
@@ -55,6 +56,7 @@ export function WorkPage() {
           ))}
         </div>
       </div>
+      <Mix1Contact />
     </div>
   );
 }
