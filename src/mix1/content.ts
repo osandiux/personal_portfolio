@@ -238,3 +238,116 @@ export const mix1About = {
   seeking: 'Seeking design leadership roles where product, design, and engineering judgment equally matter.',
   contactLine: 'Got questions? Get in touch.',
 } as const;
+
+export const mix1Build = {
+  title: 'Build',
+  intro:
+    'Mix1 is a mashup, not a rebuild — Craft’s home, Studio’s work and about, one spec for type and inset, and a short list of things we refused to Studio-wash away.',
+  what: {
+    kicker: '01 / Mashup',
+    title: 'What mix1 is',
+    body: 'An isolated mini-site at /mix1. Home is Craft: two-line hero, carousel, process sheets, pixel fields. Work and about are Studio layouts with deck copy. /craft and /studio stay frozen. On the index it is room 07.',
+  },
+  spec: {
+    kicker: '02 / Spec',
+    title: 'Type, color, inset',
+    body: 'src/studio/design.md is the source. Mix1 copies those tokens onto html[data-mix1] so home (no data-wkhs) matches work and about. Page title is heading--hg. Sections are xl. Cards and intros are md. Body is base. Kickers are xs. Paper is #f9f8f5. Ink is #090909. Inset is --safe-area.',
+  },
+  keep: {
+    kicker: '03 / Exceptions',
+    title: 'Keep these',
+    items: [
+      {
+        name: 'Pixel game',
+        note: '#hero-kv, #procflow, #footcity. Grayscale until Color On. Cell and brush stay Craft.',
+      },
+      {
+        name: 'Pixel buttons',
+        note: '.mix1-pxbtn, home CTAs, Image/Block chip, #pxctl squares. Clip path, fill primary, hover #3b5bd9.',
+      },
+      {
+        name: 'Pixel tags',
+        note: 'Carousel .tags, left aligned, --fs-xxs.',
+      },
+      {
+        name: 'Color blocks',
+        note: 'On by default for /mix1* only. Session key mix1-media-blocks — not the global media-blocks key.',
+      },
+      {
+        name: 'Craft home skeleton',
+        note: 'Two-line uppercase hero, carousel, process, --cell: 14px, --maxw: 1176px.',
+      },
+    ],
+  },
+  isolation: {
+    kicker: '04 / Isolation',
+    title: 'Do not leak',
+    rows: [
+      { k: 'html[data-mix1]', v: 'Every mix1 route.' },
+      { k: 'data-craft', v: 'Home only, so Craft home.js and home.css run.' },
+      { k: 'data-wkhs', v: 'Work, about, and this page — Studio layout CSS.' },
+      { k: 'mix1-media-blocks', v: 'Blocks default on here; Poised/Craft/Studio stay on their own key.' },
+    ],
+  },
+  sequence: {
+    kicker: '05 / Sequence',
+    title: 'How it was mashed',
+    steps: [
+      'Copy Craft home markup/runtime and Studio work/about into src/mix1. Do not edit the originals.',
+      'One Osandi nav: Work / About. Wordmark home.',
+      'Retarget type, color, and --safe-area from design.md onto html[data-mix1].',
+      'Keep pixel game, pixel buttons, tags, and default-on color blocks as named exceptions.',
+      'Fix inner pages in mix1.css only: nav size, reel block, intro wrap, one footer.',
+    ],
+  },
+  broke: {
+    kicker: '06 / What broke',
+    title: 'Mix1-real, not Lenis.',
+    items: [
+      {
+        challenge: 'Studio html[data-wkhs] a { font-size: inherit } shrank the mix1 nav on work/about.',
+        solution: 'Prefix mix1-nav and .mix1-pxbtn with html[data-mix1] so they keep --fs-navigation.',
+      },
+      {
+        challenge: 'Site .btn pill and uppercase leaked onto Get in touch and home CTAs.',
+        solution: 'Reset border-radius and text-transform; clip-path is the chrome.',
+      },
+      {
+        challenge: 'Work reel kept playing under Blocks — video background: transparent beat the paint.',
+        solution: 'Set --media-block on .video-player__video and opacity: 0 on the video when blocks are on.',
+      },
+      {
+        challenge: 'Wrapping intro scramble changed line count and shoved Team; then spaces vanished in inline-block slots.',
+        solution: 'Lock each glyph to its final width; render word spaces as real spaces.',
+      },
+      {
+        challenge: 'Work/about footers used Craft’s 1176 cap while the rest of the page was Studio full-bleed.',
+        solution: 'One Mix1Contact: --safe-area / --block-vpadding, same seeking copy on both pages.',
+      },
+    ],
+  },
+  tradeoffs: {
+    kicker: '07 / Tradeoffs',
+    title: 'Choices we kept',
+    rows: [
+      { k: 'Home hero', v: 'Craft two-line uppercase. Fractured titles stay on work, about, build.' },
+      { k: 'Nav', v: 'Work / About only. This page lives next to Deck in the footer.' },
+      { k: 'Color', v: 'Color Off/On is the pixel game. Block/Image is media. They do not share a switch.' },
+      { k: 'CSS', v: 'Override with html[data-mix1] specificity. Do not fork Craft or Studio stylesheets.' },
+      { k: 'CMS', v: 'src/mix1/content.ts — thin pages, typed copy, no backend.' },
+    ],
+  },
+  steal: {
+    kicker: '08 / Steal this',
+    title: 'If you mash two sites',
+    items: [
+      'Isolate with data-* on html and one wrapper CSS file.',
+      'Write the spec once. Copy tokens onto the mashup root.',
+      'Mash layouts. Do not duplicate vendor.css or home.css.',
+      'Name the exceptions. Everything else follows the spec.',
+      'Keep copy and image paths in a content module.',
+    ],
+    cta: 'See the work',
+    href: '/mix1/work',
+  },
+} as const;

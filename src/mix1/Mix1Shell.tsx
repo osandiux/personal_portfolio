@@ -9,6 +9,7 @@ import '../studio/styles/pages.css';
 import './styles/mix1.css';
 
 function mix1Page(pathname: string) {
+  if (pathname.includes('/build')) return 'build';
   if (pathname.includes('/about')) return 'about';
   if (pathname.includes('/work')) return 'work';
   return 'home';
@@ -72,7 +73,9 @@ export function Mix1Shell() {
         ? 'About — Osandi Robinson'
         : page === 'work'
           ? 'Experiences — Osandi Robinson'
-          : 'Osandi — Poised Design Executive';
+          : page === 'build'
+            ? 'Build — Osandi Robinson'
+            : 'Osandi — Poised Design Executive';
     const restoreIcon = setFavicon('/craft/favicon.svg');
     return () => {
       delete root.dataset.mix1;

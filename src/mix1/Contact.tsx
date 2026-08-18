@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { DECK, EMAIL, LINKEDIN, mix1About } from './content';
 
 export function Mix1Contact() {
@@ -18,6 +19,8 @@ export function Mix1Contact() {
         <a href={DECK} target="_blank" rel="noreferrer">
           Deck
         </a>
+        {' · '}
+        <Link to="/mix1/build">Build</Link>
       </p>
       <p>Poised LLC © 2026</p>
     </section>
