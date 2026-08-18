@@ -89,7 +89,7 @@ html[data-mix1][data-wkhs] {
   animation: none !important;
 }
 
-.mix1-nav {
+html[data-mix1] .mix1-nav {
   position: fixed;
   top: 1rem;
   inset-inline: var(--mix1-gutter);
@@ -106,13 +106,18 @@ html[data-mix1][data-wkhs] {
   font-variation-settings: 'wght' 400;
 }
 
-.mix1-nav a {
+html[data-mix1] .mix1-nav a {
   pointer-events: all;
-  color: inherit;
+  color: #0a0a0a;
   text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-variation-settings: inherit;
 }
 
-.mix1-nav__mark {
+html[data-mix1] .mix1-nav__mark {
   font-weight: 400;
   font-variation-settings: 'wght' 500;
 }
@@ -178,11 +183,15 @@ html[data-mix1][data-mix1-page='home'] .caro .ch .pd {
 html[data-mix1][data-mix1-page='home'] .ed p.s,
 html[data-mix1][data-mix1-page='home'] .two .c p,
 html[data-mix1][data-mix1-page='home'] .proc .dd,
-html[data-mix1][data-mix1-page='home'] .slide.cs .d,
 html[data-mix1][data-mix1-page='home'] .ed .pts li {
   font-size: var(--fs-base);
   line-height: var(--lh-base);
   letter-spacing: normal;
+}
+
+html[data-mix1][data-mix1-page='home'] .slide.cs {
+  text-align: left;
+  align-items: stretch;
 }
 
 html[data-mix1][data-mix1-page='home'] .slide.cs .t {
@@ -192,6 +201,21 @@ html[data-mix1][data-mix1-page='home'] .slide.cs .t {
   letter-spacing: normal;
   font-weight: 400;
   font-variation-settings: 'wght' var(--heading-font-variation-settings);
+  color: #090909;
+  text-align: left;
+  margin: 0.55em 0 0;
+}
+
+html[data-mix1][data-mix1-page='home'] .slide.cs .d {
+  font-family: var(--font-primary), sans-serif;
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  letter-spacing: normal;
+  font-weight: 400;
+  color: #090909;
+  text-align: left;
+  margin: 0;
+  max-width: none;
 }
 
 html[data-mix1] .mix1-pxbtn,
@@ -205,9 +229,11 @@ html[data-mix1][data-mix1-page='home'] .tt-teaser {
   margin: 0;
   padding: 16px 36px;
   border: 0;
+  border-radius: 0;
   background: var(--mix1-ink);
   color: #fff;
   text-decoration: none;
+  text-transform: none;
   font-family: var(--font-primary), sans-serif;
   font-size: var(--fs-md);
   line-height: var(--lh-md);
@@ -225,6 +251,7 @@ html[data-mix1][data-mix1-page='home'] .btn:hover,
 html[data-mix1][data-mix1-page='home'] .cta .ctabtn:hover,
 html[data-mix1][data-mix1-page='home'] .tt-teaser:hover {
   background: var(--mix1-hover);
+  transform: none;
 }
 
 html[data-mix1] .mix1-pxbtn:focus-visible,
@@ -320,17 +347,22 @@ html[data-mix1][data-mix1-page='home'] .slide.cs .tags span {
   letter-spacing: 0.06em;
 }
 
-.mix1-nav__links {
+html[data-mix1][data-mix1-page='home'] .slide.cs .tags {
+  justify-content: flex-start;
+  margin: 14px 0 0;
+}
+
+html[data-mix1] .mix1-nav__links {
   display: flex;
   gap: 1.1rem;
 }
 
-.mix1-nav__links a {
+html[data-mix1] .mix1-nav__links a {
   position: relative;
 }
 
-.mix1-nav__links a.is-on::after,
-.mix1-nav__links a:hover::after {
+html[data-mix1] .mix1-nav__links a.is-on::after,
+html[data-mix1] .mix1-nav__links a:hover::after {
   content: '';
   position: absolute;
   left: 0;
