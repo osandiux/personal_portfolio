@@ -5,6 +5,7 @@ html[data-mix1] body::after {
 html[data-mix1] {
   cursor: auto;
   --html-font-size-v: 16;
+  --html-font-size: calc(var(--html-font-size-v) * 1px);
   --font-primary: 'Workoholics';
   --heading-font-variation-settings: 400;
   --fs-xxs: 0.75rem;
@@ -23,9 +24,14 @@ html[data-mix1] {
   --lh-navigation: 1.125;
   --fs-home-service-index: clamp(1rem, 100 * var(--html-font-size-v) * 1.125 / 1440 * 1vw, 1.125rem);
   --lh-home-service-index: 1;
-  --mix1-gutter: 56px;
+  --color-primary: #090909;
+  --color-primary-contrast: #fff;
+  --color-bg-light: #f9f8f5;
+  --safe-area: clamp(0.75rem, 100 * var(--html-font-size-v) * 1.5 / 1440 * 1vw, 1.5rem);
+  --gap: clamp(0.75rem, 100 * var(--html-font-size-v) * 1.25 / 1440 * 1vw, 1.25rem);
+  --mix1-gutter: var(--safe-area);
   --mix1-maxw: 1176px;
-  --mix1-ink: #0a0a0a;
+  --mix1-ink: var(--color-primary);
   --mix1-hover: #3b5bd9;
   --mix1-pxclip: polygon(
     10px 0,
@@ -75,14 +81,10 @@ html[data-mix1] {
   );
 }
 
-@media (max-width: 680px) {
-  html[data-mix1] {
-    --mix1-gutter: 28px;
-  }
-}
-
-html[data-mix1][data-wkhs] {
-  --safe-area: var(--mix1-gutter);
+html[data-mix1][data-mix1-page='home'] {
+  --paper: var(--color-bg-light);
+  --ink: var(--color-primary);
+  --gutter: var(--safe-area);
 }
 
 .page-fade:not(.is-in) .mix1-root * {
@@ -97,7 +99,7 @@ html[data-mix1] .mix1-nav {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  color: #0a0a0a;
+  color: var(--color-primary);
   pointer-events: none;
   font-family: var(--font-primary), sans-serif;
   font-size: var(--fs-navigation);
@@ -108,7 +110,7 @@ html[data-mix1] .mix1-nav {
 
 html[data-mix1] .mix1-nav a {
   pointer-events: all;
-  color: #0a0a0a;
+  color: var(--color-primary);
   text-decoration: none;
   font-family: inherit;
   font-size: inherit;
@@ -130,6 +132,12 @@ html[data-mix1][data-mix1-page='home'] .craft-root {
   font-feature-settings: normal;
   font-weight: 400;
   line-height: var(--lh-base);
+  background: var(--color-bg-light);
+  color: var(--color-primary);
+}
+
+html[data-mix1][data-mix1-page='home'] .hhead {
+  background: var(--color-bg-light);
 }
 
 html[data-mix1][data-mix1-page='home'] .hhead .hl {
@@ -178,6 +186,7 @@ html[data-mix1][data-mix1-page='home'] .caro .ch .pd {
   font-size: var(--fs-md);
   line-height: var(--lh-md);
   letter-spacing: normal;
+  color: var(--color-primary);
 }
 
 html[data-mix1][data-mix1-page='home'] .ed p.s,
@@ -187,6 +196,7 @@ html[data-mix1][data-mix1-page='home'] .ed .pts li {
   font-size: var(--fs-base);
   line-height: var(--lh-base);
   letter-spacing: normal;
+  color: var(--color-primary);
 }
 
 html[data-mix1][data-mix1-page='home'] .slide.cs {
@@ -201,7 +211,7 @@ html[data-mix1][data-mix1-page='home'] .slide.cs .t {
   letter-spacing: normal;
   font-weight: 400;
   font-variation-settings: 'wght' var(--heading-font-variation-settings);
-  color: #090909;
+  color: var(--color-primary);
   text-align: left;
   margin: 0.55em 0 0;
 }
@@ -212,7 +222,7 @@ html[data-mix1][data-mix1-page='home'] .slide.cs .d {
   line-height: var(--lh-base);
   letter-spacing: normal;
   font-weight: 400;
-  color: #090909;
+  color: var(--color-primary);
   text-align: left;
   margin: 0;
   max-width: none;
