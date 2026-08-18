@@ -15,6 +15,10 @@ html[data-wkhs] .split-text-shuffle__slot {
   display: inline-block;
 }
 
+html[data-wkhs] .split-text-shuffle__space {
+  white-space: pre;
+}
+
 html[data-wkhs] .split-text-shuffle__sizer {
   visibility: hidden;
 }

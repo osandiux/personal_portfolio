@@ -54,12 +54,22 @@ export function SplitTextShuffle({
     <span className="split-text-shuffle" aria-label={text}>
       {display.map((line, i) => (
         <span key={i} aria-hidden="true">
-          {Array.from(line).map((ch, ci) => (
-            <span className="split-text-shuffle__slot" key={`${i}-${ci}`}>
-              <span className="split-text-shuffle__sizer">{Array.from(rows[i])[ci] ?? ch}</span>
-              <span className="split-text-shuffle__glyph">{ch}</span>
-            </span>
-          ))}
+          {Array.from(line).map((ch, ci) => {
+            const finalCh = Array.from(rows[i])[ci] ?? ch;
+            if (finalCh === ' ') {
+              return (
+                <span className="split-text-shuffle__space" key={`${i}-${ci}`}>
+                  {' '}
+                </span>
+              );
+            }
+            return (
+              <span className="split-text-shuffle__slot" key={`${i}-${ci}`}>
+                <span className="split-text-shuffle__sizer">{finalCh}</span>
+                <span className="split-text-shuffle__glyph">{ch}</span>
+              </span>
+            );
+          })}
         </span>
       ))}
     </span>
