@@ -102,13 +102,6 @@ export const mix1About = {
   title: 'About',
   intro:
     'I build the conditions for great product work — org infrastructure, delivery systems, and cross-functional standards that make design a measurable driver of business outcomes across 0→1 builds and iterative product evolution.',
-  introLines: [
-    'I build the conditions for great product work — org',
-    'infrastructure, delivery systems, and cross-functional',
-    'standards that make design a measurable driver of',
-    'business outcomes across 0→1 builds and iterative',
-    'product evolution.',
-  ],
   teamIntro: 'Osandi Sekoú Robinson — product & design leader.',
   teamBody:
     'Startup founder turned design executive with 14 years building products and the orgs that ship them — across fintech, crypto, and consumer mobile.',

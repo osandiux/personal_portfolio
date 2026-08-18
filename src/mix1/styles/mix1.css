@@ -460,7 +460,7 @@ html[data-mix1][data-mix1-page='work'] .article__description {
 }
 
 .mix1-process-methods {
-  margin-top: 1rem;
+  margin-top: var(--s6);
   padding: 0;
   list-style: none;
   display: flex;
@@ -470,20 +470,45 @@ html[data-mix1][data-mix1-page='work'] .article__description {
   line-height: var(--lh-xs);
 }
 
+html[data-mix1] .vision__end figure,
+html[data-mix1] .vision__end .picture {
+  --aspect-ratio: 1603 / 2400;
+  aspect-ratio: 1603 / 2400;
+  width: 100%;
+}
+
+html[data-mix1] .hero-agency__intro .split-text-shuffle {
+  overflow: visible;
+}
+
+html[data-mix1] .hero-agency__intro .split-text-shuffle > span {
+  white-space: normal;
+}
+
+html[data-mix1][data-media-blocks] .video-player__video {
+  background-color: var(--media-block, #3b5bd9);
+}
+
+html[data-mix1][data-media-blocks] .video-player__video video {
+  opacity: 0;
+}
+
 .mix1-contact {
-  padding: 3rem var(--mix1-gutter) 5rem;
-  max-width: var(--mix1-maxw);
-  margin: 0 auto;
+  padding: var(--block-vpadding) var(--safe-area);
   font-size: var(--fs-md);
   line-height: var(--lh-md);
 }
 
-.mix1-contact .mix1-pxbtn {
-  margin: 1.25rem 0 1.5rem;
-}
-
 .mix1-contact p + p {
   margin-top: 0.75rem;
+}
+
+.mix1-contact p:nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+.mix1-contact .mix1-pxbtn + p {
+  margin-top: 2rem;
 }
 
 .mix1-contact a:not(.mix1-pxbtn) {

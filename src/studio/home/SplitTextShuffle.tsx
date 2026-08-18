@@ -55,7 +55,10 @@ export function SplitTextShuffle({
       {display.map((line, i) => (
         <span key={i} aria-hidden="true">
           {Array.from(line).map((ch, ci) => (
-            <span key={`${i}-${ci}`}>{ch}</span>
+            <span className="split-text-shuffle__slot" key={`${i}-${ci}`}>
+              <span className="split-text-shuffle__sizer">{Array.from(rows[i])[ci] ?? ch}</span>
+              <span className="split-text-shuffle__glyph">{ch}</span>
+            </span>
           ))}
         </span>
       ))}

@@ -30,7 +30,7 @@ export function AboutPage() {
               <TextFractured text={mix1About.title} />
             </div>
             <p className="hero-agency__intro">
-              <SplitTextShuffle text={mix1About.intro} lines={[...mix1About.introLines]} />
+              <SplitTextShuffle text={mix1About.intro} />
             </p>
           </div>
         </div>
@@ -151,7 +151,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <Mix1Contact lead />
+      <Mix1Contact />
     </div>
   );
 }

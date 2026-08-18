@@ -54,12 +54,16 @@ function colorFor(src: string, fallbackIndex: number) {
 function paint(on: boolean) {
   const media = [...document.querySelectorAll('img, video')].filter(isMedia);
   media.forEach((el, index) => {
+    const wrapper = el instanceof HTMLVideoElement ? el.closest<HTMLElement>('.video-player__video') : null;
     if (on) {
       const src = el instanceof HTMLVideoElement ? el.currentSrc || el.src : el.currentSrc || el.src;
-      el.style.setProperty('--media-block', colorFor(src, index));
+      const color = colorFor(src, index);
+      el.style.setProperty('--media-block', color);
+      wrapper?.style.setProperty('--media-block', color);
       if (el instanceof HTMLVideoElement) el.pause();
     } else {
       el.style.removeProperty('--media-block');
+      wrapper?.style.removeProperty('--media-block');
       if (el instanceof HTMLVideoElement && el.hasAttribute('autoplay')) {
         void el.play().catch(() => undefined);
       }

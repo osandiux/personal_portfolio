@@ -1,14 +1,10 @@
 import { DECK, EMAIL, LINKEDIN, mix1About } from './content';
 
-export function Mix1Contact({ lead = false }: { lead?: boolean }) {
+export function Mix1Contact() {
   return (
     <section className="mix1-contact">
-      {lead ? (
-        <>
-          <p>{mix1About.seeking}</p>
-          <p>{mix1About.contactLine}</p>
-        </>
-      ) : null}
+      <p>{mix1About.seeking}</p>
+      <p>{mix1About.contactLine}</p>
       <a className="mix1-pxbtn" href={`mailto:${EMAIL}`}>
         Get in touch
       </a>

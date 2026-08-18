@@ -10,6 +10,20 @@ html[data-wkhs] .split-text-shuffle > span {
   white-space: nowrap;
 }
 
+html[data-wkhs] .split-text-shuffle__slot {
+  position: relative;
+  display: inline-block;
+}
+
+html[data-wkhs] .split-text-shuffle__sizer {
+  visibility: hidden;
+}
+
+html[data-wkhs] .split-text-shuffle__glyph {
+  position: absolute;
+  inset: 0;
+}
+
 html[data-wkhs] .figure-stripes {
   position: relative;
 }
