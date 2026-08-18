@@ -73,7 +73,6 @@ export function WireframeProvider({ children }: { children: ReactNode }) {
   return (
     <WireframeContext.Provider value={value}>
       {children}
-      {pathname !== '/' ? <WireframeToggle compact /> : null}
     </WireframeContext.Provider>
   );
 }

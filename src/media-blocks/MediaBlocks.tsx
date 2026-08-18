@@ -112,7 +112,7 @@ export function MediaBlocksToggle({ compact = false }: { compact?: boolean }) {
       aria-label="Replace images and videos with color blocks"
       onClick={toggle}
     >
-      <span className="media-blocks-toggle__label">{compact ? (on ? 'BLK' : 'IMG') : 'Blocks'}</span>
+      <span className="media-blocks-toggle__label">{compact ? (on ? 'Block' : 'Image') : 'Blocks'}</span>
       <span className="media-blocks-toggle__track" aria-hidden="true">
         <span className="media-blocks-toggle__thumb" />
       </span>
