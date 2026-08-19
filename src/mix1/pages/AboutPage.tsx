@@ -112,21 +112,23 @@ export function AboutPage() {
             <div className="vision-slider__track" ref={trackRef}>
               {mix1About.process.map((slide) => (
                 <article key={slide.name} className="vision__slide">
-                  <div className="vision__start">
-                    <header className="vision__slide-header">
-                      <h3 className="heading heading--xl">{slide.name}</h3>
-                    </header>
-                    <p className="vision__slide-description">{slide.copy}</p>
-                    <ul className="mix1-process-methods">
-                      {slide.methods.map((method) => (
-                        <li key={method}>{method}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="vision__end">
-                    <figure>
-                      <Picture src={slide.image} alt="" className="picture--cover" />
-                    </figure>
+                  <div className="mix1-vision__group">
+                    <div className="vision__start">
+                      <header className="vision__slide-header">
+                        <h3 className="heading heading--xl">{slide.name}</h3>
+                      </header>
+                      <p className="vision__slide-description">{slide.copy}</p>
+                      <ul className="mix1-process-methods">
+                        {slide.methods.map((method) => (
+                          <li key={method}>{method}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="vision__end">
+                      <figure>
+                        <Picture src={slide.image} alt="" className="picture--cover" />
+                      </figure>
+                    </div>
                   </div>
                 </article>
               ))}
