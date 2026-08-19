@@ -92,8 +92,6 @@ for (const file of files) {
   }
 }
 
-const checked = seen.size + missing.length;
-
 if (missing.length === 0) {
   console.log(`✓ asset check passed — scanned ${files.length} files, every referenced asset resolves under public/`);
   process.exit(0);
