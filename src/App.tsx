@@ -29,6 +29,7 @@ import { HomePage as Mix1HomePage } from './mix1/pages/HomePage';
 import { WorkPage as Mix1WorkPage } from './mix1/pages/WorkPage';
 import { AboutPage as Mix1AboutPage } from './mix1/pages/AboutPage';
 import { BuildPage as Mix1BuildPage } from './mix1/pages/BuildPage';
+import { ProjectPage as Mix1ProjectPage } from './mix1/pages/ProjectPage';
 import { POISED_BASE } from './content/site';
 import { MediaBlocksProvider } from './media-blocks/MediaBlocks';
 import { WireframeProvider } from './wireframe/Wireframe';
@@ -79,6 +80,7 @@ function AppRoutes() {
         <Route path="mix1" element={<Mix1Shell />}>
           <Route index element={<Mix1HomePage />} />
           <Route path="work" element={<Mix1WorkPage />} />
+          <Route path="work/:slug" element={<Mix1ProjectPage />} />
           <Route path="about" element={<Mix1AboutPage />} />
           <Route path="build" element={<Mix1BuildPage />} />
         </Route>

@@ -1,4 +1,5 @@
-import { mix1Work } from '../content';
+import { Link } from 'react-router-dom';
+import { mix1Work, mix1Projects } from '../content';
 import { Mix1Contact } from '../Contact';
 import { FigureStripes } from '../../studio/home/FigureStripes';
 import { SplitTextShuffle } from '../../studio/home/SplitTextShuffle';
@@ -39,21 +40,37 @@ export function WorkPage() {
         </div>
 
         <div className="list-article list-article--mode-default">
-          {mix1Work.items.map((item, index) => (
-            <article
-              key={item.name}
-              className={`article ${index % 2 === 0 ? 'article--header-dist-row' : 'article--header-dist-column'}`}
-            >
-              <FigureStripes src={item.image} alt={item.name} className="article__figure" />
-              <header>
-                <h2 className="heading heading--md article__heading">{item.name}</h2>
-                <p className="article__description">
-                  <strong>{item.headline}. </strong>
-                  {item.desc}
-                </p>
-              </header>
-            </article>
-          ))}
+          {mix1Work.items.map((item, index) => {
+            const project = mix1Projects.find((p) => p.name === item.name);
+            const inner = (
+              <>
+                <FigureStripes src={item.image} alt={item.name} className="article__figure" />
+                <header>
+                  <h2 className="heading heading--md article__heading">{item.name}</h2>
+                  <p className="article__description">
+                    <strong>{item.headline}. </strong>
+                    {item.desc}
+                  </p>
+                </header>
+              </>
+            );
+            return project ? (
+              <Link
+                key={item.name}
+                to={`/mix1/work/${project.slug}`}
+                className={`article ${index % 2 === 0 ? 'article--header-dist-row' : 'article--header-dist-column'}`}
+              >
+                {inner}
+              </Link>
+            ) : (
+              <article
+                key={item.name}
+                className={`article ${index % 2 === 0 ? 'article--header-dist-row' : 'article--header-dist-column'}`}
+              >
+                {inner}
+              </article>
+            );
+          })}
         </div>
       </div>
       <Mix1Contact />
