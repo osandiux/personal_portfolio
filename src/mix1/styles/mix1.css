@@ -290,7 +290,7 @@ html[data-mix1] .vision__nav {
 
 @media screen and (min-width: 768px) {
   html[data-mix1] .vision__nav {
-    top: 0;
+    top: var(--wkhs-header-height);
   }
 }
 
@@ -311,14 +311,12 @@ html[data-mix1] .mix1-vision__group {
 
 html[data-mix1] .vision__end figure {
   margin-top: 0;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-inline: 8px;
 }
 
 @media screen and (min-width: 768px) {
   html[data-mix1] .vision__end figure {
-    padding-left: 0;
-    padding-right: 0;
+    padding-inline: 0;
   }
 }
 
