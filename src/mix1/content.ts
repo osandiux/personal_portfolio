@@ -351,3 +351,395 @@ export const mix1Build = {
     href: '/mix1/work',
   },
 } as const;
+
+export const mix1Projects = [
+  {
+    slug: 'mezo-clay',
+    name: 'Mezo Clay Design System',
+    client: 'Mezo / Thesis',
+    sector: 'Crypto',
+    year: '2023',
+    service: 'Systems',
+    readTime: 4,
+    image: '/images/portfolio/mock-thesis-systems.png',
+    headline: 'Converting design debt into product infrastructure',
+    intro:
+      'What starts as a styling override always becomes a system problem. At Mezo, three product phases — legacy, testnet, mainnet — had accumulated enough inconsistency to slow every team touching the product. The work was infrastructure first, interface second.',
+    featuredSections: [
+      {
+        lead: 'A design system is only as good as the governance behind it.',
+        richTitle: 'Building the single source of truth',
+        body: [
+          "Led the full migration to Mezo Clay — partnering with Uber Base as the foundation and building a WCAG 2.2-compliant React library purpose-built for the Thesis BitcoinFi suite. Managed a direct report and an engineering contributor from execution through deployment.",
+          "The post-launch audit identified premature styling as the primary implementation bottleneck — a pattern that shows up in every fast-moving crypto team. The fix wasn't more components; it was clearer rules about when to override them.",
+        ],
+        images: ['/images/portfolio/mock-thesis-systems.png', '/images/portfolio/mezo-hero.png'],
+      },
+      {
+        lead: '2,000+ variants. 50+ base components. One source of truth.',
+        richTitle: 'Scale, compliance, and delivery',
+        body: [
+          "Partnered with the contributing designer to set quality standards and pattern library conventions. Built and tested every variant against the Mezo product surfaces — deposit, borrow, wallet, explore — so each could ship without a separate design review cycle.",
+          "The system became the infrastructure behind $322M in testnet deposits, 154K transactions, and $151M TVL at mainnet, peaking at $200M+.",
+        ],
+        images: ['/images/portfolio/mezo-wallet.png', '/images/portfolio/mezo-explore.png', '/images/portfolio/mezo-borrow.png'],
+      },
+      {
+        lead: 'Design debt compounds silently until it stops shipping features.',
+        richTitle: 'What the audit revealed',
+        body: [
+          "A 70% component integration rate at post-launch audit sounds like success. It is — but the 30% that wasn't integrated told the real story: premature styling decisions made during testnet were being maintained as one-off overrides instead of being resolved back into the system.",
+          "The governance decisions informed by that audit — when to override, when to extend, when to propose a new component — were as important as the components themselves.",
+        ],
+        images: ['/images/portfolio/mock-thesis-systems.png', '/images/portfolio/mezo-borrow.png'],
+      },
+    ],
+    mockups: [
+      '/images/portfolio/mock-thesis-systems.png',
+      '/images/portfolio/mezo-hero.png',
+      '/images/portfolio/mezo-wallet.png',
+    ],
+    closingLead: 'Infrastructure that outlasts the sprint cycle is the difference between a design system and a component dump.',
+    stats: [
+      { name: 'Component integration', description: 'Post-launch audit established the baseline for system governance decisions.', value: '70%' },
+      { name: 'TVL at mainnet peak', description: 'The system shipped with every product surface that contributed to Mezo growth.', value: '$200M+' },
+      { name: 'Testnet deposits', description: 'Built on the infrastructure shipped during this engagement.', value: '$322M' },
+      { name: 'Sprint completion', description: 'Maintained across the engagement from system build through deployment.', value: '98%' },
+    ],
+    tech: [
+      { k: 'Foundation', v: 'Uber Base → Mezo Clay' },
+      { k: 'Implementation', v: 'React + WCAG 2.2' },
+      { k: 'Scale', v: '2,000+ variants · 50+ components' },
+    ],
+    tags: ['Design systems', 'Lead', 'Crypto', 'WCAG 2.2', 'React', 'Component library'],
+    credits: [
+      { role: 'Design lead', name: 'Osandi Robinson' },
+      { role: 'Contributing designer', name: 'Poised LLC' },
+      { role: 'Engineering', name: 'Thesis engineering' },
+    ],
+    clientCredits: [
+      { role: 'Client', name: 'Mezo / Thesis' },
+      { role: 'PM', name: 'Thesis product team' },
+    ],
+  },
+  {
+    slug: 'deposit-on-mezo',
+    name: 'Deposit on Mezo',
+    client: 'Mezo / Thesis',
+    sector: 'Crypto',
+    year: '2023',
+    service: 'Product',
+    readTime: 3,
+    image: '/images/portfolio/project-hero-coinbase.png',
+    headline: "Improving the deposit flow that unlocked Mezo's liquidity",
+    intro:
+      "Depositing Bitcoin to Mezo wasn't a standard transfer. Users were bridging assets across chains into a protocol where a wrong address meant permanent loss of funds. The bar for clarity wasn't high — it was non-negotiable.",
+    featuredSections: [
+      {
+        lead: 'Research confirmed the flow was broken before we touched a pixel.',
+        richTitle: 'Diagnosing the problem',
+        body: [
+          "The existing deposit flow was perceived as risky and confusing — no upfront context, no network guidance, no unambiguous success state. Users had to infer what was happening at every step.",
+          "The redesign introduced upfront deposit instructions before any commitment, surfaced network context and minimum thresholds early, and delivered success states specific enough that users knew their funds had arrived safely — not just that a transaction had fired.",
+        ],
+        images: ['/images/portfolio/project-hero-coinbase.png', '/images/portfolio/project-after-coinbase.png'],
+      },
+      {
+        lead: 'The deposit flow became the primary on-ramp for all of Mezo\'s liquidity.',
+        richTitle: 'Outcome and downstream impact',
+        body: [
+          "Vaults, pools, and rewards all depended on a working deposit experience. The redesign unblocked each of them — contributing directly to Mezo's growth to $200M+ TVL.",
+          "Sprint completion held at 98% across the engagement, which meant the research and design process ran fast enough to stay ahead of engineering.",
+        ],
+        images: ['/images/portfolio/mezo-hero.png', '/images/portfolio/mezo-explore.png'],
+      },
+    ],
+    mockups: ['/images/portfolio/project-hero-coinbase.png', '/images/portfolio/project-after-coinbase.png', '/images/portfolio/mezo-hero.png'],
+    closingLead: 'Clarity at the point of commitment is not a UX nicety in a protocol where a wrong address means permanent loss.',
+    stats: [
+      { name: 'TVL at mainnet', description: 'Deposit flow was the primary on-ramp for all Mezo liquidity growth.', value: '$200M+' },
+      { name: 'Active users', description: 'Reached at mainnet launch, enabled by a deposit experience that worked.', value: '25K+' },
+      { name: 'Sprint completion', description: 'Maintained across the engagement from research through handoff.', value: '98%' },
+    ],
+    tech: [
+      { k: 'Platform', v: 'Mobile + Web' },
+      { k: 'Method', v: 'Research-led redesign' },
+      { k: 'Protocol', v: 'Bitcoin bridge · cross-chain' },
+    ],
+    tags: ['Product design', 'Crypto', 'Fintech', 'Research', 'Mobile', 'Web'],
+    credits: [
+      { role: 'Product design', name: 'Osandi Robinson' },
+      { role: 'Engineering', name: 'Thesis engineering' },
+    ],
+    clientCredits: [
+      { role: 'Client', name: 'Mezo / Thesis' },
+      { role: 'PM', name: 'Thesis product team' },
+    ],
+  },
+  {
+    slug: 'borrow-musd',
+    name: 'Borrow MUSD on Mezo',
+    client: 'Mezo / Thesis',
+    sector: 'Crypto',
+    year: '2023',
+    service: 'Product',
+    readTime: 3,
+    image: '/images/portfolio/project-01-borrow.png',
+    headline: 'Making high-stakes borrowing feel safe, not complex',
+    intro:
+      'MUSD borrowing required users to hold collateralization ratio, liquidation threshold, and variable APR in their heads simultaneously. None of those concepts have mainstream equivalents. The design problem was weight, not simplification.',
+    featuredSections: [
+      {
+        lead: 'Consequential decisions need to feel consequential — not overwhelming.',
+        richTitle: 'Progressive disclosure as the primary tool',
+        body: [
+          "Progressive disclosure let us surface complexity only when it was relevant to the decision at hand. A user setting their collateral ratio doesn't need to see APR mechanics at the same moment.",
+          "Error handling was consolidated to a single inline signal. Before the redesign, errors appeared in multiple places with inconsistent framing — adding cognitive load at the worst possible moment.",
+        ],
+        images: ['/images/portfolio/project-01-borrow.png', '/images/portfolio/project-02-loan.png'],
+      },
+      {
+        lead: 'Benchmarking against established DeFi patterns reduced the learning curve.',
+        richTitle: 'Expanding the addressable market',
+        body: [
+          "The redesign borrowed interaction models from familiar financial interfaces — not to hide the complexity of DeFi, but to lower the entry cost for users coming from traditional finance.",
+          "The borrow flow shipped as part of the mainnet launch suite, contributing to Mezo's $200M+ TVL and supporting expansion into a broader addressable market beyond early adopters.",
+        ],
+        images: ['/images/portfolio/project-03-wallet.png', '/images/portfolio/project-04-marketplace.png'],
+      },
+    ],
+    mockups: ['/images/portfolio/project-01-borrow.png', '/images/portfolio/project-02-loan.png', '/images/portfolio/project-03-wallet.png'],
+    closingLead: 'The job isn\'t to make DeFi simple. It\'s to make consequential decisions feel proportionally weighted.',
+    stats: [
+      { name: 'TVL at mainnet', description: 'Borrow flow contributed to Mezo\'s liquidity growth alongside deposit and wallet.', value: '$200M+' },
+      { name: 'Active users', description: 'Reached at mainnet launch across all Mezo product surfaces.', value: '25K+' },
+    ],
+    tech: [
+      { k: 'Platform', v: 'Mobile + Web' },
+      { k: 'Method', v: 'Progressive disclosure · benchmarking' },
+      { k: 'Protocol', v: 'MUSD collateralized borrowing' },
+    ],
+    tags: ['Product design', 'Crypto', 'DeFi', 'Research', 'Progressive disclosure'],
+    credits: [
+      { role: 'Product design', name: 'Osandi Robinson' },
+      { role: 'Engineering', name: 'Thesis engineering' },
+    ],
+    clientCredits: [
+      { role: 'Client', name: 'Mezo / Thesis' },
+      { role: 'PM', name: 'Thesis product team' },
+    ],
+  },
+  {
+    slug: 'blockfi-mobile',
+    name: 'BlockFi Mobile',
+    client: 'BlockFi',
+    sector: 'Fintech',
+    year: '2021',
+    service: 'Leadership',
+    readTime: 4,
+    image: '/images/portfolio/gf-blockfi.jpg',
+    headline: 'Redefining mobile trading to drive 200%+ transaction volume in 90 days',
+    intro:
+      "BlockFi's mobile trading had a surface problem and a structural one. USD denomination was the thing people complained about. The real issue was a flow built around what engineering found easiest to implement, not how traders actually think.",
+    featuredSections: [
+      {
+        lead: 'Pushing back on the brief was the first design decision.',
+        richTitle: 'Reframing the problem',
+        body: [
+          "Product benchmarking and heuristic evaluation surfaced a pattern no one had named yet: the segmented control forcing users to choose denomination before intent was the single biggest source of drop-off. Moving buy/sell intent before the amount screen eliminated it.",
+          "Recurring trades had been buried at the summary screen — three steps too late. Surfacing them earlier required a structural change to the flow that the original brief hadn't scoped. Both decisions were validated through user testing before implementation.",
+        ],
+        images: ['/images/portfolio/gf-blockfi.jpg', '/images/portfolio/mock-bbu.png'],
+      },
+      {
+        lead: 'Trades grew 200%+ in 90 days. Mobile outpaced web for the first time.',
+        richTitle: 'Measuring the impact',
+        body: [
+          "The same changes were applied consistently across web and mobile — not as a one-off mobile fix but as a rethought trading interaction model. The consistency mattered as much as the individual improvements.",
+          "The result contributed directly to BlockFi's growth in service of 225K+ clients and $50M monthly revenue — and validated the case for design having a seat at product strategy decisions, not just execution.",
+        ],
+        images: ['/images/portfolio/gf-blockfi.jpg', '/images/portfolio/gf-fennel.png'],
+      },
+    ],
+    mockups: ['/images/portfolio/gf-blockfi.jpg', '/images/portfolio/mock-bbu.png', '/images/portfolio/gf-fennel.png'],
+    closingLead: 'The brief was too small. Pushing back on it was the design work.',
+    stats: [
+      { name: 'Trades in 90 days', description: 'Mobile outpaced web-based trades for the first time following launch.', value: '+200%' },
+      { name: 'Monthly revenue', description: 'BlockFi revenue at time of engagement, grown in part through trading volume.', value: '$50M' },
+      { name: 'Clients served', description: 'Active BlockFi users at time of mobile trading redesign launch.', value: '225K+' },
+    ],
+    tech: [
+      { k: 'Platform', v: 'iOS + Android + Web' },
+      { k: 'Method', v: 'Benchmarking · user testing' },
+      { k: 'Role', v: 'Director of Product Design' },
+    ],
+    tags: ['Lead', 'Fintech', 'Mobile', 'iOS', 'Android', 'Director'],
+    credits: [
+      { role: 'Design director', name: 'Osandi Robinson' },
+      { role: 'Product designers', name: 'BlockFi design team' },
+      { role: 'Engineering', name: 'BlockFi engineering' },
+    ],
+    clientCredits: [
+      { role: 'Client', name: 'BlockFi' },
+      { role: 'PM', name: 'BlockFi product team' },
+    ],
+  },
+  {
+    slug: 'cash-native-app',
+    name: 'C@SH Native App',
+    client: 'a16z Crypto portfolio',
+    sector: 'Crypto',
+    year: '2022',
+    service: 'Leadership',
+    readTime: 3,
+    image: '/images/portfolio/gf-cash.png',
+    headline: 'Zero-to-one product design that informed a strategic pivot',
+    intro:
+      "Building a design function before the first hire means every decision compounds. The component library you build becomes the product. The research you run becomes the strategy.",
+    featuredSections: [
+      {
+        lead: 'A branded component library before a single internal designer was hired.',
+        richTitle: 'Building the function from zero',
+        body: [
+          "Customized Uber Base into a branded library that doubled engineering speed and gave the team a shared vocabulary to build with from day one. The VC principal set a high bar — a premium product resonating with an urban audience — and we met it, validated through affinity testing.",
+          "Full light and dark mode shipped. The same research surfaced a harder finding: the market hadn't matured enough for a social wallet.",
+        ],
+        images: ['/images/portfolio/gf-cash.png', '/images/portfolio/mock-vinyl-crate.png'],
+      },
+      {
+        lead: "The research that shaped the pivot preserved capital that would otherwise have been spent.",
+        richTitle: 'When research becomes strategy',
+        body: [
+          "Identifying insufficient market traction before over-investing in the product direction was the most valuable output of the engagement. The design foundation remained intact for the company's next direction.",
+          "Building 0→1 means the research has to do double duty — validating the product and validating the strategy. Here, it did both.",
+        ],
+        images: ['/images/portfolio/mock-a16z.png', '/images/portfolio/gf-cash.png'],
+      },
+    ],
+    mockups: ['/images/portfolio/gf-cash.png', '/images/portfolio/mock-a16z.png', '/images/portfolio/mock-vinyl-crate.png'],
+    closingLead: 'The most valuable deliverable was the research that stopped us from building the wrong thing.',
+    stats: [
+      { name: 'Design function', description: 'Built from zero before the first internal design hire.', value: '0 → 1' },
+      { name: 'Engineering speed', description: 'Doubled by shipping a branded component library on day one.', value: '2×' },
+    ],
+    tech: [
+      { k: 'Foundation', v: 'Uber Base → custom library' },
+      { k: 'Platform', v: 'iOS + Android' },
+      { k: 'Method', v: 'Affinity testing · 0→1 build' },
+    ],
+    tags: ['0→1', 'Lead', 'Crypto', 'Mobile', 'iOS', 'Android', 'Design systems'],
+    credits: [
+      { role: 'Design lead', name: 'Osandi Robinson' },
+      { role: 'Engineering', name: 'C@SH engineering' },
+    ],
+    clientCredits: [
+      { role: 'Client', name: 'a16z Crypto portfolio' },
+      { role: 'PM', name: 'C@SH product team' },
+    ],
+  },
+  {
+    slug: 'easi-food-delivery',
+    name: 'EASI Food Delivery',
+    client: 'EASI',
+    sector: 'Consumer',
+    year: '2020',
+    service: 'Consultant',
+    readTime: 4,
+    image: '/images/portfolio/gf-easi.jpg',
+    headline: 'Rearchitecting EASI to win a second audience — and a $500M valuation',
+    intro:
+      "EASI had a real market and a broken product. A sub-3.0 App Store rating and frequent crashes weren't edge cases — they were capping the total addressable market. The problem wasn't the audience; it was the experience they were being asked to tolerate.",
+    featuredSections: [
+      {
+        lead: 'Benchmarking built the stakeholder confidence that unlocked the redesign.',
+        richTitle: 'Building the case for change',
+        body: [
+          "Six weeks. Skeptical stakeholders. A team that had shipped the original product and wasn't sure anything needed to change. Benchmarking gave us a shared language for what 'good' looked like — not opinions, but patterns from products the team already respected.",
+          "Once the case was made, the redesign ran in parallel with engineering's re-architecture — prototyping and testing each decision before handoff, so no one was waiting on anyone.",
+        ],
+        images: ['/images/portfolio/gf-easi.jpg', '/images/portfolio/mock-ubiquiti.png'],
+      },
+      {
+        lead: 'App Store rating: below 3.0 to 4.5. Acquired for $500M+.',
+        richTitle: 'The numbers that followed',
+        body: [
+          "EASI surpassed 1M+ users and reached a $500M+ valuation. HungryPanda's acquisition rationale in 2022 mirrored the market strategy the redesign was built around — expanding from diaspora communities into a broader urban audience.",
+          "The six-week timeline wasn't a constraint. It was the discipline that kept the scope focused on what would move the numbers.",
+        ],
+        images: ['/images/portfolio/gf-easi.jpg', '/images/portfolio/gf-blinkist.jpg'],
+      },
+    ],
+    mockups: ['/images/portfolio/gf-easi.jpg', '/images/portfolio/gf-blinkist.jpg', '/images/portfolio/mock-ubiquiti.png'],
+    closingLead: 'A 4.5-star rating is a market signal. The $500M acquisition validated the strategy the redesign was built around.',
+    stats: [
+      { name: 'App Store rating', description: 'Climbed from below 3.0 to 4.5 stars following the redesign launch.', value: '3.0→4.5' },
+      { name: 'Users', description: 'EASI passed 1M+ users after the redesign expanded its addressable market.', value: '1M+' },
+      { name: 'Valuation at acquisition', description: 'HungryPanda acquired EASI in 2022 for a reported $500M+.', value: '$500M+' },
+    ],
+    tech: [
+      { k: 'Platform', v: 'iOS + Android' },
+      { k: 'Method', v: 'Benchmarking · prototype testing' },
+      { k: 'Timeline', v: '6 weeks' },
+    ],
+    tags: ['Consultant', 'Consumer', 'Mobile', 'iOS', 'Android', 'Benchmarking'],
+    credits: [
+      { role: 'Design consultant', name: 'Osandi Robinson' },
+      { role: 'Engineering', name: 'EASI engineering' },
+    ],
+    clientCredits: [
+      { role: 'Client', name: 'EASI' },
+      { role: 'PM', name: 'EASI product team' },
+    ],
+  },
+  {
+    slug: 'krisp-ai',
+    name: 'Krisp AI',
+    client: 'Krisp',
+    sector: 'AI',
+    year: '2020',
+    service: 'Consultant',
+    readTime: 3,
+    image: '/images/portfolio/gf-krisp.jpg',
+    headline: "Product innovation for Krisp.ai's noise cancelling desktop application",
+    intro:
+      "Krisp had strong utility and a dated interface. The noise cancellation worked. The desktop experience hadn't kept pace with what AI-native software was starting to look like — and that gap was starting to matter.",
+    featuredSections: [
+      {
+        lead: 'A modern UI system, not a reskin.',
+        richTitle: 'Redesigning for scale',
+        body: [
+          "Engaged as principal design consultant, I redesigned the application around a cohesive UI system — introducing branded components to accelerate implementation, reduce design debt, and establish a visual foundation capable of scaling with the product.",
+          "The work ran until COVID-19 created market uncertainty across the consumer audio space. What was scoped as a foundation for growth became a foundation for a pivot.",
+        ],
+        images: ['/images/portfolio/gf-krisp.jpg', '/images/portfolio/mock-early-flow.png'],
+      },
+      {
+        lead: 'Krisp pivoted into meeting intelligence. The structural work held.',
+        richTitle: 'When the brief changes',
+        body: [
+          "The shift toward enterprise aesthetics and recording features was a different design brief than the original work was built to serve. But the component layer and the system thinking behind it gave the team a structured starting point for that evolution.",
+          "That's the value of system work over surface work — it outlives the original brief.",
+        ],
+        images: ['/images/portfolio/gf-krisp.jpg', '/images/portfolio/mock-apple-genius.png'],
+      },
+    ],
+    mockups: ['/images/portfolio/gf-krisp.jpg', '/images/portfolio/mock-early-flow.png', '/images/portfolio/mock-apple-genius.png'],
+    closingLead: 'System work outlives the brief it was built for. That\'s the difference between components and infrastructure.',
+    stats: [
+      { name: 'Engagement type', description: 'Engaged as principal design consultant for the desktop UI system redesign.', value: 'Principal' },
+    ],
+    tech: [
+      { k: 'Platform', v: 'Desktop (macOS + Windows)' },
+      { k: 'Method', v: 'UI system · component library' },
+    ],
+    tags: ['Consultant', 'AI', 'Desktop', 'Design systems', 'macOS', 'Windows'],
+    credits: [
+      { role: 'Design consultant', name: 'Osandi Robinson' },
+      { role: 'Engineering', name: 'Krisp engineering' },
+    ],
+    clientCredits: [
+      { role: 'Client', name: 'Krisp' },
+      { role: 'PM', name: 'Krisp product team' },
+    ],
+  },
+] as const;

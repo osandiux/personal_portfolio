@@ -11,6 +11,7 @@ import './styles/mix1.css';
 function mix1Page(pathname: string) {
   if (pathname.includes('/build')) return 'build';
   if (pathname.includes('/about')) return 'about';
+  if (/\/mix1\/work\/.+/.test(pathname)) return 'work-detail';
   if (pathname.includes('/work')) return 'work';
   return 'home';
 }
@@ -71,7 +72,7 @@ export function Mix1Shell() {
     document.title =
       page === 'about'
         ? 'About — Osandi Robinson'
-        : page === 'work'
+        : page === 'work' || page === 'work-detail'
           ? 'Experiences — Osandi Robinson'
           : page === 'build'
             ? 'Build — Osandi Robinson'
