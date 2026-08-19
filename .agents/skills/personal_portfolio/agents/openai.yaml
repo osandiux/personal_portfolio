@@ -1,0 +1,6 @@
+interface:
+  display_name: "Personal Portfolio"
+  short_description: "Repo-specific patterns and workflows for personal_portfolio"
+  default_prompt: "Use the personal_portfolio repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
