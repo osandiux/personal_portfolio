@@ -284,6 +284,44 @@ html[data-mix1] .mix1-pxbtn--chip {
   clip-path: var(--mix1-pxclip-sm);
 }
 
+html[data-mix1] .vision__nav {
+  top: calc(var(--wkhs-header-height) + 1rem);
+}
+
+@media screen and (min-width: 768px) {
+  html[data-mix1] .vision__nav {
+    top: 0;
+  }
+}
+
+html[data-mix1] .mix1-vision__group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  grid-column: 1 / -1;
+  padding-top: calc(var(--wkhs-header-height) + 3rem);
+}
+
+@media screen and (min-width: 768px) {
+  html[data-mix1] .mix1-vision__group {
+    display: contents;
+    padding-top: 0;
+  }
+}
+
+html[data-mix1] .vision__end figure {
+  margin-top: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  html[data-mix1] .vision__end figure {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 html[data-mix1] .vision__nav-button {
   opacity: 0.35;
 }

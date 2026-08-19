@@ -5,7 +5,7 @@ export function Mix1Nav() {
   return (
     <header className="mix1-nav">
       <NavLink to="/mix1" className="mix1-nav__mark" end>
-        Osandi
+        O§R
       </NavLink>
       <nav className="mix1-nav__links">
         {mix1Nav.map((item) => (
