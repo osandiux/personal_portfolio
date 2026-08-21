@@ -1223,6 +1223,38 @@ html[data-mix1] .block-media.block-media--ctx-project.block-media--cols-2 {
   }
 }
 
+/* ── Block Motion Demos ─────────────────────────────────── */
+
+html[data-mix1] .block-motion-demos__inner {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  column-gap: var(--gap);
+  row-gap: var(--gap);
+}
+
+html[data-mix1] .block-motion-demos__item {
+  grid-column: span var(--cols);
+}
+
+@media screen and (min-width: 768px) {
+  html[data-mix1] .block-motion-demos__item {
+    grid-column: span 4;
+  }
+}
+
+html[data-mix1] .block-motion-demos__video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+html[data-mix1] .block-motion-demos__label {
+  margin: 0.75em 0 0;
+  color: var(--color-secondary, #666);
+}
+
 /* ── Block Mockups ──────────────────────────────────────── */
 
 html[data-mix1] .block-mockups {

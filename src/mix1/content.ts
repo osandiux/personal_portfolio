@@ -95,6 +95,14 @@ export const mix1Work = {
       service: 'consultant',
       sector: 'ai',
     },
+    {
+      name: 'Zalando Stories',
+      headline: 'One motion language for a platform built on a proven bet',
+      desc: 'Zalando’s majority stake in Highsnobiety had already proven the model — 80+ curated drops reaching 7M+ unique users before the platform had a name. Turning that into a permanent feature meant solving motion first: every editorial format needed transitions that felt consistent across app and web, and motion was still a pile of one-off files. Led a design-sprint week to define a platform-agnostic system — timing and easing as shared tokens, composed into a primitive set (sheet, enter/exit, press, swipe-up) any format could adopt instead of reinventing. Stories launched Sept 14, 2023 across 11 markets with five formats, and has scaled to 500+ stories and 700+ brands since.',
+      image: '/images/portfolio/gf-fennel.png',
+      service: 'systems',
+      sector: 'consumer',
+    },
   ],
 } as const;
 
@@ -421,6 +429,7 @@ export const mix1Projects = [
       { role: 'Client', name: 'Mezo / Thesis' },
       { role: 'PM', name: 'Thesis product team' },
     ],
+    motionDemos: [],
   },
   {
     slug: 'deposit-on-mezo',
@@ -475,6 +484,7 @@ export const mix1Projects = [
       { role: 'Client', name: 'Mezo / Thesis' },
       { role: 'PM', name: 'Thesis product team' },
     ],
+    motionDemos: [],
   },
   {
     slug: 'borrow-musd',
@@ -528,6 +538,7 @@ export const mix1Projects = [
       { role: 'Client', name: 'Mezo / Thesis' },
       { role: 'PM', name: 'Thesis product team' },
     ],
+    motionDemos: [],
   },
   {
     slug: 'blockfi-mobile',
@@ -583,6 +594,7 @@ export const mix1Projects = [
       { role: 'Client', name: 'BlockFi' },
       { role: 'PM', name: 'BlockFi product team' },
     ],
+    motionDemos: [],
   },
   {
     slug: 'cash-native-app',
@@ -636,6 +648,7 @@ export const mix1Projects = [
       { role: 'Client', name: 'a16z Crypto portfolio' },
       { role: 'PM', name: 'C@SH product team' },
     ],
+    motionDemos: [],
   },
   {
     slug: 'easi-food-delivery',
@@ -690,6 +703,7 @@ export const mix1Projects = [
       { role: 'Client', name: 'EASI' },
       { role: 'PM', name: 'EASI product team' },
     ],
+    motionDemos: [],
   },
   {
     slug: 'krisp-ai',
@@ -740,6 +754,66 @@ export const mix1Projects = [
     clientCredits: [
       { role: 'Client', name: 'Krisp' },
       { role: 'PM', name: 'Krisp product team' },
+    ],
+    motionDemos: [],
+  },
+  {
+    slug: 'zalando-stories',
+    name: 'Zalando Stories',
+    client: 'Zalando',
+    sector: 'Consumer',
+    year: '2023',
+    service: 'Systems',
+    readTime: 4,
+    image: '/images/portfolio/gf-fennel.png',
+    headline: 'One motion language for a platform built on a proven bet',
+    intro:
+      "In 2022, Zalando took a majority stake in Highsnobiety, betting that editorial content — not just catalog browsing — could drive commerce at scale. The bet was already working: over 80 curated product drops run together had reached 7 million+ unique users before the platform even had a name. Stories was the next step — turning that into a permanent feature, not a one-off collaboration.",
+    featuredSections: [
+      {
+        lead: 'The same gesture felt different depending on where you saw it.',
+        richTitle: 'Naming the fragmentation',
+        body: [
+          'Getting there meant solving a less glamorous problem first. Every editorial format — a cover story, a style guide, a guest edit — needed transitions that felt consistent whether someone hit them on the app or the web. Motion was still a pile of individual files; the same gesture read differently depending on where you encountered it.',
+          'An eight-step sprint opened by naming that fragmentation, then mapped every existing motion instance across the product before setting a bar for what a shared system would need to cover.',
+        ],
+        images: ['/images/portfolio/project-02-loan.png', '/images/portfolio/project-03-wallet.png'],
+      },
+      {
+        lead: 'Timing tokens, then a short list of primitives that compose into any format.',
+        richTitle: 'Tokens, primitives, patterns',
+        body: [
+          'What shipped: tokens defining raw timing and easing, primitives — sheet, enter/exit, press, swipe-up — defining reusable interaction patterns built from those tokens, and patterns combining primitives into on-screen behaviors editors and engineers could reach for without re-deriving anything. Swipe-up, the gesture that opens a Story full-screen, became the reference example: specified once, used everywhere a story needed to expand.',
+          'Design and engineering stopped trading animation files. A new format now borrows motion from the token layer instead of inventing its own.',
+        ],
+        images: ['/images/portfolio/project-04-marketplace.png', '/images/portfolio/project-after-coinbase.png'],
+      },
+    ],
+    mockups: ['/images/portfolio/gf-fennel.png', '/images/portfolio/project-02-loan.png', '/images/portfolio/project-04-marketplace.png'],
+    closingLead: 'Stories launched September 14, 2023, across 11 European markets with five recurring formats. The motion system is what let that scale to 500+ stories and 700+ brands without the consistency breaking — the difference between a one-off content experiment and a durable platform.',
+    stats: [
+      { name: 'Pre-launch reach', description: '80+ curated product drops with Highsnobiety, before Stories had a name.', value: '7M+ users' },
+      { name: 'Launch markets', description: 'Austria, Belgium, Denmark, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, UK — Sept 14, 2023.', value: '11' },
+      { name: 'Formats at launch', description: 'Cover Story, Style Bible, Guest Edit, The Perfect X, Unpacked.', value: '5' },
+      { name: 'Scaled to', description: 'Stories published since launch, per Zalando.', value: '500+' },
+    ],
+    tech: [
+      { k: 'Method', v: 'Design Sprint · token-first system design' },
+      { k: 'Deliverable', v: 'Timing tokens, motion primitives, DS contribution' },
+      { k: 'Source', v: 'corporate.zalando.com, Sept 14 2023' },
+    ],
+    tags: ['Systems', 'Consumer', 'Motion', 'Design Sprint'],
+    credits: [
+      { role: 'Design lead', name: 'Osandi Robinson' },
+      { role: 'Content', name: 'Mal Som' },
+    ],
+    clientCredits: [
+      { role: 'Client', name: 'Zalando' },
+    ],
+    motionDemos: [
+      { label: 'Default ease', src: '/videos/motion/easing-default.mp4' },
+      { label: 'Ease-out cubic', src: '/videos/motion/easing-out-cubic.mp4' },
+      { label: 'Linear', src: '/videos/motion/easing-linear.mp4' },
     ],
   },
 ] as const;
