@@ -98,6 +98,28 @@ export function ProjectPage() {
           </div>
         ))}
 
+        {/* Block Motion Demos — reference clips illustrating the motion principles behind the work */}
+        {project.motionDemos.length > 0 && (
+          <div className="block block--safe-area block--bg-light block-motion-demos">
+            <div className="block-motion-demos__inner">
+              {project.motionDemos.map((demo, i) => (
+                <div key={i} className="block-motion-demos__item">
+                  <video
+                    className="block-motion-demos__video"
+                    src={demo.src}
+                    data-media-block-exempt="true"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                  <p className="block-motion-demos__label">{demo.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Block Mockups — slider */}
         <div className="block block-mockups block--has-background block-mockups--unique">
           <div className="block-mockups__mockups">

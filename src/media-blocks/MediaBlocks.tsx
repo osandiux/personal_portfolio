@@ -38,6 +38,10 @@ function writeStored(key: string, on: boolean) {
 }
 
 function isMedia(el: Element): el is HTMLImageElement | HTMLVideoElement {
+  // Content that must always show and play regardless of the block toggle —
+  // e.g. instructional clips where the motion itself is the point, not a
+  // decorative placeholder standing in for a photo.
+  if (el.hasAttribute('data-media-block-exempt')) return false;
   if (el instanceof HTMLVideoElement) return true;
   if (!(el instanceof HTMLImageElement)) return false;
   const src = `${el.getAttribute('src') || ''} ${el.getAttribute('srcset') || ''} ${el.currentSrc || ''}`;
