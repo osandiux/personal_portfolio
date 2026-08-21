@@ -1,0 +1,13 @@
+# The reference rooms (/poised1, /studio, /craft, /1sap, /os1, /obs) are
+# deliberately NOT listed as Disallow here.
+#
+# They are de-indexed via an "X-Robots-Tag: noindex, nofollow" response header,
+# set in vercel.json. A crawler has to fetch a URL to see that header. Blocking
+# those paths with Disallow would prevent the fetch, so any page already in an
+# index would stay there indefinitely -- the opposite of what we want.
+#
+# Once the reference rooms have dropped out of search results, they can be
+# switched to Disallow to save crawl budget. Not before.
+
+User-agent: *
+Allow: /
